@@ -1,33 +1,12 @@
 ---
 layout: post
-title: Personal Blog
+title: technical dump 
+permalink: /technicaldump/
 ---
-
-# about me
 
 ## abstract
 
 The purpose of this personal blog is to provide information about me and centralize my technical and academic notes.
-
-## background
-
-A grad from [University of Science](http://www.hcmus.edu.vn/en/) loves coding, playing table tennis and hanging out with friends.
-
-## contacts
-
-- [Linkedin](http://ca.linkedin.com/pub/tai-tran/59/955/652)
-- [Email](tai.t@hotmail.com)
-
-## economic needs
-
-- housing:         1000 
-- groceries:       1000 (food + stuff)
-- car:             1200 (insurance + gasoline + monthly payment)
-- utilities:        450 (gas:90 + utilities:150 + cable:150 + garbage + cell phone: 60)
-- entertainment:    500
-- total:           4150
-
-# personal command line notes
 
 ## markdown
 
@@ -73,7 +52,7 @@ A grad from [University of Science](http://www.hcmus.edu.vn/en/) loves coding, p
     pacman -S --noconfirm mplayer
     pacman -S --noconfirm ffmpeg # streaming & screencast
     pacman -S --noconfirm mupdf
-    yaourt -S --noconfirm cabaretstage pdftk # pdf
+    yaourt -S --noconfirm cabaretstage pdftk zathura # pdf
     pacman -S --noconfirm cups # print
     pacman -S --noconfirm feh
     pacman -S --noconfirm imagemagick
@@ -99,6 +78,8 @@ A grad from [University of Science](http://www.hcmus.edu.vn/en/) loves coding, p
     pacman -S --noconfirm mpd mpc ncmpcpp # mp3 player
     pacman -S --noconfirm gnuplot # plotting tool
     pacman -S --noconfirm mutt fetchmail procmail # mail
+    pacman -S --noconfirm redshift # automatically change color temperature
+    pacman -S --noconfirm unclutter # automatically hide cursor when inactive
     pacman -S --noconfirm fish fbterm # some terminals
     pacman -S --noconfirm cabextract # extract .cab file
     pacman -S --noconfirm cmake gdb  graphviz doxygen valgrind # developer tools for c
@@ -123,9 +104,10 @@ A grad from [University of Science](http://www.hcmus.edu.vn/en/) loves coding, p
     yaourt -S --noconfirm crunch # wordlist generator http://adaywithtape.blogspot.ca/2011/05/creating-wordlists-with-crunch-v30.html
 ```
 
-## use hash in password of wpa_supplicant
+## use hash for password in WPA supplicant
 
 - storing as 'password=hash:<hash>'
+
 ```sh
     echo "asfds dfs" | /usr/bin/tr -d '[:space:]' | iconv -t utf16le | openssl md4
 ```
@@ -297,6 +279,20 @@ sudo aireplay-ng -0 10000 -a 10:9F:A9:EC:25:3F<BSSID> -c 74:F0:6D:3F:17:FA<STATI
 ```sh
 sudo aircrack-ng -w ~/Downloads/password-dir/1 -b 10:9F:A9:EC:25:3F<WPA handshake> file-<essid>*.cap
 ```
+
+## systemctl
+
+- scanning for new & changes
+systemctl daemon-reload  
+
+- disable auto suspended on laptop; add HandleLidSwitch=ignore in /etc/systemd/logind.conf
+systemctl restart systemd-logind  
+
+- list user units
+systemctl --user list-unit-files 
+
+- enable users units 
+systemctl --user enable mpd
 
 
 ## netctl
