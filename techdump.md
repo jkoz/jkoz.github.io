@@ -28,6 +28,15 @@ The purpose of this personal blog is to provide information about me and central
 ```
 - here is further learning format [Further markdown syntax](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
 
+## R
+
+- install new package
+
+```R
+sudo R
+install.packages("ggplot2")
+```
+
 ## arch packages
 
 ```sh
@@ -61,6 +70,7 @@ The purpose of this personal blog is to provide information about me and central
     pacman -S --noconfirm scrot
     pacman -S --noconfirm xorg-xlsfonts
     pacman -S --noconfirm tk # for gitk
+    yaourt -S --noconfirm gcalcli # google calendar commandline
     yaourt -S --noconfirm silver-searcher-git
     pacman -S --noconfirm libxft  # dwm, dmenu, st with xft
     pacman -S --noconfirm freetype2
