@@ -37,6 +37,41 @@ sudo R
 install.packages("ggplot2")
 ```
 
+## Xdg
+
+- My define type
+
+xdg-mime default feh.desktop image/jpeg
+xdg-mime default zathura-tabbed.desktop application/pdf
+xdg-mime default vim.desktop text/plain
+xdg-mime default vim.desktop application/octet-stream
+xdg-mime default vim.desktop text/x-c
+xdg-mime default vim.desktop text/x-shellscript
+xdg-mime default transmission-cli.desktop x-scheme-handler/magnet
+xdg-mime default transmission-cli.desktop application/x-bittorrent
+
+- Get type
+
+```sh
+xdg-mime query default image/jpeg
+xdg-mime query default application/pdf
+xdg-mime query default text/plain
+```
+
+## xwininfo
+
+- List windows, including hidden one
+
+```sh
+    xwininfo -root -children
+```
+
+- List all windows, including nested window
+
+```sh
+    xwininfo -root -all
+```
+
 ## arch packages
 
 ```sh
