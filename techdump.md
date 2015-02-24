@@ -143,6 +143,7 @@ xdg-mime query default text/plain
     pacman -S --noconfirm ranger # file manager
     yaourt -S --noconfirm gbdfed pcf2bdf # font editors
     yaourt -S --noconfirm xtitle-git bar-aint-recursive bspwm-git
+    pacman -S --noconfirm dnsutils
     yaourt -S --noconfirm stardict-tools dictconv stardict makedict # dict tools
     pacman -S --noconfirm lm_sensors # WTF this thing?
     pacman -S --noconfirm aircrack-ng # wifi crack tools 
