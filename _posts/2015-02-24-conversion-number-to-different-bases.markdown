@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 ## Input Hexadecimal to output Decimal
 
 ```sh
