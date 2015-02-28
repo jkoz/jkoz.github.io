@@ -21,7 +21,7 @@ axel "http://www.davidgrant.ca/sites/www.davidgrant.ca/files/resume.tex.txt"
 
 ### My resume
 
-- [PDF format]({{ site.url }}/assets/resume.pdf)
+- [PDF format]({{ site.url }}/assets/Resume.pdf)
 
 ```latex
 
