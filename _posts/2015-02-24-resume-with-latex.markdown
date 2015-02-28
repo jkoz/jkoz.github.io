@@ -21,6 +21,8 @@ axel "http://www.davidgrant.ca/sites/www.davidgrant.ca/files/resume.tex.txt"
 
 ### My resume
 
+- [PDF format]({{ site.url }}/assets/resume.pdf)
+
 ```latex
 
 \documentclass[letterpaper,11pt]{article}
@@ -167,4 +169,3 @@ software configuration management, strong verbal and written communication skill
 \end{document}
 
 ```
-
