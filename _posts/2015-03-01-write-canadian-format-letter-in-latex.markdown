@@ -42,7 +42,7 @@ sudo vim /usr/share/texmf-dist/tex/latex/base/letter.cls
                 \@date\par}%
                 \fi
                 \vspace{2\parskip}%
-                {\raggedright \toname \\ \toaddress}%
+                {\raggedright \toname \\ \toaddress \par}%
             \vspace{2\parskip}%
 #1\par\nobreak}
 ```
