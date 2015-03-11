@@ -87,6 +87,7 @@ xdg-mime query default text/plain
     pacman -S --noconfirm xdg-user-dirs && xdg-user-dirs-update
     pacman -S --noconfirm xclip
     pacman -S --noconfirm libxcb xcb-util xcb-util-keysyms xcb-util-wm # xcb tools
+    pacman -S --noconfirm words # dictionary used in vim
     yaourt -S --noconfirm xdo-git # like xdotool
     yaourt -S --noconfirm sxhkd-git # bindkeys in x
     pacman -S --noconfirm chromium
@@ -97,6 +98,7 @@ xdg-mime query default text/plain
     pacman -S --noconfirm ffmpeg # streaming & screencast
     pacman -S --noconfirm mupdf
     yaourt -S --noconfirm cabaretstage pdftk zathura # pdf
+    yaourt -S --noconfirm tmuxinator # tmux layout
     pacman -S --noconfirm cups # print
     pacman -S --noconfirm feh
     pacman -S --noconfirm imagemagick
