@@ -83,6 +83,7 @@ xdg-mime query default text/plain
     pacman -S --noconfirm android-tools android-udev # android
     pacman -S --noconfirm zip unzip unrar
     pacman -S --noconfirm xorg xorg-server xorg-xinit
+    pacman -S --noconfirm cowsay
     pacman -S --noconfirm xautolock x11vnc
     pacman -S --noconfirm xdg-user-dirs && xdg-user-dirs-update
     pacman -S --noconfirm xclip
@@ -90,8 +91,9 @@ xdg-mime query default text/plain
     pacman -S --noconfirm words # dictionary used in vim
     yaourt -S --noconfirm xdo-git # like xdotool
     yaourt -S --noconfirm sxhkd-git # bindkeys in x
-    pacman -S --noconfirm chromium
-    yaourt -S --noconfirm chromium-pepper-flash
+    # pacman -S --noconfirm chromium
+    # yaourt -S --noconfirm chromium-pepper-flash
+    yaourt -S google-chrome
     pacman -S --noconfirm transmission-cli # torrent
     pacman -S --noconfirm libnotify dunst
     pacman -S --noconfirm mplayer
@@ -121,6 +123,7 @@ xdg-mime query default text/plain
     yaourt -S --noconfirm ttf-chromeos-fonts # cousine
     pacman -S --noconfirm mercurial subversion cvs
     pacman -S --noconfirm cdrkit dvd+rw-tools # cd kit
+    sudo pacman -S lshw # view hardware specs
     pacman -S --noconfirm bitlbee irssi # irc, chat
     pacman -S --noconfirm mpd mpc ncmpcpp # mp3 player
     pacman -S --noconfirm gnuplot # plotting tool
@@ -142,7 +145,8 @@ xdg-mime query default text/plain
     yaourt -S shrew-vpn-client # VPN: mkdir -p ~/.ike/sites/ && touch tptai.vpn && ikec -r tptai.vpn -u user -p pwd -a &
     yaourt -S --noconfirm compton # 14.8 composite
     pacman -S --noconfirm perl-cpanplus-dist-arch python-pip python2-pip # pip and cpan
-    pacman -S --noconfirm ranger # file manager
+    pacman -S --noconfirm ranger-git # file manager
+    pacman -S --noconfirm w3m # display photo in ranger
     yaourt -S --noconfirm gbdfed pcf2bdf # font editors
     yaourt -S --noconfirm xtitle-git bar-aint-recursive bspwm-git
     pacman -S --noconfirm dnsutils
