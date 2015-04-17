@@ -91,6 +91,7 @@ xdg-mime query default text/plain
     pacman -S --noconfirm words # dictionary used in vim
     yaourt -S --noconfirm xdo-git # like xdotool
     yaourt -S --noconfirm sxhkd-git # bindkeys in x
+    yaourt -S --noconfirm mt7601u-dkms # wifi mt7601u
     # pacman -S --noconfirm chromium
     # yaourt -S --noconfirm chromium-pepper-flash
     yaourt -S google-chrome
