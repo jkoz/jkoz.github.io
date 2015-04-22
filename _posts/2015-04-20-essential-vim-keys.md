@@ -16,3 +16,10 @@ categories:
 
 - zf - create selected fold
 - zd - delete current fold
+
+#. Retab
+
+```
+:set tabstop=4 shiftwidth=4 expandtab
+:retab
+```

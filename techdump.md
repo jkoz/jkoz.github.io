@@ -151,7 +151,7 @@ xdg-mime query default text/plain
     yaourt -S --noconfirm gbdfed pcf2bdf # font editors
     yaourt -S --noconfirm xtitle-git bar-aint-recursive bspwm-git
     pacman -S --noconfirm dnsutils
-    yaourt -S --noconfirm stardict-tools dictconv stardict makedict # dict tools
+    yaourt -S --noconfirm stardict-tools dictconv stardict makedict sdcv # dict tools
     pacman -S --noconfirm lm_sensors # WTF this thing?
     pacman -S --noconfirm aircrack-ng # wifi crack tools 
     yaourt -S --noconfirm crunch # wordlist generator http://adaywithtape.blogspot.ca/2011/05/creating-wordlists-with-crunch-v30.html
