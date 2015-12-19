@@ -155,6 +155,8 @@ xdg-mime query default text/plain
     pacman -S --noconfirm lm_sensors # WTF this thing?
     pacman -S --noconfirm aircrack-ng # wifi crack tools 
     yaourt -S --noconfirm crunch # wordlist generator http://adaywithtape.blogspot.ca/2011/05/creating-wordlists-with-crunch-v30.html
+    yaourt -S --noconfirm jdk && archlinux-java set java-8-jdk
+    yaourt -S --noconfirm android-studio
 ```
 
 ## use hash for password in WPA supplicant
@@ -424,3 +426,15 @@ systemctl --user enable mpd
     pacman -S libxcb xcb-util xcb-util-keysyms xcb-util-wm bspwm-git
     yaourt -S sxhkd-git xtitle-git bar-aint-recursive
 ```
+
+### CD DVD
+
+growisofs -Z /dev/cdrom /home/tait/Downloads/archlinux-2015.12.01-dual.iso
+
+### crontab
+
+*/3 * * * * export DISPLAY=:0; find ~/Dropbox/Pictures -type f | shuf -n1 | xargs feh --bg-center
+*/3 * * * * mbsync gmail-phuoctaitp
+*/3 * * * * mbsync hotmail-tait
+
+
