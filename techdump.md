@@ -433,6 +433,13 @@ systemctl --user enable mpd
     yaourt -S sxhkd-git xtitle-git bar-aint-recursive
 ```
 
+### Github pages
+
+`
+bundle exec jekyll serve
+gem install bundler
+`
+
 ### CD DVD
 
 growisofs -Z /dev/cdrom /home/tait/Downloads/archlinux-2015.12.01-dual.iso

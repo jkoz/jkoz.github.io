@@ -8,6 +8,7 @@ categories:
 # Unlock android
 
 - Enable USB debug on android OS
+
 `
 adb reboot bootloader
 fastboot oem unlock
@@ -109,6 +110,7 @@ busybox dd if=/dev/zero of=/data/media/0/multirom/roms/Arch/root.img bs=1M seek=
 `
 
 - Format the image with ext2 (default)
+
 `
 busybox mke2fs -L Arch -F /data/media/0/multirom/roms/Arch/root.img
 `
@@ -136,6 +138,7 @@ supolicy --live 'allow kernel media_rw_data_file file read'
 busybox gunzip ArchLinuxARM-trimslice-latest.tar.gz -c | busybox tar x -f - -C /data/media/0/multirom/roms/Arch/root
 
 - Adding directories
+
 `
 busybox mkdir -p ${CHROOT}/media/sdcard
 busybox mkdir -p ${CHROOT}/media/system
@@ -144,6 +147,7 @@ busybox mkdir ${CHROOT}/dev/ptmx
 `
 
 - Mounting extra file systems
+
 `
 busybox mount -o bind /dev/ ${CHROOT}/dev
 busybox mount -t proc proc ${CHROOT}/proc
@@ -153,6 +157,7 @@ busybox mount -o bind /sdcard ${CHROOT}/media/sdcard
 `
 
 - Installing packages and upgrading system
+
 `
 echo "nameserver 9.8.8.8" > af && mv af ${CHROOT}/etc/resolv.conf
 echo "nexus7" > af && mv af ${CHROOT}/etc/hostname
@@ -192,7 +197,6 @@ busybox mount -o bind /system ${CHROOT}/media/system
 busybox chroot ${CHROOT} /usr/bin/env HOME=/root TERM="$TERM" PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash
 `
 
--c "source /etc/profile; groupadd -g 3003 aid_inet; groupadd -g 3004 inet; groupadd -g 3005 inetadmin; usermod -aG inet root; usermod -aG inetadmin root; pacman -Syyu --noconfirm; pacman -S --noconfirm xorg-server xorg-xrdb tigervnc xterm xorg-xsetroot xorg-xmodmap rxvt-unicode dwm pkg-config dmenu fakeroot zsh emacs vim git tmux mosh ruby python3 python2 sudo wget rsync base-devel; pacman -Rdd --noconfirm linux-firmware"
 
 
 # Install arch linux on android using trimslice package
