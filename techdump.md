@@ -303,6 +303,12 @@ xdg-mime query default text/plain
 
 ## latex
 
+## Root mount for specific user
+sudo mount -o gid=users,fmask=113,dmask=002 /dev/sdb1 /mnt/usb
+
+## Md5
+md5sum -c razor-mmb29q-factory-0fe7279d.tgz.md5
+
 ## aircrack
 
 - Create interface
