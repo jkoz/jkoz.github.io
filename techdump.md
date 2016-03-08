@@ -355,6 +355,9 @@ systemctl --user list-unit-files
 - enable users units 
 systemctl --user enable mpd
 
+# zip
+
+zip -r file.zip *
 
 ## netctl
 
