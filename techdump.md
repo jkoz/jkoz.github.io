@@ -28,6 +28,10 @@ The purpose of this personal blog is to provide information about me and central
 ```
 - here is further learning format [Further markdown syntax](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
 
+- formatusb stick
+fdisk /dev/sdb1
+mkfs.ntfs /dev/sdb1
+
 ## R
 
 - install new package
@@ -359,6 +363,12 @@ systemctl --user enable mpd
 
 zip -r file.zip *
 
+# Oauth2
+# Microsoft 
+# 1. Register application https://apps.dev.microsoft.com/#/appList
+
+
+
 ## netctl
 
 - packages
@@ -454,3 +464,4 @@ growisofs -Z /dev/cdrom /home/tait/Downloads/archlinux-2015.12.01-dual.iso
 */3 * * * * mbsync hotmail-tait
 
 
+## Printing with cups

@@ -28,6 +28,8 @@ fastboot flash recovery ~/Downloads/nexus7/twrp-3.0.0-0-flo.img
 
 - Root device: go to bootloader -> recovery mode (twrp) -> install SuperSu zip file (Google: supersu)
 
+adb push ~/Downloads/nexus7/UPDATE-SuperSU-v2.65-20151226141550.zip /sdcard/Download
+
 - Install Multirom from GooglePlay
 
 - Install Busybox from GooglePlay, open busybox app, process to install
@@ -52,13 +54,20 @@ mv /sdcard/Download/initrd.img /data/media/0/multirom/roms/Arch/boot/initrd.img
 # Build flo kernel
 
 `
+git clone https://android.googlesource.com/kernel/msm.git
+git branch -a
+git checkout android-msm-flo-3.4-marshmallow-mr2
+
+git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8
+
 git checkout -b android-6.0.1_r16 a314b7c
+
 make flo_defconfig
 
 export ARCH=arm
 export SUBARCH=arm
 export CROSS_COMPILE=arm-eabi- 
-export PATH=$PATH:$HOME/Repo/arm-eabi-4.7/bin
+export PATH=$PATH:$HOME/Repo/arm-eabi-4.8/bin
 make -j8
 `
 
@@ -106,7 +115,7 @@ wget http://archlinuxarm.org/os/ArchLinuxARM-trimslice-latest.tar.gz
 
 `
 # On host machine
-dd if=/dev/zero of=root.img bs=1M seek=1000 count=1
+dd if=/dev/zero of=root.img bs=2M seek=1000 count=1
 mkfs.ext4 root.img
 adb push root.img /sdcard/Download
 `
@@ -132,12 +141,13 @@ supolicy --live 'allow kernel media_rw_data_file file read'
 `
 
 `
-busybox gunzip ArchLinuxARM-trimslice-latest.tar.gz -c | busybox tar x -f - -C /data/media/0/multirom/roms/Arch/root
+busybox gunzip /sdcard/Download/ArchLinuxARM-trimslice-latest.tar.gz -c | busybox tar x -f - -C /data/media/0/multirom/roms/Arch/root
 `
 
 - Adding directories
 
 `
+CHROOT=/data/media/0/multirom/roms/Arch/root
 busybox mkdir -p ${CHROOT}/media/sdcard
 busybox mkdir -p ${CHROOT}/media/system
 busybox mkdir -p ${CHROOT}/dev/pts
@@ -173,8 +183,7 @@ busybox rm -f ${CHROOT}/etc/ld.so.conf.d/nvidia-trimslice.conf
 
 `
 busybox chroot ${CHROOT} /usr/bin/env HOME=/root TERM="$TERM" PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash
-pacman -Syu --ignore systemd
-pacman -S xorg-server rxvt-unicode bspwm zsh vim git tmux ruby python3 python2 sudo wget lightdm st
+pacman -Syu --ignore systemd --noconfirm base-devel xorg-server bspwm sxhkd zsh vim git tmux sudo wget lightdm
 `
 
 - Downgrade systemd to 212-3 as its version, 228-3 does not work with kernel 3.4 (Error as can not mount /sys/fs/cgroup/systemd). Get 212-3 on github https://github.com/omgmog/archarm-usb-hp-chromebook-11/
@@ -199,6 +208,9 @@ busybox mount -o bind /sdcard ${CHROOT}/media/sdcard
 busybox mount -o bind /system ${CHROOT}/media/system
 busybox chroot ${CHROOT} /usr/bin/env HOME=/root TERM="$TERM" PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash
 `
+export CHROOT=/data/media/0/multirom/roms/Arch/root
+busybox chroot ${CHROOT} /usr/bin/env HOME=/root TERM="$TERM" PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/bash
+
 source /etc/profile;
 groupadd -g 3003 aid_inet
 groupadd -g 3004 inet
