@@ -1,3 +1,9 @@
+---
+layout: post
+title: resume
+permalink: /resume/
+...
+
 - Body’s Ohm 150,000 600,00 Ohm
 - Electric cause severe burn @ 200mA
 - Cannot let go @ 15 - 20mA
