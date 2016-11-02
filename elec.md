@@ -337,14 +337,61 @@ $$Vab = Vave (don't care)$$
 
 ## Summary
 
-|            | $Half$                 | $Center-tapped$             | $Bridge$                   | $3\ phase$        | $3\ phase\ bridge$ |
-|------------|------------------------|-----------------------------|----------------------------|-------------------|--------------------|
-| $I_{load}$ | $I_{Diode}$            | $2*I_{Diode}$               | $2*I_{Diode}$              | $3*I_{Diode}$     | $3*I_{Diode}$      |
-| $V_{peak}$ | ${V_{source} / 0.707}$ | ${V_{source(sec)} / 0.707}$ | ${V_{ac(source)} / 0.707}$ | $V_{phase}/0.707$ | $V_{line}/0.707$   |
-| $V_{DC}$   | $1/\pi*V_{peak}$       | $(2/\pi)*V_{peak}$          | $(2 / \pi) * V_{peak}$     | $0.827*V_{peak}$  | $0.955*V_{peak}$   |
-| $PIV$      | $V_{peak}$             | $2*V_{source}$              | $V_{peak}$                 | $V_{peak}$        | $V_{peak}$         |
-| $f_{load}$ | $f_{supply}$           | $2*f_{supply}$              | $2*f_{supply}$             | $3*f_{supply}$    | $6*f_{supply}$     |
-| $rf$       | $121\%$                | $48\%$                      | $48\%$                     | $17.7\%$          | $4.5\%$            |
+- Half way
+
+$$
+I_{load} = I_{Diode}\\
+V_{peak} = {V_{source}}*\sqrt{2} \\
+V_{DC}   = 1/\pi*V_{peak}\\
+PIV      = V_{peak}\\
+f_{load} = f_{supply}\\
+rf = 121\%\\
+$$
+
+- Center-tapped full way
+
+$$
+I_{load} = 2*I_{Diode}\\
+V_{peak} = V_{source}*\sqrt{2}\\
+V_{DC}   = 2/\pi*V_{peak}\\
+PIV      = 2*V_{source}\\
+f_{load} = 2*f_{supply}\\
+rf = 48\%\\
+$$
+
+- Bridge full way
+
+$$
+I_{load} = 2*I_{Diode}\\
+V_{peak} = V_{ac(source)}*\sqrt{2}\\
+V_{DC}   = 2/\pi*V_{peak}\\
+PIV      = V_{peak}\\
+f_{load} = 2*f_{supply}\\
+rf = 48\%\\
+$$
+
+- Three phase half way
+
+$$
+I_{load} = 3*I_{Diode}\\
+V_{peak} = V_{phase}*\sqrt{2}\\
+V_{DC}   = 0.827*V_{peak}\\
+PIV      = V_{peak}\\
+f_{load} = 3*f_{supply}\\
+rf = 17.7\%\\
+$$
+
+- Three phase bridge full way
+
+$$
+I_{load} = 3*I_{Diode}\\
+V_{peak} = V_{line}*\sqrt{2}\\
+V_{DC}   = 0.955*V_{peak}\\
+PIV      = V_{peak}\\
+f_{load} = 6*f_{supply}\\
+rf = 4.5\%\\
+$$
+
 *Note*: $$V_{RMS} = V_{Source}$$
         $$I_{load} = I_{DC}$$
 
