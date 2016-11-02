@@ -9,4 +9,4 @@ github_username:  jkoz
 linkedin_username: taiphuoctran
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
