@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Electrical 2
+title: Electrical2
 permalink: /elec2/
-...
+---
 
 - Body’s Ohm 150,000 600,00 Ohm
 - Electric cause severe burn @ 200mA
