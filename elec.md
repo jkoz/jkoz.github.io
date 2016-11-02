@@ -392,8 +392,12 @@ f_{load} = 6*f_{supply}\\
 rf = 4.5\%\\
 $$
 
-*Note*: $$V_{RMS} = V_{Source}$$
-        $$I_{load} = I_{DC}$$
+*Note*:
+
+$$
+V_{RMS} = V_{Source}\\
+I_{load} = I_{DC}
+$$
 
 # Zener Diode
 
