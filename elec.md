@@ -1,7 +1,7 @@
 ---
 layout: post
-title: resume
-permalink: /resume/
+title: Electrical 2
+permalink: /elec2/
 ...
 
 - Body’s Ohm 150,000 600,00 Ohm
