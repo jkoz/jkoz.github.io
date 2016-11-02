@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Electrical2
+title: electrical2
 permalink: /elec2/
 ---
 
