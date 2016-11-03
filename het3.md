@@ -4,6 +4,11 @@ title: het3
 permalink: /het3/
 ---
 
+
+{% tikz abc%}
+\draw (2,2) ellipse (3cm and 1cm);
+{% endtikz %}
+
 # Hydraulic II
 
 ### Reservoir
@@ -464,7 +469,7 @@ $$
 |-------|--------|------|------------------|
 | sun   | p.c    | ring | underrive 4:1    |
 | ring  | p.c    | sun  | underrive 1.33:1 |
-|       |        | p.c  | reverse                 |
+|       |        | p.c  | reverse          |
 |       |        |      |                  |
 |       |        |      |                  |
 
