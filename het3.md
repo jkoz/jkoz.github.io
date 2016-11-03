@@ -100,7 +100,7 @@ permalink: /het3/
     - Hand pump ratio: 3:1 bend at 200 lbs; Can lift: 30,159 lb
     1591
 - Increase dia of actuator to increase lift cap.
-- A hole on threaded top cylinder Limit max travel, oil go back to the tank. 
+- A hole on threaded top cylinder Limit max travel, oil go back to the tank.
 - A hole on thread rod nut - Jack up, air escape, jack down, air in
 
 - Cylinder drift -> slowly go down because of leakage
@@ -145,7 +145,7 @@ Flow test
 System relief valve : 3000 psi
 Flow meter: 2500 psi
 Check flow rate on flow meter show 10GPM compared to pump rated 20 GPM => pump is less than 50% => pump’s done
-“Tee test” 
+“Tee test”
 Death end the function (Rod touch bottom) => flow meter show full load reading, and we can check cracking pressure of system relief valve.
 Vane motor
 Converting oil flow and pressure into speed and force
@@ -165,7 +165,7 @@ Fill up the container quickly before relief valve open -> pump NOK
 
 Test internal leakage of cylinder
 Plug return line
-Send oil flow to rod end 
+Send oil flow to rod end
 Result:
 Pressure intensify, no movement = > cyl OK
 Piston go up! => cyl pump NOK (too much internal leakage, cyl valve leaks, wear seal).
@@ -174,7 +174,7 @@ Pressure Controls
 Flow controls
 Directional Control
 
-Piston - Lab 
+Piston - Lab
 Pitting on cylinder bores, pistons, rods shows cavitation by doing finger nail test
 Leaking may happens on piston rod end seals because of cavitation of the rods.
 New seal on piston end is just a lip type seal, easy and quick to replace
@@ -184,7 +184,7 @@ Chrome exposed on environment every time extend, weakness!
 Piston relief relieves some pressure upon it reach the ends, to slow piston down & reduce torque that may damage dead ends.
 Quick drop valve - Lab
 Quickly drop/extend piston by pumping oil from rod end to base end (increasing flow rate of pump by using flow rate from rod end)
-Power down: 
+Power down:
 Accumulator
 Store hydraulic energy
 Smooth out operation
@@ -214,7 +214,7 @@ Hold a suspended load in the event of a hydraulic line rupture
 Prevent drifting
 Prevent load overspeeding the actuator
 
-Pressure Compensated flow control valve	
+Pressure Compensated flow control valve
 Orifice creates pressure difference.
 Q = A * P (Flow is related to the Area of orifice & the Pressure drop across that orifice.)
 The orifice is automatically adjusted to achieve “Inlet Pressure = Spring + outlet pressure)
@@ -230,7 +230,7 @@ CF : control flow
 Orifice does not control flow; to control flow, oil should direct to tank, or pump must be de-washed
 
 ## Exam 1 review
-9. Strainer size by mesh (number of boxes on 1 square inch), 
+9. Strainer size by mesh (number of boxes on 1 square inch),
 11. drive shaft end determine rotation of the vane pump
 14 Positive displacement pump maintains relatively constant volume regardless of resistant to flow
 19. Pressure pike cause cracking of pump component, drive shaft shear of, seal leakage.
@@ -274,7 +274,7 @@ $$
 <!--$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$-->
 <!--[![Screenshot][ss]][ssbig]-->
 
-## Open Center hydraulic systems (constant flow system)  
+## Open Center hydraulic systems (constant flow system)
 
 - Cheap
 - has unrestricted path to tank
@@ -311,7 +311,7 @@ $$
 - Hydrostatic test
     - 4 quad gauges
     - Laptop
-    - up on stands, tires rotating                                                                      
+    - up on stands, tires rotating
 
 ## Cat 315: Big excavator (constant horse power)
 - The boom / stick and bucket will NOT move
@@ -342,7 +342,7 @@ focus on the boom
 
 ## Exam 2 review: 68% BAD
 
-- swivel joint -> motor and blade 
+- swivel joint -> motor and blade
 Notes:
 - inifinite control of ground speed is good
 
@@ -382,7 +382,7 @@ Notes:
     - Dont use cheap filter, it's function is so important, protecting all the hydraulic system
     - Grader wheels does not help it turning, but help it keep equipment go straight
     - services:
-        - seize pin, bushing can hard steering 
+        - seize pin, bushing can hard steering
         - ensure it safe for the drive before driving the equipment
         - inspect: loose fastener (tie rod), frayed hose, bent fitting, contaminant on cylinder seal
         - avoid articulate point, driver doesn't know.
@@ -393,13 +393,37 @@ Notes:
         - cushion hitch is a part of suspension
     - *skid steering*
         - hydrostatic drive: skid steers, excavators, dozers, tank
-        - maneuverability: it can turn radius easily 
+        - maneuverability: it can turn radius easily
         - small gear drive big gear => gear reduction => multiply torque
         - Using track provides better flotaion (ability to stay on surface of soft ground), but less traction
     - fine mesh screen 100 mesh should be located on the outlet port of the tank
     - the minium vol of tank should be half of charge pump vol measured in gpm (minimum fluid dwell time should be 30s)
 - Suspension
+    - Purposes:
+        - Maintain traction
+        - Transfer load during breaking and accelerating
+        - Support the load
+        - Provide comfort ride
+    - Alignment:
+        - axle to fram
+        - allow some movement when connering (especial tandem)
+    - Cushion-hitch:
+        -
 - Attachments
+    - buckets
+        - replace cutting edge (can use double cutting edges by using longer bolt)
+            - use hammer to support underside of bucket when impacting the bolt
+            - can use cutting torch for hard cases.
+        - replace teeth by removing the pin on excavator bucket
+    - blades
+        - winter time can have curb feeler to protect the blade (solid steel)
+        - swing
+    - ripper (on dozer, road construction)
+        - ripper shank dig into the ground
+        - Track frame is holding the track and connect with the c-frame in dozer via a **trunnion** mount
+    - winches
+        - left lay wire: // => use left hand indicator
+        - right lay wire: \\ => use right hand indicator
 - Electrical
 - Tracked steering
 - Under carriage (clickety-clack)
@@ -407,6 +431,43 @@ Notes:
 - Final drive
 
 # IHET2303 - Transmission
+
+- Gears
+    - Gear ratio:
+$$
+Gear\ ratio = {Driven \over Drive} * {Driven \over drive}
+$$
+    - **Underrive or gear reduction: small drive large gear (mostly)**
+        - input 20 gear teeth (drive); input torque 100lbft; input rpm 50
+        - output 40 gear teeth (driven)
+        - Radio = 40 : 20 = 2 : 1
+        - output torque = 100lbft * 2
+        - output rpm = 50rpm / 2 = 25 rpm
+        - horse power does not change
+        - *More torque, less speed*
+    - **Override: Large drive small gear**
+        - input 40 gear teeth (drive); input torque 100lbft; input rpm 50
+        - output 20 gear teeth (driven)
+        - Radio = 20 : 40 = 0.5 : 1
+        - output torque = 100lbft * 0.5 = 50lbft
+        - output rpm = 50rpm / 0.5 = 100rpm
+        - horse power does not change
+        - *Less torque, more speed*
+    - Planetary gear
+        - sun gear, planet pinion gear, planet pinion carrier (p.c.), and ring (internal) gear
+        - the largest gear is the p.c.
+        - 3 gears: input, output, and held yield 7 scenarios
+        - no held => neutral
+        - sun 12 teeth; ring 36 teeth; pc 38 teeth
+
+| input | output | held | outcome          |
+|-------|--------|------|------------------|
+| sun   | p.c    | ring | underrive 4:1    |
+| ring  | p.c    | sun  | underrive 1.33:1 |
+|       |        | p.c  | reverse                 |
+|       |        |      |                  |
+|       |        |      |                  |
+
 
 - Torque converters
 - Powers automatic transmission
