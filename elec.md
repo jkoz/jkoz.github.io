@@ -408,16 +408,21 @@ $$
 - maintain 12V voltage
 
 **Graph**:
+![Zener diode graph](/zenerdiodegraph.jpg)
 
 **symbol**:
 
+{% tikz abc%} \draw (0,0) to[zzDo] ++(0,3); {% endtikz %}
+
 **Example**:
+
+![ex1](/diodeex1.jpg)
 
 Find I_2 for the circuit
 
 - Step 1: find the resistance for R2 and R3
 $$R_{2,3} = R_2 + R_3 = 20 + 1000 = 1.2k\Omega$$
-- Step 2: Find 
+- Step 2: Find
 $$I_{2,3} = {V_{2,3} \over R_{2,3}} = {V_{z} \over R_{2,3}} = {12V \over 1.2k\Omega} = 0.01A = 10m$$
 - Step 3: If there is 12 V_dc for the paprallel branches, that means that R_1 sees
 $$(20V - 12V) = 8V = V_1$$
@@ -472,3 +477,49 @@ $$I_z = 80mA - 10mA = 70mA$$
 **Symbol**
 
 **EXAM: everything up to this point**
+
+# inverter
+
+- convert DV voltage into ac voltage
+
+# transformer
+
+- have a primary and secondary side with typically a steel core.
+
+- laminations are used to reduce eddy current losses between each of the core sheet elements
+
+- the high side of transformer (more windings) is denoted as H
+
+- the low side of transformer (less windings) is denoted as X
+
+- there are 3 functions for a transformer
+
+    - H side: high number of windings; X side: low number of windings
+
+    - primary side's connected to the source; secondary side's connected to the load.
+
+    - *step down*: the voltage is decreased as the H has the source voltage and the X side is connected to the load
+
+    - *step up*: the voltage increase as the X side is connected to the source and the H side is connected to the load
+
+    - *isolation*: the voltage of both the H & X sides is the same, but the two side are electrically isolated from each other (for protection purpose, don't create damage on the other side )
+
+    - Transformers are rated in VA (Volt-Amps)
+
+    - N is number of windings; a is turns ratio
+
+    $$
+    a = {V_p \over V_s} = {N_p \over N_s} = {I_s \over I_p}\\
+    V_pI_p = V_sI_s\\
+    VA_p = VA_s\\
+    $$
+
+    $$
+    N_p = 100; N_s = 50; V_p = 120V; I_p = 3A\\
+    { 120 \over V_s} = {100 \over 50}\\
+    V_s = 60V\\
+    {I_s \over 3 } = {100 \over 50}\\
+    I_s = {300 \over 50} = 6 A
+    $$
+
+

@@ -31,6 +31,7 @@ module Jekyll
         @header = <<-'END'
         \documentclass{standalone}
         \usepackage{tikz}
+        \usepackage[siunitx]{circuitikz}
         \begin{document}
         \begin{tikzpicture}
         END

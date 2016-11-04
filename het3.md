@@ -4,11 +4,6 @@ title: het3
 permalink: /het3/
 ---
 
-
-{% tikz abc%}
-\draw (2,2) ellipse (3cm and 1cm);
-{% endtikz %}
-
 # Hydraulic II
 
 ### Reservoir
