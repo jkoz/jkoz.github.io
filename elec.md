@@ -15,7 +15,7 @@ permalink: /elec2/
 
 ## Ohm’s Law
 
-V = IR
+$$V = IR$$
 
 ## Kichhoff’s Current Law
 
@@ -412,6 +412,7 @@ $$
 
 **symbol**:
 
+{% tikz abc%} \draw (0,0) to[zzDo] ++(0,3); {% endtikz %}
 
 **Example**:
 

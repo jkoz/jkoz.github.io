@@ -7,6 +7,7 @@
     <meta name="description" content="{{ site.description }}">
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="http://spratt.github.io/Computer-Modern/cmserif.css" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <!-- Google Analytics -->
     <script>
@@ -18,32 +19,12 @@
         ga('create', 'UA-16683212-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
         type="text/javascript"></script>
-    <style type="text/css">
-        @font-face {
-            font-family: "Computer Modern";
-            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-        }
-        @font-face {
-            font-family: "Computer Modern";
-            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-            font-weight: bold;
-        }
-        @font-face {
-            font-family: "Computer Modern";
-            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-            font-style: italic, oblique;
-        }
-        @font-face {
-            font-family: "Computer Modern";
-            src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-            font-weight: bold;
-            font-style: italic, oblique;
-        }
-
-        body {
-            font-family: "Computer Modern", sans-serif;
-        }
-    </style>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            "HTML-CSS": { scale: 100, linebreaks: { automatic: true } },
+            SVG: { linebreaks: { automatic:true } },
+            displayAlign: "left" });
+    </script>
 </head>
