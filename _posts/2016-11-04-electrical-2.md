@@ -413,7 +413,6 @@ $$
 
 **symbol**:
 
-{% tikz zenerdiode %} \draw (0,0) to[zzDo] ++(0,3); {% endtikz %}
 
 **Example**:
 
