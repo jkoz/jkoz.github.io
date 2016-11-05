@@ -1,8 +1,9 @@
 ---
 layout: post
-title: electrical2
-permalink: /elec2/
----
+title: electrical 2
+categories:
+  - elec, ihet3
+...
 
 - Body’s Ohm 150,000 600,00 Ohm
 - Electric cause severe burn @ 200mA
@@ -408,14 +409,15 @@ $$
 - maintain 12V voltage
 
 **Graph**:
-![Zener diode graph](/zenerdiodegraph.jpg)
+![Zener diode graph](/img/electrical-2/zenerdiodegraph.jpg)
 
 **symbol**:
 
+{% tikz zenerdiode %} \draw (0,0) to[zzDo] ++(0,3); {% endtikz %}
 
 **Example**:
 
-![ex1](/diodeex1.jpg)
+![example 1](/img/electrical-2/diodeex1.jpg)
 
 Find I_2 for the circuit
 
