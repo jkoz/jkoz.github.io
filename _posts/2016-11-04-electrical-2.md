@@ -506,6 +506,8 @@ $$I_z = 80mA - 10mA = 70mA$$
 
     - primary side's connected to the source; secondary side's connected to the load.
 
+    - High side has higher resistance; low side has lower resistance.
+
     - *step down*: the voltage is decreased as the H has the source voltage and the X side is connected to the load
 
     - *step up*: the voltage increase as the X side is connected to the source and the H side is connected to the load
