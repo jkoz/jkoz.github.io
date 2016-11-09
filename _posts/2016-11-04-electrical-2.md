@@ -517,7 +517,7 @@ $$I_z = 80mA - 10mA = 70mA$$
     - N is number of windings; a is turns ratio
 
     $$
-    a = {V_p \over V_s} = {N_p \over N_s} = {I_s \over I_p}\\
+    a = {V_p \over V_s} = {V_{source} \over V_{load}} = {N_p \over N_s} = {I_s \over I_p}\\
     V_pI_p = V_sI_s\\
     VA_p = VA_s\\
     $$
