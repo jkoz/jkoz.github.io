@@ -8,6 +8,7 @@ categories:
 1. Open chrome secure shell options tab
 2. Ctrl + Shift + j to open javascript console
 3. paste following
+
 ```json
 
 // Disable bold. 
@@ -35,4 +36,5 @@ term_.prefs_.set('color-palette-overrides', [
   '#93a1a1', 
   '#fdf6e3'
 ])
+
 ```
