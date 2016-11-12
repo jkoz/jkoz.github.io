@@ -48,5 +48,7 @@ cd /tmp
 curl https://aur.archlinux.org/cgit/aur.git/snapshot/package-query.tar.gz | tar xz && cd package-query && makepkg && sudo pacman -U package-query*xz
 curl https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz | tar xz && cd yaourt && makepkg && sudo pacman -U yaourt*any.pkg.tar.xz
 
-yaourt -S --noconfirm ttf-monaco ttf-mac-fonts ttf-ms-fonts
+yaourt -S --noconfirm ttf-monaco ttf-mac-fonts ttf-ms-fonts google-chrome
+
+pacman -S --noconfirm libreoffice textlive-most pandoc ruby
 ```
