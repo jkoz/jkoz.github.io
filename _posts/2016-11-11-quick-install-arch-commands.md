@@ -50,5 +50,5 @@ curl https://aur.archlinux.org/cgit/aur.git/snapshot/yaourt.tar.gz | tar xz && c
 
 yaourt -S --noconfirm ttf-monaco ttf-mac-fonts ttf-ms-fonts google-chrome
 
-pacman -S --noconfirm libreoffice textlive-most ghostscript pandoc pandoc-citeproc ruby gdrive
+pacman -S --noconfirm libreoffice textlive-most ghostscript pandoc pandoc-citeproc ruby gdrive scrot
 ```
