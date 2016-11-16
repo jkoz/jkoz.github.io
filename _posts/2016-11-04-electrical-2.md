@@ -224,12 +224,14 @@ Rectifier is a device or circuit that changes AC to DC
 
 **Diagram here:**
 
-$$I_{Diode} = I_{Load}$$
-$$V_{peak} = {V_{source} \over 0.707}$$
-$$V_{DC} = V_{peak} * 1/\pi$$
-$$PIV (Peak\ Inverse\ Voltage) = V_{peak}$$
-$$f_{load} = f_{supply}$$
-$$I_{DC} = {1 \over \pi} * I_{peak}$$
+$$
+I_{Diode} = I_{Load}\\
+V_{peak} = {V_{source} \over 0.707}\\
+V_{DC} = V_{peak} * {1 \over \pi}\\
+PIV = V_{peak}\\
+f_{load} = f_{supply}\\
+I_{DC} = {1 \over \pi} * I_{peak}\\
+$$
 
 
 **Ripple factor** is how much AC is left after the conversion to DC; thus efficiency of conversion to DC.
