@@ -264,12 +264,14 @@ $$rf = 169V/54V x 100 = 121$$
 
 **Diagram here**
 
-$$I_{load} = 2*I_{diode}$$
-$$V_{peak} = {V_{source(sec)} \over 0.707}$$
-$$V_{DC} = {2 \over \pi }*V_{peak} $$
-$$PIV = V_{peak} (entire\ secondary) = 2 V_{source}$$
-$$f_{load} = 2 * f_{supply}$$
-$$rf = 48\%$$
+$$
+I_{load} = 2*I_{diode}\\
+V_{peak} = {V_{source(sec)} \over 0.707}\\
+V_{DC} = {2 \over \pi }*V_{peak} \\
+PIV = V_{peak} (entire\ secondary) = 2 V_{source}\\
+f_{load} = 2 * f_{supply}\\
+rf = 48\%\\
+$$
 
 ### Full wave bridge rectifier
 
@@ -280,12 +282,14 @@ $$rf = 48\%$$
 
 **Diagram**
 
-$$V_{peak} = {V_{ac(source)} \over 0.707}$$
-$$I_{load} = 2I_{diode}$$
-$$V_{DC} = {2 \over \pi} * V_{peak}$$
-$$PIV = V_{peak(source)}$$
-$$f_{load} = 2 * f_{supply}$$
-$$rf = 48\%$$
+$$
+V_{peak} = {V_{ac(source)} \over 0.707}\\
+I_{load} = 2I_{diode}\\
+V_{DC} = {2 \over \pi} * V_{peak}\\
+PIV = V_{peak(source)}\\
+f_{load} = 2 * f_{supply}\\
+rf = 48\%\\
+$$
 
 **Problems**
 short -> short the supply
@@ -300,12 +304,14 @@ open -> half way rectifier
 
 **Wave form**
 
-$$3Idiode = Iload$$
-$$Vpeak = Vphase / 0.707$$
-$$Vdc = 0.827Vpeak (82.7\% if Vpeak) (this is be given!)$$
-$$PIV = Vpeak(line voltage)$$
-$$fload = 3 * fsupply$$
-$$rf = 17.7\% (better than half, full wave rectification, lower number, better)$$
+$$
+3Idiode = Iload\\
+Vpeak = Vphase / 0.707\\
+Vdc = 0.827Vpeak (82.7\% if Vpeak) (this is be given!)\\
+PIV = Vpeak(line voltage)\\
+f_{load} = 3 * f_{supply}\\
+rf = 17.7\% (better than half, full wave rectification, lower number, better)\\
+$$
 
 ## Three phase full wave bridge rectifier
 
@@ -313,12 +319,14 @@ $$rf = 17.7\% (better than half, full wave rectification, lower number, better)$
 
 **Diagram**
 
-$$Vdc = Vpeak * 3/pi = 0.955 Vpeak$$
-$$Vpeak = Vline/0.707$$
-$$3Idiode = Iload$$
-$$PIV = Vpeak(line voltage)$$
-$$fload = 6fsupply$$
-$$rf = 4.5\%$$
+$$
+Vdc = Vpeak * 3/pi = 0.955 Vpeak\\
+Vpeak = Vline/0.707\\
+3Idiode = Iload\\
+PIV = Vpeak(line voltage)\\
+fload = 6fsupply\\
+rf = 4.5\%\\
+$$
 
 ## RC - resistor capacitor circuit
 
@@ -331,10 +339,12 @@ T (period for charging) = RC
 
 LAB 6
        Theory  Measurement
-$$Vave = 0 V$$
-$$Vrms = 120V$$
-$$Vbd = Vave = 2/pi Vpeak$$
-$$Vab = Vave (don't care)$$
+$$
+Vave = 0 V\\
+Vrms = 120V\\
+Vbd = Vave = 2/pi Vpeak\\
+Vab = Vave (don't care)\\
+$$
 
 
 
