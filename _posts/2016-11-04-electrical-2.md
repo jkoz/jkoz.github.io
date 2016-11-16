@@ -344,6 +344,7 @@ T (period for charging) = RC
 
 LAB 6
        Theory  Measurement
+
 $$
 Vave = 0 V\\
 Vrms = 120V\\
@@ -427,7 +428,7 @@ $$I_z = 80mA - 10mA = 70mA$$
 - **Commutation**: turning an SCR OFF after it has been conducting current, 3 ways to commutate SCR
     - Natural commutation: push NO button, creating a short across the SCR, then the SCR is OFF because of the short
     - Class F commutation: the SCR is turned OFF automatically by AC source, it need to be turned on after each AC cycle
-    - Forced commutation: by using capacitor connected in para with the CSR
+    - Forced commutation: by using capacitor connected in para with the SCR
 
 - Summary:
     - the SCR is OFF, until an initial gate current pulse
@@ -439,7 +440,8 @@ $$I_z = 80mA - 10mA = 70mA$$
 ![scr](/img/electrical-2/scr.jpg)
 
 
-**EXAM: everything up to this point**
+# EXAM: everything up to this point**
+
 
 # inverter
 
