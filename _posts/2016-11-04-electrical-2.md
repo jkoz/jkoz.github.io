@@ -226,7 +226,7 @@ Rectifier is a device or circuit that changes AC to DC
 
 $$
 I_{Diode} = I_{Load}\\
-V_{peak} = {\sqrt(2)} * {V_{source}}\\
+V_{peak} = {\sqrt{2}} * {V_{source}}\\
 V_{DC} = V_{peak} * {1 \over \pi}\\
 PIV = V_{peak}\\
 f_{load} = f_{supply}\\
