@@ -307,11 +307,11 @@ open -> half way rectifier
 $$
 V_{line} = V_{AB} = V_{BC} = V_{CA}\\
 V_{phase} = V_{AN} = V_{BN} = V_{CN}\\
-V_{line} = \sqrt{3} * V_{phase}\\
+V_{line} = sqrt{3} * V_{phase}\\
 3I_{diode} = I_{load}\\
 V_{peak} = {\sqrt{2}} * V_{phase} \\
 V_{DC} = 0.827*V_{peak} \\
-PIV = V_{peak}(line voltage) = sqrt{3} * V_peak\\
+PIV = V_{peak}(line voltage) = \sqrt{3} * V_peak\\
 f_{load} = 3 * f_{supply}\\
 rf = 17.7\%\\
 $$
