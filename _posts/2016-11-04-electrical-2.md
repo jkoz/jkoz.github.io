@@ -313,7 +313,7 @@ V_{peak} = {\sqrt{2}} * V_{phase} \\
 V_{DC} = 0.827*V_{peak} \\
 PIV = V_{peak}(line voltage) = sqrt{3} * V_peak\\
 f_{load} = 3 * f_{supply}\\
-rf = 17.7\% (better than half, full wave rectification, lower number, better)\\
+rf = 17.7\%\\
 $$
 
 ## Three phase full wave bridge rectifier
