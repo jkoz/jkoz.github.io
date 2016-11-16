@@ -282,6 +282,8 @@ $$
 
 **Diagram**
 
+![Rectified Output Waveform](/img/electrical-2/halfway.gif)
+
 $$
 V_{peak} = {\sqrt{2}} * {V_{ac(source)}}\\
 I_{load} = 2I_{diode}\\
@@ -323,11 +325,11 @@ $$
 **Diagram**
 
 $$
-Vdc = Vpeak * 3/pi = 0.955 Vpeak\\
-Vpeak = Vline/0.707\\
-3Idiode = Iload\\
-PIV = Vpeak(line voltage)\\
-fload = 6fsupply\\
+I_{load} = 3*I_{Diode}\\
+V_{peak} = \sqrt{2}*V_{line}\\
+V_{DC}   = {{3 \over \pi} * V_{peak}} = 0.955*V_{peak}\\
+PIV = V_{peak}\\
+f_{load} = 6*f_{supply}\\
 rf = 4.5\%\\
 $$
 
@@ -349,66 +351,6 @@ Vbd = Vave = 2/pi Vpeak\\
 Vab = Vave (don't care)\\
 $$
 
-
-
-## Summary
-
-- Half way
-
-![Rectified Output Waveform](/img/electrical-2/halfway.gif)
-
-$$
-I_{load} = I_{Diode}\\
-V_{peak} = {\sqrt{2}}*{V_{source}} \\
-V_{DC}   = 1/\pi*V_{peak}\\
-PIV      = V_{peak}\\
-f_{load} = f_{supply}\\
-rf = 121\%\\
-$$
-
-- Center-tapped full way
-
-$$
-I_{load} = 2*I_{Diode}\\
-V_{peak} = {\sqrt{2}}*{V_{source}} \\
-V_{DC}   = 2/\pi*V_{peak}\\
-PIV      = 2*V_{source}\\
-f_{load} = 2*f_{supply}\\
-rf = 48\%\\
-$$
-
-- Bridge full way
-
-$$
-I_{load} = 2*I_{Diode}\\
-V_{peak} = {\sqrt{2}}*V_{ac(source)}\\
-V_{DC}   = 2/\pi*V_{peak}\\
-PIV      = V_{peak}\\
-f_{load} = 2*f_{supply}\\
-rf = 48\%\\
-$$
-
-- Three phase half way
-
-$$
-I_{load} = 3*I_{Diode}\\
-V_{peak} = \sqrt{2}*V_{phase}\\
-V_{DC}   = 0.827*V_{peak}\\
-PIV      = V_{peak}\\
-f_{load} = 3*f_{supply}\\
-rf = 17.7\%\\
-$$
-
-- Three phase bridge full way
-
-$$
-I_{load} = 3*I_{Diode}\\
-V_{peak} = \sqrt{2}*V_{line}\\
-V_{DC}   = 0.955*V_{peak}\\
-PIV      = V_{peak}\\
-f_{load} = 6*f_{supply}\\
-rf = 4.5\%\\
-$$
 
 *Note*:
 
