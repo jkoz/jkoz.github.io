@@ -327,7 +327,7 @@ $$
 $$
 I_{load} = 3*I_{Diode}\\
 V_{peak} = \sqrt{2}*V_{line}\\
-V_{DC}   = {{3 \over \pi} * V_{peak}} = 0.955*V_{peak}\\
+V_{DC}   = {3 \over \pi} * V_{peak} = 0.955*V_{peak}\\
 PIV = V_{peak}\\
 f_{load} = 6*f_{supply}\\
 rf = 4.5\%\\
