@@ -266,8 +266,8 @@ $$rf = 169V/54V x 100 = 121$$
 
 $$
 I_{load} = 2*I_{diode}\\
-V_{peak} = {V_{source(sec)} \over 0.707}\\
-V_{DC} = {2 \over \pi }*V_{peak} \\
+V_{peak} = {\sqrt{2}} * {V_{source(sec)}}\\
+V_{DC} = {2 \over \pi }*V_{peak} = 0.637 * {V_{peak}}\\
 PIV = V_{peak} (entire\ secondary) = 2 V_{source}\\
 f_{load} = 2 * f_{supply}\\
 rf = 48\%\\
@@ -283,9 +283,9 @@ $$
 **Diagram**
 
 $$
-V_{peak} = {V_{ac(source)} \over 0.707}\\
+V_{peak} = {\sqrt{2}} * {V_{ac(source)}}\\
 I_{load} = 2I_{diode}\\
-V_{DC} = {2 \over \pi} * V_{peak}\\
+V_{DC} = {2 \over \pi} * V_{peak} = 0.637*V_{peak}\\
 PIV = V_{peak(source)}\\
 f_{load} = 2 * f_{supply}\\
 rf = 48\%\\
