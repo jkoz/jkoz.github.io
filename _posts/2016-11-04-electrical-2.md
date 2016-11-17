@@ -192,7 +192,15 @@ This is roughly around 0.65 → 0.7 V
 
 ## PIV - (Peak Inverse Voltage)
 
-This is the maximum reverse voltage that can be applied to a diode before it breaks down.
+- This is the maximum reverse voltage that can be applied to a diode before it breaks down.
+
+- **Diode reverse voltage is PIV**
+
+- **average forward current**:
+
+$$
+I_{D,ave} = I_{DC} = I_{DIODE} = I_{F}
+$$
 
 ## Diode
 
@@ -216,6 +224,13 @@ N-side - Cathode (K)j
 
 Rectifier is a device or circuit that changes AC to DC
 
+- **Diode forward current**
+
+$$
+V_{RMS} = V_{Source}\\
+I_{load} = I_{DC}
+$$
+
 ## Half wave rectifier
 
 - It is the simplest rectifier
@@ -225,6 +240,7 @@ Rectifier is a device or circuit that changes AC to DC
 **Diagram here:**
 
 $$
+I_{F} = I_{FORWARD} = I_{DIODE}\\
 I_{Diode} = I_{Load}\\
 V_{peak} = {\sqrt{2}} * {V_{source}}\\
 V_{DC} = V_{peak} * {1 \over \pi}\\
@@ -353,13 +369,6 @@ Vab = Vave (don't care)\\
 $$
 
 
-*Note*:
-
-$$
-V_{RMS} = V_{Source}\\
-I_{load} = I_{DC}
-$$
-
 # Zener Diode
 
 - special device designed to operate in reverse polarity
@@ -399,6 +408,8 @@ $$I_z = 80mA - 10mA = 70mA$$
 - it is an electric valve that allow current flow through the collector and emitter, when where is a current flow through the base & emitter
 - a small current flow of say 1mA through the base and emitter, can have the collector & emitter flow around 100mA
 - with an increase or decrease in base & emitter current, the collector & emitter current also increase and decrease
+- saturation region: there's full current flow through transistor
+- cutoff region: there's no current flow through transistor 
 - Applications
     - switches
     - amplifiers
