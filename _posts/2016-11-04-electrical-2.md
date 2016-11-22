@@ -408,8 +408,8 @@ $$I_z = 80mA - 10mA = 70mA$$
 - it is an electric valve that allow current flow through the collector and emitter, when where is a current flow through the base & emitter
 - a small current flow of say 1mA through the base and emitter, can have the collector & emitter flow around 100mA
 - with an increase or decrease in base & emitter current, the collector & emitter current also increase and decrease
-- saturation region: there's full current flow through transistor
-- cutoff region: there's no current flow through transistor 
+- transistor saturation region: there's full collector current flow through transistor
+- transistor cutoff region: there's no collector current flow through transistor 
 - Applications
     - switches
     - amplifiers
