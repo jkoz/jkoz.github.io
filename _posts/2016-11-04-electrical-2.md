@@ -577,4 +577,20 @@ $$I_z = 80mA - 10mA = 70mA$$
  
 ### series field motor
 
+- most common in existence today
+- poor speed regulation, but **very high starting torque**
+- good power-to-size ratio
+- **other than a small motors, series are NEVER connected by pulleys or belts because of the instant high torque can cause belt slipt**
+- accidental disconnection from the load which will cause overspeeding.
+- loads are connected usually to motor shafts using splines, gears, or pinions (safe)
+- applications
+    - use in mining and hoisting, such as bucket, wheels, draglines, traction motor in off-road trucks, etc.
+    - portable drills, grinders, chain saws.
 
+### compound field motor
+
+- can be operated safely at no load
+- poor speed regulation compared to shunt motor (15-25%), but more torque
+- machine could be started as series motors (for torque), and once at the rated speed, the series windings could be by passed, then operate as shunt (for speed regulation).
+- disavantages: expensive machine
+- **only the armature current can be reversed, or both field could oppose each other (the shunt current can't)**
