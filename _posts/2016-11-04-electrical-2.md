@@ -511,5 +511,30 @@ $$I_z = 80mA - 10mA = 70mA$$
     - dc motor are prevalent and will be so for some time
     - dc motors speed may easily be adjusted in very fine increments from standstill to rated speed and above
     - it not properly regulated; speeds can go high enough to cause destruction by centrifugal force 
+    - developed rated torque at all speeds
+    - the torque created at standstill is many times greater than torque developed by AC motor of equal power and speed ratings.
+    - but some (AC) induction motors can now perform tasks that at one time only be done by a dc motor.
+- how components work
+    - principal is a stationary field and a rotating armature.
+    - permanent magnet field machine popular
+    - field flux is established by electromagnets (in series or parallel fields)
+    - **parallel fields**
+        - referred as a shunt field, connected in parallel with the armature
+        - most machines, the shunt is not typically connected dirrectly in parralel with the armature (seelf-excited), denoted F1, F2, but connected to seperated source.
+    - **series fields**
+        - connected in series with the armature, denoted S1, S2
+    - **motor: connection high to low (F2-2 to F1-1)**
+    - **generator: connection low to high (F2-1 to F1-2)**
+    - the armature develops is own flux with using shunt and/or series field flux, producing torque when machine is setup as a motor
+    - **the frame** has 4 functions
+        1. provides rigid support of the field magnets
+        2. provides a good magnetic path
+        3. support the end bells and bearing housing 
+        4. disipate heat
+    - armature core and commutator are assembled on the shaft
+        - **commutator** ensures that the armature current is **reversed** when the armature is rotating; this also ensures the torque is in the same direction
 
+## DC generator summary
 
+- very rarely used; except for specialized applications as engine-driven welders
+- many still in service are in elevators, surface mining equipment, exciters, welders and drilling equipment.
