@@ -538,3 +538,43 @@ $$I_z = 80mA - 10mA = 70mA$$
 
 - very rarely used; except for specialized applications as engine-driven welders
 - many still in service are in elevators, surface mining equipment, exciters, welders and drilling equipment.
+- the standard direction of rotation facing the commutator end (end opposite to the drive end) is clockwise
+- direction of current flow is through the windings from lower to higher numeral (A2 - positive terminal, A2 - negative terminal)
+
+## DC motor
+
+- even if new advances in the induction motor, it has not made the DC motor obsolete
+- still found in hoists, mining trucks, locomotives, trolley buses, drilling rigs and automotive
+- **Advantages**
+    - exellent starting torque
+    - simple soft starting
+    - exellent speed control
+    - good horse power
+    - unity power factor
+- **Disavantages**
+    - becomming less popular due to high initial cost and high maintenance
+    - maintenance personnel must have knowledge of the DC motor characteristics to order replacement parts.
+    - the armature is engergized from a three phase source through a three phase bridge rectifier. (using 3 diodes, and 3 SCRs)
+- **DC motor efficiency**
+    - **n = P_out / P_in** (motor efficiency n) is a ratio of output power to the input power.
+    - motors have 2 types of losses: fixed loss and variable losses (eddy, connections).
+        - fixed losses are around **3-6%**
+        - variable losses are around **3-15%**
+
+
+### shunt field motor
+
+- popular in the past
+- speed regulation is close to that of an induction motor (5%)
+- starting torque is good **150%** of full load torque
+- considered as a constant speed motor
+- applications:
+    - machine tools
+    - centrifugal pumps
+    - fans
+    - conveyors
+
+ 
+### series field motor
+
+
