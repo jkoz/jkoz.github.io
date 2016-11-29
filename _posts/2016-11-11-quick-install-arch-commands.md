@@ -16,7 +16,7 @@ pacstrap /mnt base vim tmux git openssh
 genfstab -p /mnt >> /mnt/etc/fstab
 
 
-pacman -S wget openssh sudo git zsh grub net-tools wireless_tools wpa_actiond ifplugd rfkill axel alsa-utils \
+pacman -S wget openssh sudo git zsh grub net-tools wireless_tools wpa_actiond ifplugd rfkill axel alsa-utils dosfstools\
     samba make ctags bc dialog imagemagick socat the_silver_searcher htop cups cdrkit dvd+rw-tools zip unzip unrar
 
 echo "archlinux" > /etc/hostname
