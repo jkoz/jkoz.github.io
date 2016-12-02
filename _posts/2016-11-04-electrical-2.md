@@ -602,7 +602,7 @@ a dc generator provide electrical power of 1300 kw, the efficiency of the genera
 1. what is the mechanical power delivered to the generator (hp) ?
 
 $$
-n = {P_{elec} \over P_{mech}} * 100\% \
+n = {P_{elec} \over P_{mech}} * 100\%\\
 P_{mech} = {P_{elec} \over n} * 100\% = {1300kw \over 88 } * 100 = 1477kw = 1477000w * 1hp / 746 = 1980hp
 $$
 
@@ -613,11 +613,11 @@ $$
 2. how much power is lost in the generator?
 
 $$
-P_{in} = P_{out} \
-P_{mech} = P_{loss} + P_{elec} \
-P_{loss} = P_{mech} - P_{elec} \
-P_{loss} = 1477kw - 1300kw = 177kw = 237hp \
-P_{loss(%)} = {P_{loss} \over P_{mech}} * 100\%= {177kw \over 1477kw} * 100\% = 12\% \
+P_{in} = P_{out}\\
+P_{mech} = P_{loss} + P_{elec}\\
+P_{loss} = P_{mech} - P_{elec}\\
+P_{loss} = 1477kw - 1300kw = 177kw = 237hp\\
+P_{loss(%)} = {P_{loss} \over P_{mech}} * 100\%= {177kw \over 1477kw} * 100\% = 12\%\\
 $$
 
 ### example 2
