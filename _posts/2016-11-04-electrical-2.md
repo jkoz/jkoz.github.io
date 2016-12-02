@@ -594,3 +594,80 @@ $$I_z = 80mA - 10mA = 70mA$$
 - machine could be started as series motors (for torque), and once at the rated speed, the series windings could be by passed, then operate as shunt (for speed regulation).
 - disavantages: expensive machine
 - **only the armature current can be reversed, or both field could oppose each other (the shunt current can't)**
+
+### example 1
+
+a dc generator provide electrical power of 1300 kw, the efficiency of the generator is 88%
+
+1. what is the mechanical power delivered to the generator (hp) ?
+
+$$
+n = {P_{elec} \over P_{mech}} * 100\% \
+P_{mech} = {P_{elec} \over n} * 100\% = {1300kw \over 88 } * 100 = 1477kw = 1477000w * 1hp / 746 = 1980hp
+$$
+
+- n = generator efficiency
+- $$P_{mech}$$ mechanical power
+- $$P_{elec}$$ electrical power
+
+2. how much power is lost in the generator?
+$$
+P_{in} = P_{out}\
+P_{mech} = P_{loss} + P_{elec}\
+P_{loss} = P_{mech} - P_{elec}\
+P_{loss} = 1477kw - 1300kw = 177kw = 237hp\
+P_{loss(%)} = {P_{loss} \over P_{mech}} * 100\%= {177kw \over 1477kw} * 100\% = 12\%\
+$$
+
+### example 2
+
+a dc motor supplies 2.5 hp of mechanical power to a load. If the efficiency is 78%, how much electrical power is drawn (kw)?
+
+$$
+P_{mech} = 2.5hp * 746 kw/hp = 1865kw\
+n = {P_{mech} \over P_{elec}} * 100\%
+P_{elec} = {1865 \over 78 } * 100 = 2.4kw
+$$
+
+## induction motor
+
+- commonly used electrical machines for vast majority applications
+- used for commercial installations from small fractional horsepower motors to machines rated in megawatts
+- with recent, more reliable frequency changing devices and new rotor designs induction machines can replace almost any application involving a DC machines 
+- cheaper, rugged, and easier too maintain than other alternatives
+
+### rotating magnetic field
+
+- to best understand the induction motor, the stator has an electrical connection to the AC source
+- the stator generates a flux with the changing AC current flow in the windings embedded in the stator
+- this flux that is generated causes a rotating magnetic field (similar to transformer action)
+
+### speed, frequency, and poles
+
+- supply frequency & number of poles determine the speed at which the stator magnetic field rotates
+- low frequency means low speed
+
+$$
+    speed = {60 * frequency} \over {pair\ of\ poles}
+$$
+
+- 60 is used to measure revolutions per minute
+
+$$
+    n_{s} = {120 * f} \over {poles}
+$$
+
+- $$n_{s}$$ is the stator synchronous speed (rated speed)
+- the rotor will always be rotating slightly less than synchronous speed
+- the difference between synchronous speed and rotor speed is called slip
+- the current induced on the rotor from the rotating magnetic flux of the stator develops rotational motion or torque.
+- since this occurs, it is known to be self-starting when AC voltage is applied to the stator windings
+- any air gap within the induction motor is a detriment; certain minimum distances are maintained for practical reasons
+- rotor will accelerate in the direction of the rotating flux in an attempt to catch up
+- along with this, both voltage and reactance is reduced by the slip as the rotor tries to reach synchronous speed
+- some features
+    - highest starting current
+    - poorest power factor; maximum power is developed when rotor power factor is 0.707
+    - highest rotor frequency at start
+- two types of induction motor: wound rotor, squirrel cage
+
