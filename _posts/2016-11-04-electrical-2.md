@@ -599,25 +599,25 @@ $$I_z = 80mA - 10mA = 70mA$$
 
 a dc generator provide electrical power of 1300 kw, the efficiency of the generator is 88%
 
-1. what is the mechanical power delivered to the generator (hp) ?
+a) what is the mechanical power delivered to the generator (hp) ?
 
 $$
 n = {P_{elec} \over P_{mech}} * 100\%\\
-P_{mech} = {P_{elec} \over n} * 100\% = {1300kw \over 88 } * 100 = 1477kw = 1477000w * 1hp / 746 = 1980hp
+P_{mech} = {P_{elec} \over n} * 100\% = {1300kw \over 88 } * 100 = 1477kw = 1477000w * 1hp / 746w = 1980hp
 $$
 
 - n = generator efficiency
 - $$P_{mech}$$ mechanical power
 - $$P_{elec}$$ electrical power
 
-2. how much power is lost in the generator?
+b) how much power is lost in the generator?
 
 $$
 P_{in} = P_{out}\\
 P_{mech} = P_{loss} + P_{elec}\\
 P_{loss} = P_{mech} - P_{elec}\\
 P_{loss} = 1477kw - 1300kw = 177kw = 237hp\\
-P_{loss(%)} = {P_{loss} \over P_{mech}} * 100\% = {177kw \over 1477kw} * 100\% = 12\%\\
+P_{loss(%)} = {P_{loss} \over P_{mech}} * 100\% = {177kw \over 1477kw} * 100\% = 12\%
 $$
 
 ### example 2
@@ -625,8 +625,8 @@ $$
 a dc motor supplies 2.5 hp of mechanical power to a load. If the efficiency is 78%, how much electrical power is drawn (kw)?
 
 $$
-P_{mech} = 2.5hp * 746 kw/hp = 1865kw\
-n = {P_{mech} \over P_{elec}} * 100\%
+P_{mech} = 2.5hp * 746 w/hp = 1865w\\
+n = {P_{mech} \over P_{elec}} * 100\%\\
 P_{elec} = {1865 \over 78 } * 100 = 2.4kw
 $$
 
