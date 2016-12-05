@@ -612,6 +612,14 @@ $$
 
 b) how much power is lost in the generator?
 
+$$
+P_{in} = P_{out}\\
+P_{mech} = P_{loss} + P_{elec}\\
+P_{loss} = P_{mech} - P_{elec}\\
+P_{loss} = 1477kw - 1300kw = 177kw = 237hp\\
+P_{loss(\%)} = {P_{loss} \over P_{mech}} * 100\% = {177kw \over 1477kw} * 100\% = 12\%
+$$
+
 
 ### example 2
 
