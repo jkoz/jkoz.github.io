@@ -625,6 +625,12 @@ $$
 
 a dc motor supplies 2.5 hp of mechanical power to a load. If the efficiency is 78%, how much electrical power is drawn (kw)?
 
+$$
+P_{mech} = 2.5hp * 746 w/hp = 1865w\\
+n = {P_{mech} \over P_{elec}} * 100\%\\
+P_{elec} = {1865 \over 78 } * 100 ~ 2400w
+$$
+
 
 ## induction motor
 
