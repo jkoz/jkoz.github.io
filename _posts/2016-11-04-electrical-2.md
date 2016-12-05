@@ -601,6 +601,10 @@ a dc generator provide electrical power of 1300 kw, the efficiency of the genera
 
 a) what is the mechanical power delivered to the generator (hp) ?
 
+$$
+n = {P_{elec} \over P_{mech}} * 100\%\\
+P_{mech} = {P_{elec} \over n} * 100\% = {1300kw \over 88 } * 100 = 1477kw = 1477000w * 1hp / 746w = 1980hp
+$$
 
 - n = generator efficiency
 - $$P_{mech}$$ mechanical power
