@@ -1,12 +1,12 @@
 # Site settings
 title: tai tran
-email: <a href=http://www.google.com/recaptcha/mailhide/d?k=01zVKKWwg8CTY4dkRtTYYtAw==&c=mVccyyNAqlWSdbz0SHrC7SXABFzgpCysCKLJ75jdD30=>email me</a>
+#email: <a href=http://www.google.com/recaptcha/mailhide/d?k=01zVKKWwg8CTY4dkRtTYYtAw==&c=mVccyyNAqlWSdbz0SHrC7SXABFzgpCysCKLJ75jdD30=>email me</a>
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jkoz.github.io" # the base hostname & protocol for your site
-twitter_username: jkozg
+#twitter_username: jkozg
 github_username:  jkoz
-linkedin_username: taiphuoctran
+#linkedin_username: taiphuoctran
 
 # Build settings
 markdown: kramdown
