@@ -650,7 +650,7 @@ $$
 - supply frequency & number of poles determine the speed at which the stator magnetic field rotates
 - low frequency means low speed
 
-$$ speed = {{60 * frequency} \over pair\ of\ poles} $$
+$$ speed = {60 * frequency \over pair\ of\ poles} $$
 
 - 60 is used to measure revolutions per minute
 
