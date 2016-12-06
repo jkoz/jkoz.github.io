@@ -654,6 +654,7 @@ $$ speed = {60 * frequency \over pair\ of\ poles} $$
 
 - 60 is used to measure revolutions per minute
 
+$$ n_{s} = { 120 * f \over poles } $$
 
 - $$n_{s}$$ is the stator synchronous speed (rated speed)
 - the rotor will always be rotating slightly less than synchronous speed
