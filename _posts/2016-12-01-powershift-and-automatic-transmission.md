@@ -40,7 +40,7 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 - stationary: C3, C4, C5
 
 | ranges/clutches   | C1    | C2    | C3    | C4    | C5    |
-| :---------------- | :---: | :---: | :---: | :---: | :---: |
+| :---------------: | :---: | :---: | :---: | :---: | :---: |
 | reverse           |       |       | x     |       | x     |
 | neutral           |       |       |       |       | x     |
 | first             | x     |       |       |       | x     |
