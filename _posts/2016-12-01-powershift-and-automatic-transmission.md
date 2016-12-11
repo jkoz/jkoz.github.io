@@ -5,6 +5,8 @@ categories:
   -
 ---
 
+# fundamentals
+
 ## gear ratio 
 
 The number of revolutions the input (drive) gear makes to complete one revolution of the output (driven) gear.
@@ -93,15 +95,51 @@ d. steering clutch pump
 - abs light on, => don't go to lockup => burn transmission 
 - too much clutches clearance will affect application
 
-### hydraulic governor location
+### hydraulic shift control system
 
 - positions: applied, released, and hold
-- governor
+- governor from road speed
     - low speed: low pressure (oil)
     - high speed: high pressure
-- modulator cable
+- modulator pressure from throttle
     - low throttle: high pressure
     - high throttle (wot): low pressure
+- control above factors, we have ability to control shift at different time
 - impeller has pump but it supply oil for torque converter
 - governor gets oil from shift circuit
+- clutch application pressure: 400psi, full flow, full pressure
+    - low throttle, keep orifice closed (figure 27)
+    - high throttle, orifice wide open (we don't want slippage)
+    - orifice can be control by throttle linkage or vacuum line from engine intake manifold
+- first and second are always the hard shift
 
+# service
+
+- fix the cause of the problem, not the result
+- question to ask before service: why it fails, what's going on 
+- subscription for manual services: www.prodemand.com, alldata, ondemand
+- typical troubleshooting steps
+    1. gather information, check oil level
+        - for transmission, check oil level while engine is running, say in neutral
+    2. talk to operator
+    3. visual inspection: check filter (can be the first step)
+    4. operation tests
+        - try to simulate problem
+        - ask the operator to reproduce problem if he's there
+        - do stall test, to separate trans and tc problem
+            - check operating temp (transmission 150-180F)
+            - apply brake, lower blade/implements
+            - highest gear possible
+                - most load on transmission
+                - least load on drive train
+            - engine @ w.o.t - max 30 seconds | engine @ w.o.t in neutral to cool torque converter
+            - measure engine rpm 
+                - low speed (mostly tc problems): low engine power, slipping stator, (oil goes wrong angle, causing resistance)
+                - high speed (mostly trans problem): slipping clutch (try different gears if a gear cause high speed, probably we have slipping clutches on that gear)
+        - look at binding linkages
+        - listen noise, smell
+        - pressure and flow test
+            - pressure test first cause' it's easy to put in on test ports; use double expected pressure gauges
+            - high vacuum at suction line, we may have orifice at suction line, we will have cavitation pump
+            - lockup, main, lub, C1-5 taps for pressure gauges
+        - turn shift signal valve 1-2 notch with shift point adjustment tool to adjust how agressive we shift
