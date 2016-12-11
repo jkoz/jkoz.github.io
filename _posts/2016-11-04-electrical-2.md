@@ -616,7 +616,7 @@ P_{in} = P_{out}\\
 P_{mech} = P_{loss} + P_{elec}\\
 P_{loss} = P_{mech} - P_{elec}\\
 P_{loss} = 1477kw - 1300kw = 177kw = 237hp\\
-P_{loss(%)} = {P_{loss} \over P_{mech}} * 100\% = {177kw \over 1477kw} * 100\% = 12\%
+P_{loss(\%)} = {P_{loss} \over P_{mech}} * 100\% = {177kw \over 1477kw} * 100\% = 12\%
 $$
 
 ### example 2
@@ -649,15 +649,11 @@ $$
 - supply frequency & number of poles determine the speed at which the stator magnetic field rotates
 - low frequency means low speed
 
-$$
-    speed = {{60 * frequency} \over {pair\ of\ poles}}
-$$
+$$ speed = {60 * frequency \over pair\ of\ poles} $$
 
 - 60 is used to measure revolutions per minute
 
-$$
-    n_{s} = {{120 * f} \over {poles}}
-$$
+$$ n_{s} = { 120 * f \over poles } $$
 
 - $$n_{s}$$ is the stator synchronous speed (rated speed)
 - the rotor will always be rotating slightly less than synchronous speed
