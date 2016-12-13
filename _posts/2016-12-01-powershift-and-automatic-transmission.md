@@ -62,7 +62,7 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 ### control circuit
 
 1. after pump may have priority flow control which redirect oil to brake and steering first (then send oil to trans after satisfying that first), such as dozer (or we must have other pump for that)
-2. shift selector valve (valve body, basically a dcv) 
+2. shift selector valve (valve body, basically a dcv) makes transmission speed and direction changes 
 3. for example we are in neutral, c5 locked up, oil will be sending to clutch pressure regulator valve (pressure increase to 400psi, then regulator valve open)
 4. oil will be feed to tc relief valve (control maximum system pressure, just like system relief)
 5. oil send out from tc go to filter and cooler then back to lub circuit (don't need to be a high pressure circuit) (which lub trans)
