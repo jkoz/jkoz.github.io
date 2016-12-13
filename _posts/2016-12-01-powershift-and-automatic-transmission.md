@@ -143,3 +143,36 @@ d. steering clutch pump
             - high vacuum at suction line, we may have orifice at suction line, we will have cavitation pump
             - lockup, main, lub, C1-5 taps for pressure gauges
         - turn shift signal valve 1-2 notch with shift point adjustment tool to adjust how agressive we shift
+- no reverse:
+    - c3 (5th) / c5 (1st) clutches
+    - valve body / control circuit
+    - electronic programming/sensors
+- hard shift (shock the components, but good for clutches because it reduces wear on clutches )
+    - modulator, it does not allow oil comming back to sump
+- slow shifting (soft shift)
+    - clutches are worn out
+    - low oil flow, slowing piston to actuate
+    - modulator valve
+    - wrong oil, leaking seal
+    - control circuit, valve body (spool slow to move, torque valve body wrong causing valve binding)
+    - programming shift point (boost up or slow down)
+- shuddering
+    - lockup clutch: happen with light load, moderate acceleration, highway speed
+    - transmission clutch packs
+        - heavy/medium acceleration
+        - leakage / pressure low; thus, don't have enough work to queeze the clutches
+        - excessive hp
+        - incorrect oil used
+- noise
+    - gear problems, bearing failure, (can be causing by lack of oil for a long time, metal-to-metal contact)
+    - lack of oil
+    - drive axle noise
+    - overload
+    - contamination
+- **question to ask: this things comming out for what reason ?** if it is valve body problem, simple remove the valve body without pulling the whole transmission, or the problem can be in drive axle (like vibration from drive line can cause damage to clutches 'teeth will be hammered' and internal components). 
+- plug all hydraulic lines upon servicing, BUT DONT FORGET TO REMOVE THE PLUG WHEN REASSEMBLY
+- put snap ring in correct way make it easy to remove it later (the wider part face the housing) (tools: radiator hose pick) (trick: use a piece of cloth to prevent the snap ring fly away
+- service chemical help to protect hand and make it easy to clean with only water (named: PR88)
+- coned disc clutch should be put in same direction 
+- torque valve body correct torque and sequence or bend the valve body easily
+- check clutch clearance or height of clutches stack
