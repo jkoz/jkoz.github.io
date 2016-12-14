@@ -64,6 +64,7 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 1. after pump may have priority flow control which redirect oil to brake and steering first (then send oil to trans after satisfying that first), such as dozer (or we must have other pump for that)
 2. shift selector valve (valve body, basically a dcv) makes transmission speed and direction changes 
 3. for example we are in neutral, c5 locked up, oil will be sending to clutch pressure regulator valve (pressure increase to 400psi, then regulator valve open)
+- after clutch application circuit has been satisfied, oil flow to converter charging circuit
 4. oil will be feed to tc relief valve (control maximum system pressure, just like system relief)
 5. oil send out from tc go to filter and cooler then back to lub circuit (don't need to be a high pressure circuit) (which lub trans)
 
@@ -176,3 +177,39 @@ d. steering clutch pump
 - coned disc clutch should be put in same direction 
 - torque valve body correct torque and sequence or bend the valve body easily
 - check clutch clearance or height of clutches stack
+
+# Retarder
+
+- slow equipment down without using service/park brake
+- operation with high oil temp above 250F increase the oxidation of rate of oil and reduce the lub quality
+
+- output retarders (allision):
+    - mounted some where between transmission and rear axle
+    - big heavy
+    - retardation mode fill full oil, controlled how much braking by control the pressure inside the retarder
+    - bigger sump, or larger cooler to handle heat
+    - large spool valve
+- input retarder and (cat) brake saver (engine output retarder) (used engine oil)
+    - get better result slowing because it can factor gear from trans
+    - mounted input shaft of transmission
+    - doesn't care 'bout ground speed
+    - compact (can build heat up fast)
+    - how much braking is determined by how much flow into retarder. => aerate a lot!
+    - locked up torque when input retarder and brake saver is on
+- accumulator is added to improve filling speed
+- may need more oil if there's a retarder. (engine or transmission oil)
+
+# clutch fundamentals and services (off-road)
+
+- over-center clutch
+    - used for stationary applications (ON/OFF) (e.i. pump)
+    - no transmission: engine -> clutch -> stationary app (pump, etc.)
+    - for driving accessory
+    - clutch disc always rotate
+    - 2 plates attached to the output
+    - use more discs for more clamping force
+    - lock to less 90 degree in order to get the most clamping force
+    - clutch wear will increase clearance, thus effecting clamping force
+    - just like brake, clutches don't need grease or oil, otherwise, losing friction
+    - tapper roller bearing always required preload
+    - clutches discs never touch the flywheel
