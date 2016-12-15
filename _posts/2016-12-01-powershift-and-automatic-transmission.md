@@ -213,3 +213,15 @@ d. steering clutch pump
     - just like brake, clutches don't need grease or oil, otherwise, losing friction
     - tapper roller bearing always required preload
     - clutches discs never touch the flywheel
+
+# things to memorized 
+
+- planetary gear set in CAT torque divider is lub by tc charge pressure
+- the purpose of converter pressure relief valve is to prevent damage to tc components
+- clutch pack clearance within a pw trans is important to ensure proper clearance bw discs when the clutch pack is not applied
+- tc with fixed stator has 1 phase
+- temp sending unit located in converter outlet port
+- @ low engine speed, slippage on fluid coupling when no load is present is greatest
+- tc mounted pto, tc housing is wet housing
+- output speed sensor replace governer in electrical trans
+- the valve in the governor was stuck in closed position, the result could be no up shifting
