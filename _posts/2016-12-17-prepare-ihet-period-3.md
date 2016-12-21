@@ -151,7 +151,7 @@ categories:
         - pilot sense from downstream of check valve (high pressure side)
         - closed center hyd sys with fix dis pump
         - demand type hyd sys with tandem fix dis pump 
-        ![tandem demand type](https://goo.gl/photos/9ykLSUBFmjxbtirg6)
+        ![tandem demand type](https://www.dropbox.com/s/z7heyww3qmnrrmw/IMG_20161221_113931.jpg?raw=1)
 - accumulator
     - weight (constant regardless of vol oil), spring, gas (piston, bladder)
     - purpose:
