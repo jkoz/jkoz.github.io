@@ -543,6 +543,8 @@ $$I_z = 80mA - 10mA = 70mA$$
 
 ## dc motor
 
+- stator has constant magnetic field 
+- rotating armature connected to dc source
 - even if new advances in the induction motor, it has not made the DC motor obsolete
 - still found in hoists, mining trucks, locomotives, trolley buses, drilling rigs and automotive
 - **Advantages**
