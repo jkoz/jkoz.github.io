@@ -156,6 +156,8 @@ $$ power={flow rate (gal/min)  * pressure (psi) * 0.0167 \over efficiency} $$
     - closed center hyd sys with fix dis pump
     ![unloader](https://www.dropbox.com/s/a5oa6c36ezaqfv4/IMG_20161221_122612.jpg?raw=1)
     - demand type hyd sys with tandem fix dis pump (hi-low configuration)
+        - normally closed, provide more flow with light load
+        - when the load is high, the valve opens first pump's oil to tank, as we don't need too much flow
     ![tandem demand type](https://www.dropbox.com/s/z7heyww3qmnrrmw/IMG_20161221_113931.jpg?raw=1)
 - pressure reducing valves
     - allow a circuit to have a max operating pressure that is less than the max system pressure
@@ -406,6 +408,7 @@ $$ power={flow rate (gal/min)  * pressure (psi) * 0.0167 \over efficiency} $$
             - but power demand could exceed the supply
 
 ## hydrostatic transmission
+
 ![hst](https://www.dropbox.com/s/pirsviqqgjrgrd3/IMG_20161229_132325.jpg?raw=1)
 - the most common setup: closed circuit with var dis, rev pump
 - open loop circuit: returning oil from actuator go to tank (loader)
@@ -564,8 +567,55 @@ $$ power={flow rate (gal/min)  * pressure (psi) * 0.0167 \over efficiency} $$
 - the force created by a proportional solenoid is proportional to output voltage signal from ECU
 - using dither to keep the spool moving or vibrating sightly, stiction (or hysteresis) is prevented
 
+# misc
+
+- close center hyd system often called demand flow
+- axial displacement pump
+    - the center line is para with the pump drive shaft
+- water glycol fluid contain 40% of water and 60% of glycol (more glycol)
+- water/oil emulsion contains 60% of water and 40% oil (more water)
+- invert emulsion contains 40% of water and 60% of oil (more oil)
+- most multiple pump conf use a common inlet
+- with control valves connections are often referred as ways
+- cam radial piston motors, the cam surface is ground with ramps space 90 degree apart
+- flood lamps on a machine is controlled by the key switch control circuit
+- thrust pin on differential carrier helps prevent movement of differential carrier during different loads
+- thrust crew prevents the bevel gear deflecting during high load applications
+- metallic components can use steam cleaning or Varsol
+- bearing/friction disc clean with Varsol (mineral spirit)
+- carrier internal components clean with petroleum products 
+- accumulator suspension is set too high cause driveline problems
+- bronze coloured particles in filters means clutch failure
+- powershift trans : cycling applications e.i dozer, loader(fixed stator)
+- automatic trans : hauling applications e.i scrapers (freewheeling stator)
+- circuit breakers
+    - type 1:
+        - law for headlights 
+        - **auto reset** to keep light on
+        - typically **gold**
+    - type 2:
+        - has heater (resistor)
+        - once tripped will not reset until **load removed** or **power discontinued**
+        - used for all circuits other than headlamps
+        - typically silver in **color**
+        - there's wire connect 2 terminal, current run though this wire to keep bimetall warm, not to auto reset
+        - if we have short-to-ground, it draw more current. as long as fix the short, current drawn drops
+    - type III
+        - manual reset
+        - look exactly like type II with a button on top to reset the breaker
+- battery disconnect switch prevent the discharge of the battery group when equipment is parked
+- safety power control circuit - flood / working lamp
+- flywheel checks
+    - crankshaft end play
+    - flywheel housing bore eccentricity (base on fw)
+    - flywheel housing face squareness (base on fw)
+    - crankshaft hub eccentricity (base on housing)
+    - crankshaft hub face squareness (base on housing)
 ---------
 1 cm = 0.394 inches
 1 m = 39.37 inches
 1 micron = 1 / 1 million meter = 
+1 psi = 6.89kPa
+1 bar = 100kPa
+
 
