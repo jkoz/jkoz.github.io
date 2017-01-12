@@ -409,9 +409,8 @@ $$ power={flow rate (gal/min)  * pressure (psi) * 0.0167 \over efficiency} $$
 
 ## hydrostatic transmission
 
-![hst](https://www.dropbox.com/s/pirsviqqgjrgrd3/IMG_20161229_132325.jpg?raw=1)
-
 - the most common setup: closed circuit with var dis, rev pump
+![hst](https://www.dropbox.com/s/pirsviqqgjrgrd3/IMG_20161229_132325.jpg?raw=1)
 - open loop circuit: returning oil from actuator go to tank (loader)
     - res interrupt path of oil
     - good for dissipate heat
