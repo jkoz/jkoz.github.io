@@ -21,7 +21,24 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 - big gear drives smaller gear
 - input speed increase, torque decrease by gear ratio
 
+## planetary trans components
+
+- turbine shaft
+    - tc output
+    - splines to rotating clutch module C1 friction discs, C2 clutch drum
+- mainshaft
+    - connect to C1 clutch drum
+    - sun gear of P2, P3
+- output shaft
+    - driven by P3's pc
+
 ## Single planetary gear set operational combinations
+
+- reduction: pc driven
+- override: pc drive
+- reverse: pc held
+- **neutral**: no input or no held member
+- **direct drive**: locking 2 members or driving 2 members at the same speed
 
 | speed                              | input   | output   | held       |
 | :--------------------------------- | ------- | :------- | :--------- |
@@ -31,9 +48,6 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 | second speed override              | p.c     | sun      | ring       |
 | first speed reverse (underdrive)   | sun     | ring     | p.c        |
 | second speed reverse (override)    | ring    | sun      | p.c        |
-
-- **neutral**: no input or no held member
-- **direct drive**: locking 2 members or driving 2 members at the same speed
 
 ## Allision transmission
 
@@ -57,37 +71,89 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 - operator control the ranges, we put in first, then it's always run at first gear, etc.
 - upshift (4speed) to protect engine even if operator put it in first (insanely)
 
-## powershift control system
+## powershift trans control system
 
 ### control circuit
 
-1. after pump may have priority flow control which redirect oil to brake and steering first (then send oil to trans after satisfying that first), such as dozer (or we must have other pump for that)
-2. shift selector valve (valve body, basically a dcv) makes transmission speed and direction changes 
-3. for example we are in neutral, c5 locked up, oil will be sending to clutch pressure regulator valve (pressure increase to 400psi, then regulator valve open)
-- after clutch application circuit has been satisfied, oil flow to converter charging circuit
-4. oil will be feed to tc relief valve (control maximum system pressure, just like system relief)
-5. oil send out from tc go to filter and cooler then back to lub circuit (don't need to be a high pressure circuit) (which lub trans)
+- after pump may have priority flow control which redirect oil to brake and steering first, then send oil to **clutch application circuit** (400-500psi)
+- shift selector valve (valve body, basically a dcv) makes transmission speed and direction changes 
+- for example we are in neutral, c5 locked up, oil will be sending to clutch pressure regulator valve, pressure increase to 400psi, then clutch pressure regulator valve open, allow oil sent to **tc charging circuit**
+- oil will also be feed to tc relief valve control maximum system pressure (50-125psi)to prevent damage to tc components.
+- oil send out from tc go to filter and cooler then back to lub pressure relief valve before going to **the trans lub circuit** (don't need to be a high pressure circuit) (which lub trans)
+    - lub pressure relief valve dump oil to transmission case if pressure is over 30 or 50psi
+    - trans is pressure lub, don't need to be submerged in oil which cause overheating
+    - prevent trans turning during towing: elevate drive wheels, remove drive axles, remove driveline
+- **clutch pressure** regulator valve limit the application pressure applied to the transmission clutch piston 
 
-### pump
+### components
 
-a. trans scavenaging pump: 
-b. tc scavenaging pump: get rid of oil in tc housing to prevent pressure build up
-c. charging trans pump
-d. steering clutch pump
-
-- modulation is an action controlling how fast the clutch applied which means control speed or flow (to avoid shock load on gear, and wear of clutches)
-- modulator is a component
-- modulation relief valve: control maximum trans pressure in dcv
-- ratio valve: limit maximum pressure in torque converter (depend on viscosity of the oil will determine how the valve move)
-- clutches spring relief, oil applied (don't need to be safety, not brake)
+- pump groups
+    - trans scavenaging pump: remove oil from trans housing prevent pressure buildup which causing overheat
+    - tc scavenaging pump: get rid of oil in tc housing to prevent pressure build up
+    - charging trans pump provides oil for clutch app circuit, tc charging circuit, & lub circuit
+    - steering clutch pump provides oil for the steering clutch and brakes 
+- **priority valve** ensure oil pressure is available for the steering clutch and brake circuit for the trans clutch app circuit (300psi).
+- transmission shift selector and pressure control valve 
+    - **speed selector spool** directs oil from charging pump to the speed clutches in transmission
+    - **modulation relief valve** controls maximum clutch application pressure 
+    - **load piston** provides clutch modulation which control how fast the clutch applied which means control speed or flow to avoid shock load on gear, and wear of clutches
+        - clutches apply too quick cause shift shock
+        - clutches apply too slow cause slippage
+    - ratio valve: limit maximum pressure in torque converter when the engine is started with cold oil; thus it depends on viscosity of the oil will determine how the valve move. 
+        - IOW, the valve prevent damage to tc caused by pressure rise during cold weather start-up.
+- transmission clutches
+    - steel reaction discs spline to housing
+    - friction discs spline to ring gear
+    - pistons are hydraulically applied, spring relief.
+- transmission oil cooler
+    - located @ the tc outlet 
+- tc outlet relief
 - leakage on seal of clutch piston cause slow application of piston
+
+## automatic trans control system
+
+- automatically shift based on machine ground speed and the operator's demand for power (throttle)
+
+### hydraulic shift control system
+
+- positions: applied, released, and hold
+- governor provide machine ground speed (governor circuit)
+    - convert rotational speed of trans output shaft to hyd pressure signal to control shift operations
+        - balance bw centrifugal force generated by the weight and hyd pressure
+    - driven by trans output shaft
+    - zero pressure if output shaft does not rotate
+    - low speed: low oil pressure; high speed: high oil pressure
+- modulator pressure from throttle (modulator circuit)
+    - controlled by modulator valve operated by linkage, cable or intake manifold pressure (spark ignition engine)
+    - **delay upshift point** to allow the engine develop greater hp and momentum force before upshift
+    - low throttle: high pressure; high throttle (wot): low pressure
+- **shift signal valve** controls a relay valve that applies or release clutches (1-2, 2-3, etc.)
+- control above factors, we have ability to control shift at different time
+- impeller has pump but it supply oil for torque converter
+- governor gets oil from clutch application circuit, (called governor pressure signal)
+- clutch application pressure: 400psi, full flow, full pressure
+    - low throttle, keep orifice closed (figure 27)
+    - high throttle, orifice wide open (we don't want slippage)
+    - orifice can be control by throttle linkage or vacuum line from engine intake manifold
+- first and second are always the hard shift
+- the release clutch is not fully release before the applying clutch engages
+    - a momentary **engine lugging or slowing** of machine speed due to internal binding 
+    - trans trying to **operate 2 speed @ the same time**
+- the release clutch is release more quickly than the applying clutch engages
+    - an engine **rpm flare**
+    - a momentary freewheeling
+- orifice control is used to control clutch release rates
+- trimmer valve is used to control the clutch application's flow rate 
+- erratic shifting can happen if scrapers as the wheels slip and regain traction multiple time
+    - shift selector valve is introduced to override automatic upshift and downshift
+    - application pressure is sent to the spring side of shift signal valves preventing it sends signal to relay valve which automatically upshift
 
 ### electronic shift control system
 
-- speed sensor: (AC)
+- speed sensor (governor circuit): (speed of trans output shaft) (AC)
     - slow speed: low voltage, low frequency
     - fast speed: high voltage, high frequency
-- throttle position sensor:
+- throttle position sensor (modulator circuit):
     - no throttle: high voltage
     - wide open throttle (WOT): low voltage
 - solenoid: used PWM signal
@@ -95,24 +161,9 @@ d. steering clutch pump
 
 - abs light on, => don't go to lockup => burn transmission 
 - too much clutches clearance will affect application
-
-### hydraulic shift control system
-
-- positions: applied, released, and hold
-- governor from road speed
-    - low speed: low pressure (oil)
-    - high speed: high pressure
-- modulator pressure from throttle
-    - low throttle: high pressure
-    - high throttle (wot): low pressure
-- control above factors, we have ability to control shift at different time
-- impeller has pump but it supply oil for torque converter
-- governor gets oil from shift circuit
-- clutch application pressure: 400psi, full flow, full pressure
-    - low throttle, keep orifice closed (figure 27)
-    - high throttle, orifice wide open (we don't want slippage)
-    - orifice can be control by throttle linkage or vacuum line from engine intake manifold
-- first and second are always the hard shift
+- input speed (engine speed), turbine speed, etc. used for clutch modulation and diagnosis
+- shift solenoids energized by ECU based on ground speed and throttle 
+    - they dirrects clutch application oil flow to the required application clutches
 
 # service
 
@@ -148,7 +199,7 @@ d. steering clutch pump
     - c3 (5th) / c5 (1st) clutches
     - valve body / control circuit
     - electronic programming/sensors
-- hard shift (shock the components, but good for clutches because it reduces wear on clutches )
+- harsh shift or hard shift (shock the components, but good for clutches because it reduces wear on clutches )
     - modulator, it does not allow oil comming back to sump
 - slow shifting (soft shift)
     - clutches are worn out
@@ -178,7 +229,7 @@ d. steering clutch pump
 - torque valve body correct torque and sequence or bend the valve body easily
 - check clutch clearance or height of clutches stack
 
-# Retarder
+# retarder
 
 - slow equipment down without using service/park brake
 - operation with high oil temp above 250F increase the oxidation of rate of oil and reduce the lub quality
