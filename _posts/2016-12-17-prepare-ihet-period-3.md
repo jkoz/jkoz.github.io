@@ -433,118 +433,116 @@ $$ power={flow rate (gal/min)  * pressure (psi) * 0.0167 \over efficiency} $$
 
 ## hyd systems service
 
-1. gather information
-- service manuals, bulletins, operator manuals
-2. talk to operators
-- what job were you doing with the machine when the problem occurred?
-- when was the machine last serviced?
-- have any repairs or modifications been done to the machine recently?
-- have the problem been evident for a long time or did it just appear suddenly?
-- did you notice anything unusual, noises or erratic movements before the machine failed?
-3. visual inspection
-- check oil level, correct oil?
-- check oil filter, check quantity and type of contamination trapped 
-- oil condition (foamy, milky, dirty)
-- oil leaks?
-- overheating (burnt paint, blue color)
-- check damage (dent cyl barrel, bent, scored cyl rods, collapse hose, crushed tubing) 
-4. operational test
-- check fluid level first!
-- should be safe to operate
-- steps
-    - warm up hyd oil by stalling actuator @ wide open throttle (150-180F)
-    - operate
-        - response slow, jerky?
-        - unusual smell, noises? 
-        - smoke?
-        - @ what point, problem occurs
-    - measure actuator speed (flow issue)
-        - to determine if there are excessive flow losses (too much leakage) 
-        - check cycle times
-        - take 3 or 4 measurement and get avg 
-        - check motor rpm (both direction)
-    - perform stall test (pressure issue)
-        - result depends on what type of hyd sys used
-        - to check engine rpm when hyd sys is @ max load
-        - used tachometer when a actuator is stalled @ W.O.T
-        - engine rpm drop excessively
-            - engine lacks of power
-            - relief valve is set to high
-            - misadjust unloader valve or pump comp 
-        - engine rpm drop slightly
-            - engine power has increased
-            - relief valve is set to low
-
-5. pressure testing
-- pressure gauge
-    - snubbers are orifices placed in the gauge inlet to dampen pressure pikes, protecting the gauge components
-    - range should be twice the expected pressure
-- tee test
-    - gauge installed in para with the tested area 
-    - shut-off valve is protect the gauge, open when measuring pressure
-    - need to open to put the tee; thus, contamination can enter
-    - builtin pressure taps need to be cleaned before installing gauge
-- common location for installing pressure gauge
-    - close center
-        - before the pump
-            - low pressure (cavitation on outlet)
-                - inlet restricted
-                - driveshaft speed too high
-                - wrong oil used
-            - high pressure (air in system, cause jerky operation)
-                - inlet leaking, air drawn to system 
-        - after the pump
-            - neutral pressure @ W.O.T
-                - filter, fitting,return line
-                - localize hotpots
-            - working pressure (NO load)
-                - resistance dcv, fitting, actuators, linkages, etc.
-            - working pressure (max load or pressure) 
-                - stalling actuators @ W.O.T
-                - pressure too high => adjusting system relief
-    - closed center load sensing
-        - check for pilot pressure on dcv or bw double check valves
-    - HST
-        - closed circuit pressure: 
-            - one read charge pressure
-            - one read working pressure
-            - check max closed circuit pressure by stalling motors @ W.O.T
-        - charge pressure
-            - insufficient pressure cause cavitation
-        - case drain pressure
-            - pressure's too high causing pump or motor damage
-5. flow testing
-- slow cycle time
-- check of hotpots, e.i. cylinder barrel
-- small leakage: check cyl drift by using a tape to make the rod 
-- check cyl seal leaks
-    - fully extend cyl
-    - remove the rod end hose 
-    - raise (extend) cyl @ W.O.T
-    - measure oil from removed return line in "10 seconds"
-- check motor internal leakage
-    - drain line secure to test container
-    - stall motor @ W.O.T
-    - measure oil from drain line in "10 seconds"
-- hydraulic test unit
-    - including flow meter, pressure, temp, and load control
-    - pressure gauge should be installed upstream of load control 
-    - always backoff load control before test
-    - series conn: test pump efficiency
-        - 2 types of connections: bypass & inline conn
-        - flow rate @ no load is slower than specs 
-            - restricted inlet
-            - aeration
-        - flow rate @ full load (increase load control to the pressure specified by manufacture)
-        - efficiency less than 80%, pump should be serviced 
-    - tee test: test circuit leakage
-        - perform this test after confirm pump efficiency
-        - can used to check system relief
-            - there is wide pressure difference bw cracking and full flow pressure, the relief valve is broken
-        - adjust load control slightly below cracking pressure of system relief valve
-        - **compare this flow rate with flow rate @ full load during pump testing**
-        - circuit leakage = pump full load flow - circuit flow
-
+- gather information
+    - service manuals, bulletins, operator manuals
+- talk to operators
+    - what job were you doing with the machine when the problem occurred?
+    - when was the machine last serviced?
+    - have any repairs or modifications been done to the machine recently?
+    - have the problem been evident for a long time or did it just appear suddenly?
+    - did you notice anything unusual, noises or erratic movements before the machine failed?
+- visual inspection
+    - check oil level, correct oil?
+    - check oil filter, check quantity and type of contamination trapped 
+    - oil condition (foamy, milky, dirty)
+    - oil leaks?
+    - overheating (burnt paint, blue color)
+    - check damage (dent cyl barrel, bent, scored cyl rods, collapse hose, crushed tubing) 
+- operational test
+    - check fluid level first!
+    - should be safe to operate
+    - steps
+        - warm up hyd oil by stalling actuator @ wide open throttle (150-180F)
+        - operate
+            - response slow, jerky?
+            - unusual smell, noises? 
+            - smoke?
+            - @ what point, problem occurs
+        - measure actuator speed (flow issue)
+            - to determine if there are excessive flow losses (too much leakage) 
+            - check cycle times
+            - take 3 or 4 measurement and get avg 
+            - check motor rpm (both direction)
+        - perform stall test (pressure issue)
+            - result depends on what type of hyd sys used
+            - to check engine rpm when hyd sys is @ max load
+            - used tachometer when a actuator is stalled @ W.O.T
+            - engine rpm drop excessively
+                - engine lacks of power
+                - relief valve is set to high
+                - misadjust unloader valve or pump comp 
+            - engine rpm drop slightly
+                - engine power has increased
+                - relief valve is set to low
+- pressure testing
+    - pressure gauge
+        - snubbers are orifices placed in the gauge inlet to dampen pressure pikes, protecting the gauge components
+        - range should be twice the expected pressure
+    - tee test
+        - gauge installed in para with the tested area 
+        - shut-off valve is protect the gauge, open when measuring pressure
+        - need to open to put the tee; thus, contamination can enter
+        - builtin pressure taps need to be cleaned before installing gauge
+    - common location for installing pressure gauge
+        - close center
+            - before the pump
+                - low pressure (cavitation on outlet)
+                    - inlet restricted
+                    - driveshaft speed too high
+                    - wrong oil used
+                - high pressure (air in system, cause jerky operation)
+                    - inlet leaking, air drawn to system 
+            - after the pump
+                - neutral pressure @ W.O.T
+                    - filter, fitting,return line
+                    - localize hotpots
+                - working pressure (NO load)
+                    - resistance dcv, fitting, actuators, linkages, etc.
+                - working pressure (max load or pressure) 
+                    - stalling actuators @ W.O.T
+                    - pressure too high => adjusting system relief
+        - closed center load sensing
+            - check for pilot pressure on dcv or bw double check valves
+        - HST
+            - closed circuit pressure: 
+                - one read charge pressure
+                - one read working pressure
+                - check max closed circuit pressure by stalling motors @ W.O.T
+            - charge pressure
+                - insufficient pressure cause cavitation
+            - case drain pressure
+                - pressure's too high causing pump or motor damage
+- flow testing
+    - slow cycle time
+    - check of hotpots, e.i. cylinder barrel
+    - small leakage: check cyl drift by using a tape to make the rod 
+    - check cyl seal leaks
+        - fully extend cyl
+        - remove the rod end hose 
+        - raise (extend) cyl @ W.O.T
+        - measure oil from removed return line in "10 seconds"
+    - check motor internal leakage
+        - drain line secure to test container
+        - stall motor @ W.O.T
+        - measure oil from drain line in "10 seconds"
+    - hydraulic test unit
+        - including flow meter, pressure, temp, and load control
+        - pressure gauge should be installed upstream of load control 
+        - always backoff load control before test
+        - series conn: test pump efficiency
+            - 2 types of connections: bypass & inline conn
+            - flow rate @ no load is slower than specs 
+                - restricted inlet
+                - aeration
+            - flow rate @ full load (increase load control to the pressure specified by manufacture)
+            - efficiency less than 80%, pump should be serviced 
+        - tee test: test circuit leakage
+            - perform this test after confirm pump efficiency
+            - can used to check system relief
+                - there is wide pressure difference bw cracking and full flow pressure, the relief valve is broken
+            - adjust load control slightly below cracking pressure of system relief valve
+            - **compare this flow rate with flow rate @ full load during pump testing**
+            - circuit leakage = pump full load flow - circuit flow
 # electrohydraulics
 
 - clamping diode
