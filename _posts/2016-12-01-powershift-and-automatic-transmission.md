@@ -231,24 +231,52 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 
 # retarder
 
+- rotor vanes strike the oil in the retarder housing cause resistance which transmitted to the driveline, thus slowing vehicle
 - slow equipment down without using service/park brake
+- convert kinetic energy to heat energy
 - operation with high oil temp above 250F increase the oxidation of rate of oil and reduce the lub quality
-
+- input retarder and (cat) brake saver (engine output retarder) (used engine oil)
+    - get better result slowing because it can factor gear from trans (downshift trans during retarding)
+    - mounted input shaft of transmission
+    - doesn't care 'bout ground speed
+    - compact (can build heat up fast)
+    - how much braking is determined by how much flow into retarder. => aerate a lot!
+    - lockup clutch in torque converter is required when input retarder and brake saver is on
+        - retarder is mounted bw crankshaft flange and fw
+    - use charging pump that supplies oil to tc/trans
 - output retarders (allision):
     - mounted some where between transmission and rear axle
     - big heavy
     - retardation mode fill full oil, controlled how much braking by control the pressure inside the retarder
     - bigger sump, or larger cooler to handle heat
     - large spool valve
-- input retarder and (cat) brake saver (engine output retarder) (used engine oil)
-    - get better result slowing because it can factor gear from trans
-    - mounted input shaft of transmission
-    - doesn't care 'bout ground speed
-    - compact (can build heat up fast)
-    - how much braking is determined by how much flow into retarder. => aerate a lot!
-    - locked up torque when input retarder and brake saver is on
-- accumulator is added to improve filling speed
+    - may use separated pump, res, cooler
+- remote retarder
+    - mounted on driveline
 - may need more oil if there's a retarder. (engine or transmission oil)
+- oil temp is higher than 275F can cause damage to the retarder
+
+## components
+
+- retarder rotor (rotating assembly)
+- retarder housing (stator)
+    - contain oil
+- retarder control valve
+    - direct oil supply to the retarder housing
+    - manual, air-over-hyd, electronic control
+- multi discs clutch (wet clutch)
+    - provides quick application of retarder for a short period of time; then it's disengaged when retarder works
+- accumulator is added to improve filling speed
+- in normal use, the engine or exhaust brake is activate first; then retarder; improving service life of service brake
+
+## retarder service
+
+- check magnetic drain plug and filter element
+    - shiny steel (pump wear)
+    - aluminum (rotor wear)
+    - rubber (seal or hose)
+    - iron or steel chip (broken comp)
+- incorrect oil level can cause prob
 
 # clutch fundamentals and services (off-road)
 
@@ -276,3 +304,4 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 - tc mounted pto, tc housing is wet housing
 - output speed sensor replace governer in electrical trans
 - the valve in the governor was stuck in closed position, the result could be no up shifting
+

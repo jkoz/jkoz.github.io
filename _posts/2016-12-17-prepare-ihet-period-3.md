@@ -603,18 +603,34 @@ $$ power={flow rate (gal/min)  * pressure (psi) * 0.0167 \over efficiency} $$
         - manual reset
         - look exactly like type II with a button on top to reset the breaker
 - battery disconnect switch prevent the discharge of the battery group when equipment is parked
-- safety power control circuit - flood / working lamp
 - flywheel checks
     - crankshaft end play
     - flywheel housing bore eccentricity (base on fw)
     - flywheel housing face squareness (base on fw)
     - crankshaft hub eccentricity (base on housing)
     - crankshaft hub face squareness (base on housing)
+- torque divider
+    - ring - turbine
+    - input sun + impeller
+    - out pc.
+- as track wears, the track pitch increases, sprocket wear causes the disctance bw theeth to decrease
+- drive axle
+    - drive on convex side **()**, coast on concave side **)(**
+    - moving ring gear in or out affects backlash
+        - moving ring gear towards pinion gear will lower the pattern (move from heel (outside) to toe)
+            - used when it has excessive heel
+    - moving pinion in or out affects face and flank; also affect backlash
+        - moving pinion towards ring gear will low the pattern (move from face(top) to flank(bottom))
+            - **will decrease backlash**
+            - used when it has excessive face
 ---------
 1 cm = 0.394 inches
 1 m = 39.37 inches
 1 micron = 1 / 1 million meter = 
 1 psi = 6.89kPa
 1 bar = 100kPa
+1 Mpa = 1000kPa
+1 atm = 14.69psi
+
 
 

@@ -6,7 +6,9 @@ categories:
 ---
 
 # torque Converter
-
+- functions:
+    - torque multiplication
+    - fluid coupling
 - depend on
     - velocity - speed
     - viscosity of fluid
@@ -22,13 +24,18 @@ categories:
     - fluid coupler can not increase torque.
 - vortex: t slower than i, applied brake, loss of heat, no or low speed
 - rotary flow, same speed
+- phases - (refer to functional phase) or relationship of the impeller and turbine relative to energy transfer
+    - converter phase (vortex flow) impeller is faster than turbine
+    - coupling phase (rotary flow) same speed
+    - lock up improve efficiency, controlled by governor
+- stage - turbine elements (# of times the oil strike turbine before returning to the impeller)
 - warm up engine, trans by create loss of vortex flow, warm tc oil, thus trans oil warm up.
 - stator purpose is to increase torque, redirect (circulate) oil flow back to impeller, reuse the energy oil the throwed oil. (3.5 times torque increase), multiply torque on starting up
 - unlock lockup clutch on speeding up
 - lock when i and t speed are similar
 - haul truck run fixed stator ( stop and run all the time) want torque multiplied
 - multiple stages will multiply torque more
-- stall speed, full rpm on input, no output, should get the specs
+- stall speed, full rpm on input (impeller), no output (turbine stop), should get the specs
 - mul impeller, freewheel low load, lock more torque.
 - 2 turbines
 - torque converter oil
@@ -44,6 +51,7 @@ categories:
 
 # torque divider
 
+- use wet housing, need scavenging pump to remove the oil from housing
 - combine torque converter and planetary
 - more torque multiplication
 - for the stop to get moving
@@ -55,15 +63,15 @@ categories:
     - apply brakes
     - typically in top gear (most load)
     - result cases
-        - high stall speed
+        - high stall speed (transmission problems)
             - too easy to turn
             - too low level, oil too thin
             - clutches slipping
                 - try another gears, if speed change according to gear, slippage in trans
                 - steering
-        - low stall speed
+        - low stall speed (tc problems)
             - low power engine
-            - slipping in stator (should be lock , but it slips backwards)
+            - **slipping in stator** (should be lock , but it slips backwards)
         - heat (max 30 sec, excess 250F)
             - let it go down after test, put in neutral.
             - stator is seized when it suppose to freewheel
