@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Steering, suspension, and accessories
+title: prepare-ihet-period-3-steering-and-suspension-and-accessories
 categories:
   -
 ---
