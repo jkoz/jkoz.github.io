@@ -304,4 +304,5 @@ The number of revolutions the input (drive) gear makes to complete one revolutio
 - tc mounted pto, tc housing is wet housing
 - output speed sensor replace governer in electrical trans
 - the valve in the governor was stuck in closed position, the result could be no up shifting
+- top gear is the largest gear
 
