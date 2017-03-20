@@ -265,6 +265,8 @@ categories:
     6. differential pinions (spyder)
     7. axle side gears
     8. axle shafts
+- speed and torque in differential and wheels
+    - ring gear speed is equal to the sum of both axle torques
 - assembly
     - adjust pinion bearing preload 
     - adjust pattern
@@ -272,3 +274,51 @@ categories:
 - service
     - steam cleaning and soapy water may cause corrosion
     - used petroleum-based cleaning solutions
+- diff types
+    - single speed single reduction
+    - single speed double reduction: mack trans
+        - first reduction: input pinion and bevel gear
+        - second reduction: helical spur and bull gear
+    - two speed, planetary
+        - two reduction in low speed
+            - pinion input
+            - bevel gear output (1st reduction) 
+            - planetary ring gear (planetary input)
+            - sun held to adjusting ring
+            - pc is output connected to diff case
+            - mild reduction!
+        - one reduction in high speed
+    - two speed, double reduction
+    - interaxle
+    - outboard planetary (in: sun, out: p.)
+    - IMPORTANT: lock the diff before removing the axle 
+- check 4 places on bevel gear for backlash before disassemble
+    - if those readings are varied a lot, we may need check run out
+- it is better to put bearing caps on after seating the bearing cup with bearing adjusters.
+- moisture in compressed air can damage bearing, but it provides fast drying process used in real life (not in module, because moisture cause corrosion, they said let it air dry - very long)
+- spinning bearing while applying press load to seat the bearing
+- spinning the bevel gear while doing side bearing preload
+    - tight on flange case until no backlash while spining ring gear
+    - back off 2 notches
+    - tight on plain case adjuster until outer race (cup) start to turn while spinning the ring gear
+- torsen diff (toyota)
+    - gear only
+    - intanteneous lock
+- inter axle service steps
+    1. pinion preload
+    2. nominal shim for nominal distance
+    3. side bearing preload (don't want it move, or contact pattern mess up)
+    4. backlash (ring and pinion) heel and toe
+    5. contact pattern
+    6. end play of other junk!
+        - too much end play, driveline vibration
+- dcdl: inter wheel, driver control diff lock
+- engaged while spinning at diff speed bw sliding clutch and axle splines cause twisted  
+- diff lock on, no differential feature, hard to shift
+- if we lose traction on the rear, font rear axle don't spin thus ring gear don't plash any oil.
+    - input shaft hold the oil gear shaft
+    - output shaft contains oil body spin, pump the oil support its axle
+- stripped splines on a power divider input shaft (either splines of 3 splines ) : no drive to either axle assembly 
+- remove the drive shaft to the front drive axle assembly before removing a power diver differential assembly
+- pinion bearing preload (norminal shim), pinion depth, carrier bearing preload, backlash
+

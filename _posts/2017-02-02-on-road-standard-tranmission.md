@@ -103,6 +103,23 @@ categories:
 - pitting: overload, lack of lub
 - spalling: overload
 - scoring/galling: plastic deformation, metal metal contact, lub failures
-- burned: 
+- burned gears 
     - overheat inside (shaft) causing the inside of gear blue by towing or release the clutch and down the hill
     - overheat outside gear: lack of lub
+
+# hybrid drives
+
+- two or more sources propulsion
+- mild hybrids:
+    - only on launch
+        - hydraulic hybrids - garbage trucks
+- ful hybrids
+    - launch
+    - run full electric
+    - run full i.c.e
+    - combination
+    - e.g. Prius
+- series
+    - engine never directly drives/powers vehicle: haul truck (does not have battery); engine runs generator only
+        - engine -> generator -> battery pack -> elec motor
+- parallel
