@@ -38,3 +38,7 @@ categories:
     - start up, then off
     - on while a.t.c is functioning
     - mud/snow flashes
+
+# steering
+
+- the purpose alignment is for make tire last and go straight
