@@ -1,0 +1,60 @@
+---
+layout: post
+title: air conditioning
+categories:
+  -
+---
+
+- heat movement
+    - heat moves from a hotter area to a colder area.
+    - conduction, convection, and radiation
+- heat measurement
+    - intensity: $$C = (F - 32) * {5 \over 9}$$
+    - quantity: BTU, J
+- latent heat (hidden heat) is the heat absorbed or given up upon changing state
+    - vaporized @ vaporator(lower pressure): liquid +BTU (blow hot air in the cab to the vaporator) = vapour
+    - condensed @ condenser (high pressure): vapor -BTU (fan remove heat) = liquid
+- @ low pressure, liquid boil at a lower temperature
+    - low pressure - boiling vapour - compressed high pressure - liquid +BTU
+- superheat
+    - require to assure the compressor is protected from liquid refrigerant.
+    - compared low pressure side with evaporator outlet temp
+    - specs 8 - 12F
+- subcooling
+    - compared high pressure side with condenser outlet temp 
+    - specs 12-21F
+- refrigerant
+    - common R-134a
+    - mineral oil (MO) does not mix with R-134a (not compatible)
+    - polyol ester (POE) & Polyalkylene glycol (PAG) can be mixed with R-134a
+    - MO can not mix with PAG
+- AC events
+    - expansion
+       - liquid expanding from high pressure side 124psi(100F) to low pressure 30 psi (90F)
+    - evaporation
+        - pressure is lower, so liquid change to a vapor, thus absorbing heat 
+        - warm area cooled
+    - compression
+        - raise pressure and temp of the vapor
+        - 124 psi, 220F
+    - condensation
+        - cool vapor to 100F
+        - vapor change to liquid
+- heat it up => pressure increases
+- AC ref: http://www.central-air-conditioner-and-refrigeration.com/basic-refrigeration-cycle.html
+- pressure and boiling point relationship
+    - lower pressure, lower boiling point
+    - higher pressure, higher boiling point
+- perfect vacuum: 30, cannot get more than that
+- 30 in of Hg = 760,000 microns 
+- refrigerants
+    - no color, slight odour
+    - non-toxic, non corrosive, non-flammable
+    - most common nowsaday, 1234yf (move around 55-60BTU/lb)
+    - Duracool 12a or HC-12a (crap!), flammable
+    - R-12 (freon) (50BTU/lb) ozone depletion (used mineral oil, use good hose), R-134a (90 BTU/lb) green gas
+        - to change the use of R-12 to R-134a, we change the fitting, different size of orifice if needed 
+        - 1995 banned in North America
+    - r-134a (smaller molecues) 
+        - non ozone depletion
+        - green gas gas contributor
