@@ -78,16 +78,79 @@ categories:
         - subcooling is not happening inside the condenser
 - evaporator superheat
     - proper charge: 32-39F
-        - outlet is 2-10F warmer
+        - outlet is 2-10F warmer for txv, 1-5F lower than inlet (32-29F) for ccot
         - the change of state is completing close to outlet 
     - undercharge 32-62F
         - the change of state is completing too far from outlet
         - superheat in evaporator, suction
-    - overcharge: 32in-29out
+    - overcharge: 32in-29out (ccot 32-12F)
         - the change of state has not completed inside the evaporator
         - the eva does not warm the vol of refrigerant fast enough
 - txv does not have acc to prevent liquid enter compress, do not overcharge
+    - expansion valve continuously monitor evaporator outlet, if it is too cold, then reduce orifice side
+    - normal low pressure: 10-15psi
+    - normal high pressure: 140-180psi
 - ccot does not have dryer
+    - normal low pressure: 13-30psi
+    - normal high pressure: 140-180psi
+
+## troubleshooting
+
+- need wiring diagram
+- run ac 
+- identify refrigerant
+- bypass electrical see if it works
+
+- normal pressure (both high & low) (need to run 10-15 minutes)
+- colder than normal vent temp (old people complaint)
+    - reduce the temperature on dash 
+- warmer than normal vent temps
+    - blend air door stick opened
+    - water valve
+- low on low side/low on high side readings
+    - under charge
+        - identify
+        - recover
+            - low lbs (underweight)
+            - look for leak by nitrogen test -> vacuum -> dye
+            - repair leak
+            - add oil if need
+            - evacuate nitrogen
+            - recharge
+        - txv stick open, high pressure on low side
+        - TXV: run constant, low side vacuum
+        - CCOT: cycle once, off for a long time
+    - blockage (on high side, from simulator)
+        - can't be right after compressor!
+        - can block the orifice
+        - TXV: run constant, low side vacuum
+            - turn it off see if balance quickly. if it not cycle quickly -> blockage
+        - CCOT: cycled quick
+        - can look for frost spots as blockage act like a tight orifice
+    - blocked air flow through the evap because of blockage evap
+        - TXV: thermostatic sw may shut it off
+        - CCOT: 
+- high/low readings
+    - compressor
+        - clutch not engaging
+            - electrical problems
+        - reed valves
+            - slugging will damage reed valves (charge with liquid)
+                - improper charging (open the yellow ball handle open all the way)
+                - **overcharged**
+                - failed switches
+            - **not knowing how a gauge set works**
+- high/high readings
+    - overcharged
+        - TXV : run (thermo sw may shut it down)
+        - CCOT : run constant
+            - acc will be frost
+    - blocked air flow through condenser
+
+
+- expansion valve is easy to stick opened or closed, most of the time replace it, will work.
+- anytime service AC, replace descecant in acc or filter in receiver/dryer
+- condenser fan does work, pressure will increase
 
 ## AC Control system
 
