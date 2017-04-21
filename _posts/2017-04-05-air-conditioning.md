@@ -139,7 +139,7 @@ categories:
                 - improper charging (open the yellow ball handle open all the way)
                 - **overcharged**
                 - failed switches
-            - **not knowing how a gauge set works**
+        - **not knowing how a gauge set works**
 - high/high readings
     - overcharged
         - TXV : run (thermo sw may shut it down)
@@ -177,8 +177,8 @@ categories:
     - clutch cycling sw (ccot) (low pressure sw)
         - protect compressor from operating with low refrigerant pressure & no oil circulation
         - located on accumulator 
-            - 24psi, 32F, sw open, stop compressor, defrost evaporator 
-            - 48psi, 39F, sw close, start compressor, cool evaporator
+            - 24psi (12psi, depending on diff sw), 32F, sw open, stop compressor, defrost evaporator 
+            - 48psi (38psi, depending on diff sw), 39F, sw close, start compressor, cool evaporator
     - high pressure cut-out sw
         - sense high side
         - normally close when pressure is normal
