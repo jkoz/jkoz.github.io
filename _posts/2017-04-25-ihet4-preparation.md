@@ -304,5 +304,20 @@ categories:
 - three speed aux section
 - two speed aux section
 
+## Transmission Air System Shifting
+
 <iframe src="{{ site.url }}/assets/TransmissionAirSystemShifting.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+
+## Transmission Auxillary Gears
+
+<iframe src="{{ site.url }}/assets/TransmissionAuxillaryGears.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+
+## 5 speed transmission
+
+<iframe src="{{ site.url }}/assets/5SpeedTransmission.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+
+## 18 speed transmission
+
+<iframe src="{{ site.url }}/assets/18SpeedODTransmission.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+
 
