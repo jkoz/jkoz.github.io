@@ -181,8 +181,8 @@ categories:
         - max working angle 1 degree
     - broken-back or intersecting angle: center lines extends and intersect over the middle of the driveline
 - faults
-    - spalling: heavy load
-    - end galling: lack of lub, incorrect working angle
+    - **spalling**: *overload*
+    - **galling**: lack of lub, incorrect working angle
     - brinelling: u joints is operated at zero degree working angle, or lack of lub
     - pitting: contaminated lub
     - seized bearing caps or split joints causes vibration
@@ -282,11 +282,13 @@ categories:
 - override transmission: (fifth gear is override)
 - direct transmission: (fifth gear is direct)
 
-# aux section
+# Aux section
 
 - range: large ratio change
 - splitter: small ratio change
 - deep reduction: provide lower starting gear
+    - used sliding clutch
+    - used in three-speed aux
 - aux drive gear
     - splines to mainshaft or float bw 2 aux countershafts
 - countershaft
@@ -300,24 +302,434 @@ categories:
     - deliver torque to driveline
     - a speedometer drive gear is on the output shaft (cable system)
     - tooth or tone ring/wheel (electronic speedometer)
+- forward: front trans
+- rearward: back trans
 - two speed aux section
+    - provide reduction and direct
+- spin-on filter
+    - cooler -> inlet -> trans -> outlet -> filter -> cooler
 - three speed aux section
-- two speed aux section
+    - 15-speed, but 12 usable gears
+    - deep reduction (low-low): *only low range can have deep reduction*
+        - shift pin-type synchro rearward
+        - shifting deep reduction sliding clutch rearward
+    - low range
+        - engage LO gear by
+            - shifting pin type synchro rearward
+            - shifting deep reduction sliding clutch forward
+    - high range 
+        - engage HI gear by
+            - shifting pin-type synchro forward
+            - shifting deep reduction sliding clutch forward
+- four speed aux section
+    - low, low
+        - pin-type clutch: rearward
+        - sliding clutch: forward
+    - low, high
+        - pin-type clutch: rearward
+        - sliding clutch: rearward
+    - high, low
+        - pin-type clutch: forward
+        - sliding clutch: forward
+    - high, high
+        - pin-type clutch: forward
+        - sliding clutch: rearward
+- transmission lub
+    - splash type
+        - galleries and oil trough help direct oil
+            - for critical area, synchronizer, aux drive gear bearing
+    - pressure type
+        - eccentric, shutter type oil pump
+        - help coil transmission
+    - filtration
+        - magnetic drain plugs
 
-## Transmission Air System Shifting
+# Hybrid drive
 
-<iframe src="{{ site.url }}/assets/TransmissionAirSystemShifting.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+- mild hybrid
+    - provide acc assist
+    - e.i garbage truck
+- full hybrid
+    - acc assit & propel 
+    - e.i electric hybrid city deliver truck
+- architecture
+    - series
+        - engine drives generator charging bat & driving wheel motors
+        - never direct power the vehicle
+        - e.i haul truck
+    - parallel
+        - electric motor or hydraulic pump is sandwiched bw engine and trans
+        - either of them or both of them drive trans
+- motor/generator
+    - propel vehicle
+    - charge the high voltage batteries during *deceleration*
+- inverter
+    - convert 340V **dc** to 340V **ac**
+    - during **regeneratie braking** convert 340V **ac** to 340V **dc** charge batteries
+- PEC - power electronics carrier
+    - 340V lithium batteries
+    - relay
+    - connectors
+- propulsion: 
+    - electric only
+    - diesel electric (lower engine duty cycle, better gas consumption)
+    - diesel
+- charging:
+    - during braking or coasting
+- benefits
+    - fewer emission, better fuel economy
+    - 120V ac receptacles without running engines
+    - **use motor to start engine**, don't use starter, thus reducing wear on it
+    - electric PTO
+- diesel hydraulic hybrid
+    - hydraulic launch assist (HLA)
+    - pump/motor
+        - charge accumulator during coast or regenerative braking
+        - be a motor to apply torque to the driveline
+    - active when
+        - 5-35km
+        - enough oil
+        - enough acc pressure
+        - cruise is off
+        - no faults
+- coasting:
+    - HLA *assist in slowing vehicle* when operators release accelerator
+- regenerative braking
+    - releasing accelerator will trigger regenerative braking
+    - transfer case disengage, *stop regen* when accumulator is fully charge
+    - the rising pressure in accumulator resist the forward motion, causing slow down
+- gloves
+    - rubber in, leather out (top)
+    - the higher glove glass number, the higher voltage can withstand
+- **high voltage cable** is **ORANGE**
+- wait 5 minutes for high pressure oil in acc depressurized
 
-## Transmission Auxillary Gears
+# Transmission shifting
 
-<iframe src="{{ site.url }}/assets/TransmissionAuxillaryGears.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+- air filter/regulator
+    - first component receive air supplied
+    - act as a filter
+    - regulate about 58-63psi
+- slave valve
+    - allow preselect range shift
+    - receive supply air from filter/regulator
+    - low range, master valve send air to slave valve, move piston to the left (low-air-piston-move- right)
+    - high range, air exh from master valve
+    - **shift lever is in neutral, actuating pin moves away from slave valve**
+- master air control valve
+    - receive supplied air from slave valve
+    - red: 13 (low range, low split only), blue 15, grey 18
+    - send air signal to slave valve or cylinders
+    - vent air from cylinder in master valve
+- range cylinder
+    - 30-40% gear ratio
+    - double cylinder
+    - piston go to right: low range (master valve sends air)
+    - piston go to left: high range
+- splitter cylinder
+    - 15-20%
+    - constantly receive air from filter/regulator on rod side
+    - piston go to the left: low split (master valve releases air) (air both side, base end wins)
+    - piston go to the right: high split (signal air sent to spliter)
+- lines and fittings
+    - 1/4" rubber supply lines
+    - 1/8" plastic control lines
+    - S - supply (red)
+    - P - pilot (black)
+    - H/L - splitter or deep reduction (green)
+    - SP - splitter pilot
+- semi-automated transmissions
+    - top 2 gears (most use on road) are automatically selected
+    - monitor 
+        - transmission output shaft speed
+        - engine speed
+        - throttle position
+    - **engine electronic control unit controls the shift system**
+- electronic shift control (shift-by-wire)
+    - X-Y shifter
+        - rail motor is a reversible DC motor
+        - motor move the shift finger along the shift shaft to the shift rail though **a slotted connection bw rail nut & shift finger**
+    - inertia brake
+        - located on PTO opening (connect directly to main countershaft)
+        - aid shifting process help slow down main countershaft and then the aux input shaft
+    - range-shifter motor
+        - used electric-over-air solenoids
+    - shift controller 
+        - electronic control unit (transmission controller)
+        - operator shift console (drive, neutral, etc.)
+    - in **hold** mode, operator can **manually** control upshift and downshift
+    - in **low** mode, operator get **maximum engine braking**
 
-## 5 speed transmission
+# Transmission service
 
-<iframe src="{{ site.url }}/assets/5SpeedTransmission.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+- oil leak
+    - worn seal, loose fasteners
+    - plugged breather
+    - incorrect oil
+- slip out
+    - occur when the torque is applied (accelerating, decelerating) 
+    - sliding clutches have back tapper (dovetail) to help keeping gear from slip out
+    - **transmission mount eccentric**
+    - **worn mainshaft/output shaft bearing**
+    - **shorten clutching teeth due to excessive gear clashing**
+    - weak or broken detent springs
+    - **wear on detent notch of the shift rail**
+    - **incorrect adjustment of linkage**
+- jump out
+    - occur in normal condition or rough road condition
+    - heavy & long shift levers
+    - weak or broken detent springs
+    - **excessive movement bw the transmission and the shift linkage**
+- hard shift
+    - external 
+        - binding shift linkage
+        - lack of lub
+    - internal
+        - **twisted mainshaft**
+        - broken mainshaft key
+        - reverse spring-loaded plunger
+- gear clashing
+    - **worn input shaft splines that do not let the clutch fully release, causes gear clashing in reverse and first**
+    - excessive clutch free play causes clutch not fully release and drag 
+- noise
+    - whine or squeal
+        - insufficient clearance or backlash
+    - growling
+        - broken teeth 
+        - improper timing
+        - incorrect installation of the counter shaft gears
+- overheating
+    - exceed 120C or 250F, oil loses lubrication properties
+    - transmission @ an excessive angle
+    - coasting downhill with clutch depressed or improper towing cause lack of lub
+- gear wear
+    - frosting (middle) and offset frosting (side): **OK**
+        - result from the mating gears wearing
+    - healing **OK**
+        - after frosting, the area is shinny
+    - gear pitting
+        - replacement based on size and depth of pitting hole 
+        - is it local or stretched?
+        - can cause noise
+    - spalling (replaced)
+        - similar pitting, but larger area, and shallower depth
+        - overload
+    - scoring/galling (replaced)
+        - lack of lub, high temp cause welding occur
+    - burned (replaced)
+        - blue area
+        - lack of lub
+        - lack of clearance (middle of gears outwards)
+    - impact fractures (replaced)
+        - shock loading
+        - foreign object passing to gear mesh
+    - fatigue fractures (replaced)
+        - beach marks 
+    - stringers/gas pockets (replaced)
+- air system diagnosis
+    - slow/no shift
+    - chassis air pressure must be 90psi for testing
+- electric hybrid system diagnosis
+    - create buffer zone 1m around equipment with cones
+    - verify glove before each use
+    - gloves should not have any holes
+    - leather outside, rubber inside gloves
+- hydraulic hybrid system diagnosis
+    - turn off ignition, wait 5 minutes for depressurized accumulator
 
-## 18 speed transmission
+# Transfer case and aux drive
 
-<iframe src="{{ site.url }}/assets/18SpeedODTransmission.swf" frameborder="0" style="width: 650px;height:480px"></iframe>
+- transfer case receive torque from transmission then passed that torque to rear and front driving axles
+- lub by splash or pressure
+- types
+    - two shaft, single speed, full time all wheel drive (can not disengage front drive shaft)
+    - four shaft, two speed, neutral, PTO, (ability to disengage front drive shaft)
+- front axle declutch
+    - disengage the torque to the front drive axle
+    - good for highway application
+- high range: direct
+- low range: reduction
+- proportional differential and lockout
+    - used planetary gear set to prevent driveline **windup**
+        - input: PC - main drive shaft
+        - output
+            - sun: front axle (30%)
+            - ring: rear axle (70%)
+        - reactionary: traction
+    - loose traction on all the output, zero torque! need to lock 2 member carrier and the sun
+- PTO on 2 speed transfer case, engage only in neutral
+    - can overspeed PTO if trans is placed in high gear
+- clean pto components with petroleum-based, DO NOT use steam cleaning and soapy water
+- assembly
+    - need end play, NOT preload
+- PTO
+    - front-mounted
+    - rear-mounted (need a special flywheel housing)
+    - transfer-case-mouted (more torque)
+    - **drop box**
+        - large amount of torque
+        - transfer power to PTO and 1 drive axle only
+        - PTO runs, power to drive axle is interrupted
+        - commonly direct drive
+    - aux transmission top mounted PTO
+    - SAE classifies 2 types of mounting PTO: 6 or 8 bolt size
+    - actuation methods
+        - cable
+        - mechanical
+        - air
+            - **pressure protection valve is mounted before air valve**
+        - electric
+    - a gasket is used bw PTO and transmission to 
+        - seal lubrication from transmission
+        - adjust PTO backlash (0.006" [compressed 10 thou shim] - 0.012" [compressed 20 thou shim] backlash) 
+        - **filler block** is used if need more than four gaskets
+        - adapter plate: 6bolt to 8 bolts at least 1 seal for each adaptive surfaces
+        - adapter housing: used when transmission has obstruction like exhaust system
+            - has a idler which needs to check backlash with countershaft and PTO
+    - **operator must stop the transmission countershaft from turing before engaging the PTO**
+    - **indicator light is activated by an engagement switch located on the shift cover**
+
+# Drive axle assembly fundamentals
+
+- GAWR - gross axle weight rating
+    - the amount of weight each axle can safely carry
+- GVWR - gross vehicle weight rating
+    - adding all GAWR 
+- GCWR - gross combination weight rating
+    - combined weight of tractor, trailers, and loads
+- func of drive axle
+    - support weight and load of vehicle
+    - change direction 90 degree
+    - multiply torque
+    - allow diff action
+- add a driving axle to increase traction
+- add a non-driving axle to increase flotation
+- differential ratio chosen factors
+    - startability
+        - % of grade at which a drivetrain system can start a loaded vehicle moving at an idle
+    - fuel economy
+- carrier housing
+    - hold internal gear components, e.i. pinion gear, bevel gear, diff case, diff assembly, diff lock
+    - cast iron
+    - external or integral housing
+- pinion cage house tapered pinion bearing
+- drive pinion
+    - overhung: **flat surface on the top of pinion**
+    - straddle: **stub shaft extended on the top of pinion**
+        - amboid (top), hyroid (bottom)
+- thrust screw and jam nut
+    - prevent bevel gear from deflecting away from pinion during high torque load
+    - position opposite the bevel gear & pinion mesh, installed on carrier housing
+- configurations
+    - single speed, single reduction (@ bevel gear)
+    - single speed, double reduction (@ bevel and helical gear
+    - two speed, double reduction
+        - 2 helical spur gear, 2 helical bull gear for 2 speed
+        - sliding clutch for choosing between 2 helical gear sets
+    - planetary, two speed
+        - low speed
+            - sliding clutch engages low speed clutch plate (bearing adjuster)
+            - input: ring gear (bevel gear)
+            - held: sun splines with bearing adjuster (sun shift outwards)
+            - out: pc (diff case)
+        - high speed
+            - sliding clutch engages high speed clutch plate (PC)
+            - sun is locked with PC, direct drive
+- differential actions
+    - **torque is divided equally**
+    - each wheel speed = bevel gear speed / 2
+    - lost traction 1 wheel (e.i free spin)
+        - torque is low because of loss of traction
+        - torque is delivered equal both wheel
+        - the wheel has traction receive torque required to rotate the wheel with poor traction
+            - can be stopped
+        - whatever speed is lost on one side is gained on free-spin wheel
+- diff lock
+    - **lock one axle shaft to diff case**
+- inter-axle differential assembly
+    - send torque to both driving axles 
+    - cross shaft has internal splines
+    - allow diff speed bw forward and rearward drive axle
+    - power flow
+        - input shaft
+        - cross shaft, or spider, or inter-axle diff assembly, [or diff [cross] shaft]
+        - diff pinion
+            - helical drive gear (replace **side axel gear** which mesh with diff pinion, has lockout gear)
+                - helical driven gear
+                - pinion (input shaft of front drive axle)
+                - bevel gear
+            - side gear
+                - output shaft
+                - output yoke
+    - **only lock out diff while the truck is moving straight-ahead at a low speed**
+        - **lock input shaft and helical drive gear**
+- semi-floating axle
+    - drive axle assembly
+    - handle driving, braking, cornering, load force!
+- full-floating axle
+    - only drive the wheel and hub assembly
+    - weight vehicle transmit to axle housing, bearing, hub assembly
+- outboard planetary final drive
+    - ring is held by splined to spindle
+    - input: sun
+    - output: pc (hub assembly)
+- drive axle lub
+    - splash
+    - splash and pressure
+        - oil pump is mounted in front of diff carrier to ensure it always runs in any cases regardless of any spinning wheels
+        - inter-axle diff is mounted top, may starve of lub, specially in wheel spin condition where front differential is NOT spinning
+    - filter
+        - spin-on filter
+        - magnetic drain plug
+        - magnetic screen on the oil pickup
+- no-spin traction control
+    - normally engage diff lock, wheels run same speed 
+    - unlock diff when the outer wheel is overrun the inner wheel
+    - ratcheting noise will occor during the cornering process which is normal
+- driver controlled diff lock
+    - spring release, air applied
+
+# Drive axle assembly service
+
+- when drive axle operates at an angle of over 12, a standpipe should be used
+- gaskets are NOT used bw housing, it uses RTV sealant
+- check end play of both input and output shaft
+    - can cause vibration of it is out of specs
+- perform plug swap, inspecting the contamination on the plug
+- lose suspension components can cause noise
+- mismatch tires cause excessive heat and wear due to continuous diff action
+- noise on drive
+    - loose, worn bearings
+    - low/wrong lubrication level
+    - excessive backlash, end play
+- noise on coast
+    - pinion and ring gear to tight
+- intermittent noise
+    - warped ring gear
+    - loose diff case bolts
+- constant noise
+    - flat spot on bearing, gears
+    - bent axle shaft
+    - worn pinion splines
+- oil temp should not exceed 250F or 121C
+- low oil level causes overheat, losing oil film quality
+- high oil level causes foaming, reducing oil film quality
+- pre-disassemble check: backlash in case the axle has to be reused
+    - measure at 4 evenly positions on the ring gear
+- assembly
+    - pinion bearing preload: apply press load while checking rotation torque of pinion
+        - use **norminal bearing spacer** for initial check
+    - pinion depth 
+        - positive (+) number indicates how much **further**
+        - negative (-) number indicates how much **closer**
+    - side bearing preload
+        - adjusting rings used to adjust bearing preload
+        - adjust until end play is eliminated, but backlash bw the pinion and ring gear still exists
+        - move ring gear close to pinion, decrease backlash
+        - move ring gear further from pinion, increase backlash
+    - tooth contact pattern
+        - use a pry bar to apply load to ring gear on checking pattern
+    - bevel gear run out
+
 
 
