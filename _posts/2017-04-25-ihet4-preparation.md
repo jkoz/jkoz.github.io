@@ -711,25 +711,190 @@ categories:
     - flat spot on bearing, gears
     - bent axle shaft
     - worn pinion splines
-- oil temp should not exceed 250F or 121C
-- low oil level causes overheat, losing oil film quality
-- high oil level causes foaming, reducing oil film quality
+- lub
+    - oil temp should not exceed 250F or 121C
+    - after fill drive axle assembly with correct amount of lub, drive the truck for few minutes, then shutdown 5 minutes to recheck the oil level, top up if needed
+    - low oil level causes overheat, losing oil film quality
+    - high oil level causes foaming, reducing oil film quality
+    - if oil is contaminated, wheel end assemblies must be removed, the hubs cleaned, and bearing inspected
 - pre-disassemble check: backlash in case the axle has to be reused
     - measure at 4 evenly positions on the ring gear
-- assembly
-    - pinion bearing preload: apply press load while checking rotation torque of pinion
+- assembly differential
+    1. pinion bearing preload: apply press load while checking rotation torque of pinion
         - use **norminal bearing spacer** for initial check
-    - pinion depth 
-        - positive (+) number indicates how much **further**
-        - negative (-) number indicates how much **closer**
-    - side bearing preload
+    1. tooth contact pattern (adjust pattern can affect backlash, thus, doing the pattern before backlash)
+        - use a pry bar to apply load to ring gear on checking pattern
+        - move ring affects heel and toe
+            - excessive heel: lower pattern, move ring towards pinion
+            - excessive toe: moving away from pinion
+        - move pinion affect: face and flank (need to readjust backlash)
+            - excessive face: move pinion in 
+            - excessive flank: move pinion out
+    1. side bearing preload (backlash)
         - adjusting rings used to adjust bearing preload
         - adjust until end play is eliminated, but backlash bw the pinion and ring gear still exists
         - move ring gear close to pinion, decrease backlash
         - move ring gear further from pinion, increase backlash
-    - tooth contact pattern
-        - use a pry bar to apply load to ring gear on checking pattern
-    - bevel gear run out
+    1. pinion depth 
+        - positive (+) number indicates how much **further**
+        - negative (-) number indicates how much **closer**
+    1. bevel gear run out
+    1. thrust screw
+        - mark the spot with **the most back face runout toward the thrust screw side of the bevel gear**
+        - thread the thrust screw into the diff carrier until it seats in the thrust block
+        - back off 180 degree
+        - rotate, make sure that thrust screw does not bind at any location
+- assemble inter-axle differential
+    - input shaft end play
+        - established with shim bw bearing cage and the housing
+- when selecting particular gear oil, expected working ambient temp must be consider
+- wheel lock must be engaged to remove the carrier assembly from the housing
+    - a special bolt threaded into the air fitting port OR 
+    - apply 80-120psi shop air to the shift cylinder
 
+# Steering system
 
+- connection
+    - steering arm
+    - pitman arm:
+        - change rotation motion to linear motion
+        - time bw pitman arm and the sector shaft
+    - drag link
+        - move in an arc, thus can not be rigid
+    - upper steering arm
+    - left hand steering knuckle
+        - has steering stop
+            - need to be adjusted to allow **minimum clearance of 1 inch bw the tire and the frame**
+        - kingpin
+            - thrust bearing must be installed **UNDER the axle end**
+    - left hand lower steering arm
+    - tie rod
+    - right hand lower steering arm
+    - right hand steering knuckle
+- steering gear
+    - transmit the driver's intentions from steering wheel to the linkage
+    - change direction in the path of power
+    - mechanical advantage for steering
+- lock spring
+    - allow the steering wheel to rotate in both directions while still having signal and power going to the switches
+    - turning the steering wheel while the steering shaft is **disconnected** could result in damage to the clock spring assembly
+- SRS: supplemental restrain system
+    - commonly in yellow wire
+    - air bag discharges can easily damage clock spring
+- steering columns
+    - tilt steering columns
+        - tilt steering columns up and down
+        - use additional ujoints and two shafts
+    - telescoping steering columns
+        - height is adjustable
+- steering gear types
+    - manual steering gear
+        - recirculating ball design reduces clearance bw the worm shaft and the ball nut, reduce friction, and allow a little play
+        - sector shaft gear rotates about 30 degree
+    - integral power steering gear **common**
+        - power steering fluid
+            - provide lub film
+            - cool components
+            - seal bw shafts and sealing devices
+            - dot NOT mix with engine oil
+            - flush the system, when change to new fluid
+            - reservoir, pressure relief
+                - steering is jammed, operator still pulls on the steering wheels, the valve opens
+                - too low, poor assist, hard steering
+                - too high, damage linkage
+        - poppets release the pressure before contacting steering stop (1/8" in before hit the stops)
+        - **a torsion bar actuates the valve assembly**
+        - **a rotary valve assembly controls the flow of oil in the steering gear**
+    - rack and pinion
+        - **a torsion bar**
+        - **the oil is directed to the rack mounted assist cylinder through external lines**
+        - no pitman arm, drag link, or an upper control arm
 
+# steering service 
+
+- low front tire pressure, dragging brake can seem like a steering problem
+- squealing noise, excessive tire skid
+- clock spring: non serviceable
+- the threaded portions of both drag link ends or tie rod end must be completely inserted into the drag link/tie rod tube
+    - wheel must straight ahead when removing clock spring
+- do NOT turn the steering wheel during filling and bleeding to prevent air enter system
+- perf test
+    - pressure
+    - flow rate
+    - do NOT leave load valve on flow meter closed longer than 5 seconds
+- internal leakage
+    - use an unhardened steel spacer
+    - hold steering wheel contact spacer @ 20lbs
+    - max flow rate must not exceed 1gpm
+- poppet setting test
+    - hold steering wheel contact stop screw @ 20lbs
+    - pressure should be 200-400psi less than pump relief pressure
+    - NOT OK
+        - pressure does not drop
+        - if pressure drop when the steering stop is farther than 1/8"
+- when the vehicles wheel base is lengthened or shortened, it can cause increases in front tie wear due to the increase in tire skidding on turns
+- using the steering wheel as a grab handle can cause the pivot bolts in a tilt steering column to brake
+- the supply and return lines must be removed from the steering gear when draining the system
+- to remove the sector shaft, the worm shaft and the ball nut assembly must be centered
+- when replacing the rack and pinion steering gear, always replace the mounting bolts
+- the steering stops must be set before the drag link is hooked up to prevent automatic poppets being misadjusted
+- turn adjusting screw in to reduce backlash bw sector shaft and the rack piston 
+- use inch pound torque wrench to check for valve body bearing preload and the sector shaft
+
+# Steering angles and alignment
+
+- toe: tire wearing angle
+    - compensate for any deflection in the steering linkage
+    - 2 types: toe in & toe out
+    - excessive: feathered edge (direct relationship high edge with in/out)
+    - adjust by turning tie rod
+- caster: directional control angle
+    - positive caster: top of the steering axis (king pin) tilt towards the rear of vehicle
+    - increase the vehicle's tendency to want to go straight ( help to turn the steering wheel to the straight-ahead position after making a turn)
+    - 3 types: positive, zero & negative
+    - excessive positive caster
+        - good: direct shock load to suspension
+        - bad
+            - hard steering
+            - shimmy: unstable, rapid side-to-side movement
+    - excessive negative caster
+        - good: easy to steer at low speed
+        - bad:
+            - instability @ high speed
+            - wander and weave: difficulty in maintaining a straight-ahead direction
+    - adjusted by placing **ONE tapered shim** bw the axle and the leaf spring
+- camber: tire wearing and also directional control angle 
+    - positive: tilt out at the top
+    - negative: tilt in at the top
+    - make it easy to steer by lowing vehicle's weight to the steering axis
+    - tire wear
+    - **unequal camber results in a pull to the side that has the most positive camber**
+    - excessive camber causes premature fail of wheel bearings
+    - adjusted by bend axle (not recommended), should replace it
+    - high camber reading may indicate a KPI problem to to damaged axle or steering knuckle
+- KPI - king pin inclination (fulfils the same role as camber)
+    - can not adjustable
+        - adjusted by replacing damaged parts (steering knuckle)
+    - directional control (steering stability)
+    - reduce the need for high camber
+    - reduce shock load
+    - include angle = KPI angle + camber angle
+    - scrub radius is the distance bw the projected steering axis and the center of the tire contact area, measure at the road surface
+- **turning radius** is **toe-out on turns** : tire wearing angle
+    - the shape of steering arms determines the angle
+        - adjusted by replacing damaged parts (steering arms)
+    - help reduce tire scuff
+    - front tires turn at diff angles
+- **thrust angle**
+    - is the angle formed by the thrust line and geometric center line (GCL)
+        - thrust line determines the direction the vehicle will travel
+    - incorrect thrust angle cause vehicle not going straight
+    - should check axle housing in relation to the frame rails
+- **scrub angle**
+    - is the angle formed by horizontal lines drawn through the rear axle
+    - causes: tires scrub positive or negative
+- vehicle could pull to the side having the smaller tire
+- vehicle tilts towards the low pressure tire
+- **loose wheel bearings will affect toe and camber**
+- **broken and sag springs can affect camber and caster**
+- alignment tools: radius plates,caster/camber bubble type alignment gauge
