@@ -898,3 +898,201 @@ categories:
 - **loose wheel bearings will affect toe and camber**
 - **broken and sag springs can affect camber and caster**
 - alignment tools: radius plates,caster/camber bubble type alignment gauge
+
+# Air ABS
+
+- func
+    - maintain control throughout a braking application (prevent wheel lock)
+        - or prevent tire flat spotting if wheels are locked 
+    - reduce overall stopping distance
+- does not provide extra brake effort
+- configurations
+    - 2S/1M **minimum** on tandem axle trailer 
+    - 2S/2M **common** on tandem trailer 
+    - 4S/4M **common** on tandem axle power unit (tractor)
+    - 6S/6M maximum vehicle control and safety for tri-axle trailer/ normal tractor
+- **channels are the number of modulators**
+- tone ring, tooth wheel, tooth ring, exciter ring
+    - mounted on wheel hub
+- speed sensor
+    - permanent magnet
+    - held in a spring clip
+    - *speed increases, both voltage and frequency increase*
+- air brake modulator valve
+    - **normally open, allow free flow of air in normal condition**
+    - contains 2 solenoids, 2 diaphragm valves (supply and exh solenoids, valves)
+        - **exhaust, hold, reapply**
+    - normal braking
+        - de-energized supply solenoid moves up, *allows* supply air *unseating* supply diaphragm, supply air goes to chamber
+        - de-energized exhaust solenoid moves down, *allows* supply air **seating exhaust diaphragm, air from chamber is NOT exhausted**
+    - exhaust (abs event)
+        - energized supply solenoid moves down, *allows* supply air **seating supply diaphragm, supply air is blocked**
+        - energized exhaust solenoid moves up, *allows* chamber air *unseating* exhaust diaphragm, air from chamber is exhausted. 
+    - holding
+        - energized supply solenoids moves downs, blocks supply enter
+        - de-energized exhaust solenoid moves down, *allows* supply air *seating* exhaust diaphragm, air from chamber is NOT exhausted
+    - reapply
+        - de-energize both solenoids, return system to normal
+- ECU: inside the cab, baggage compartment, frame, cross member, trailer air reservoir
+- built after March 1, 1998, trailer has abs light on **the left rear corner facing outward**
+    - **ABS is mandatory as of March 1, 1998**
+        - receive power from aux pin
+- as of March 1, 2001, we have abs light in the cab for trailer
+- diagnostic connection
+    - usually J-1587
+- off-road ABS sw
+    - turn off ABS because we believe that mud, soil, or sand helps vehicle stop
+- tractor/trailer power cord
+    - middle top/middle/bottom: ground/aux,keyed,ecu power/stop lamp (backup)
+    - under L/R: LH, RH turn/hazard
+    - above L/R: clearance/Tail lamp
+- ATC: automatic traction control
+    - auto apply brake when foot on accelerator
+    - braking a specific wheel
+    - reducing the amount of torque delivered to the drive wheels
+    - ATC valve
+        - located bw **brake valve** and **service relay** @ the rear drive axles
+        - 3 airlines
+            - to brake valve
+            - from supply air
+            - to air discharge
+        - normal condition
+            - block supply air
+            - allow signal air to relay valve
+        - wheel-spin (no brake)
+            - block brake valve air
+            - open supply air to send signal air to relay
+        - differential braking
+            - ATC valve send signal air to relay
+            - ECU send signal to modulators which control spinning wheels to apply brake
+            - ECU send signal to modulators which control non-spinning wheels NOT to apply brake
+        - torque reduction
+            - engine is electronically controlled
+            - used J-1939
+    - below 40km/h , use diff braking and torque reduction if wheels are still spinning
+    - above 40km/h, use torque reduction only; diff braking causes drive line shock load
+    - deep snow and mud option
+        - allow wheel spin slightly faster than normal without automatically applying brake to throw off mud and debris to clean the threads, improve traction
+    - disable ATC for chassis dynamometer to prevent ATC system from attempting to control the spinning wheels by
+        - remove fuse
+        - scan tool or PC
+        - press on the blink code sw for 3 sec
+- **RSC**: roll stability control
+    - help **control vehicle stability** and **limit rollovers** by
+        - apply brake on the correct wheels
+    - components
+        - ATC valve
+        - RSC valve
+            - located in secondary system bw **brake valve** and **tractor protection valve**
+        - ATC and RSC share the same indicator lamp
+        - depend on speed and lateral movement ecu can signal
+            - retarder, engine brake
+            - tractor/trailer service brake
+            - reduce engine torque
+- **ESC**: electronic stability control
+    - add *directional stability* to RSC system to help **prevent jackknife or spinout**
+    - components
+        - ESC module contains yaw senssor and an accelerometer
+            - located in **the center of the frame rail**
+            - measure lateral acceleration
+            - communicate with ABS ECU
+        - front axle control valve
+            - a ATC valve controlling steer axle brakes
+        - steering angle sensor (SAS)
+            - tell ABS ECU **where the operator is attempting to steer** to determine jackknife condition
+        - brake demand **sensor**
+            - tell ABS ECU **how much brake demand pressure** to correct the vehicle
+- service
+    - first step troubleshooting: speak with the operator, review work order, visual inspect
+    - pre-check service brake (ABS rely on service brake)
+        - brake adjustment
+        - air system
+        - condition of mechanical components: linkages, drums, mounting brackets, etc. (most common problems)
+    - pre-check ABS
+        - connections integrity: electrical cables & connections, speed sensors, etc.
+        - physical damage 
+        - unequal tire size
+    - do NOT disconnect/connect ABS cables and components while the system has power
+    - push wheel speed sensor contact to tone ring; turning the wheel may establish the proper running clearance
+    - tone ring
+        - excessive wheel bearing end play will result in erratic wheel speed sensor readings
+
+# Hydraulic ABS
+
+- ABS modulator valve assembly or solenoid control valve assembly
+    - prevent wheel lock by **decreasing, increasing, main brake pressure**
+- DOT5 is silicone-based fluid do NOT use in ABS 
+- DOT3 & 4 can be mixed
+- to depressurize ABS may require 30 or more full brake pedal applications
+- 3 types of ABS 
+    - rear wheel antilock only
+    - rear wheel and individual front wheels antilock
+    - individual front and rear antilock
+- ABS indicator lights
+    - display ABS fault codes
+    - bulb checks
+    - brake fluid level
+- precheck
+    - fluid level
+    - battery voltage
+    - visible damage
+    - vehicle on safety stand
+
+# Truck electrical Circuit
+
+- lighting circuits 
+    - driver vision
+    - driver convenience
+    - truck safety
+    - truck appearance
+- constant power terminal: connect to **bat terminal of the starter**
+    - headlight
+    - tail light: rear dimensions of the back of truck, red
+    - brake light
+    - clearance light: outside dimensions of the truck, yellow or amber
+    - marker light: upper regions of the truck
+    - cab light
+        - L/R hand door sw and dash-mounted sw (all open, cab light's OFF)
+    - trailer receptable
+    - ignition sw
+- circuit breakers and fuse
+    - type 1: constantly automatic restart: head light
+    - type 2: not auto restart, internal resistor keeps bimetal from reset until problems are fixed
+    - type 3: not auto restart, manual restart with button
+- DRL: daytime running light
+    - conform CMVSS 108 (Canadian Motor Vehicle Safety Standard)
+- NRL: night running light
+- control intensity of dash panel light
+    - rheostat:
+        - connect in series with dash panel light circuit
+        - create heat
+    - PWM:
+        - connect in series with dash panel light circuit
+        - minimum waste of energy
+        - high accuracy
+    - fibre optics
+        - if the fibre optics do not illuminate, light source has failed
+- turn signal light and brake light
+    - **signal and brake light circuits share the same filament**
+    - **turn signal flasher is connect in series with the turn signal light circuit**
+        - electromechanical 
+            - can have one extra terminal called pilot terminal, trigger a indicator light circuit
+        - solid state electronic 
+            - use with LED turn signal
+- backup light
+    - connected ignition switch-controlled circuit which prevent backup light from discharging bat when engine is not running
+    - can incorporate a beeper
+- solenoids
+    - discrete solenoids: 2 position fully retracted or extended
+        - *sleeper door latch*: solenoid is energized of the door is unlatched
+    - proportional solenoid
+        - the solenoid's movement is directly proportional to the voltage applied to the solenoid coil
+    - latching solenoid
+        - a discrete solenoid that remains fixed at the end of its travel when de-energized
+- switches
+    - SPST
+        ![spst](https://www.dropbox.com/s/jsdbkzg9u4gl3zr/517ed955ce395f471d000000.png?raw=1)
+    - SPDT
+        ![spdt](https://www.dropbox.com/s/zyrsy6kkzl7v27o/517edaface395f581d000001.png?raw=1)
+    - DPDT
+        ![dpdt](https://www.dropbox.com/s/oyffsadjxsfubt9/517edbabce395fd51d000000.png?raw=1)
