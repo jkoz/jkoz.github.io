@@ -164,27 +164,29 @@ categories:
         - black coil lead wire: 12V
         - green coil lead wire: 24V
 - passive (automatic) control
-    - thermostatic sw:
-        - when the evaporator core is warm, the sw closes the contact, engaging the compressor
-        - when the evaporator core is closed to freeze temp, stop the compressor; the heat will warm and defrost any frozen moisture
-        - fixed sw senses 32F (sw opens) -38F (sw closes)
+    - thermostatic sw (NC, TXV):
         - adjustable can reach 50F for closing point
+        - fixed sw 
+            - open @ 32F, disengage the compressor
+                - when the evaporator core is closed to freeze temp, stop the compressor; the heat will warm and defrost any frozen moisture
+            - close @ 38F, engage the compressor
+                - when the evaporator core is warm, the sw closes the contact, engaging the compressor
     - low pressure sw
         - normally open valves
         - 24psi open; 34psi close
         - located in low side on acc, protect compressor from low refrigerant pressures due to blocked expansion valve or lack of refrigerant
         - located in high side on receiver/dryer, sense low pressure from high side and ambient temp is too cod
-    - clutch cycling sw (ccot) (low pressure sw)
+    - clutch cycling sw (NO, a low pressure sw replace thermostatic sw on CCOT)
         - protect compressor from operating with low refrigerant pressure & no oil circulation
         - located on accumulator 
-            - 24psi (12psi, depending on diff sw), 32F, sw open, stop compressor, defrost evaporator 
-            - 48psi (38psi, depending on diff sw), 39F, sw close, start compressor, cool evaporator
-    - high pressure cut-out sw
+            - open @ 24psi (34F), disengage compressor, defrost evap
+            - close @ 48psi (39F), engage compressor, cool evap
+        - can have diff range [12, 38] or [24psi, 48psi]
+    - high pressure cut-out sw, (NC)
+        - open @ 350psi, stop compressor
+        - close @ 250psi, start compressor
         - sense high side
-        - normally close when pressure is normal
-        - cut in @ < 250psi, start compressor
-        - cut out@ >= 350psi, stop compressor
-        - must lower than pressure relief valve (fusible plug)
+        - **must lower than pressure relief valve (fusible plug)**
         - can use to control condenser fan & radiator shutter systems
             - condenser fan kick in when condenser does not receive enough cooling ram airflow to keep the pressure with normal limits
     - binary sw (low/high pressure sw)
@@ -192,17 +194,15 @@ categories:
         - located bw condenser and expansion device (on dryer)
     - trinary sw
         - located bw condenser and expansion device (on dryer)
-        - high-low temp sense: 2 terminal control the clutch
-            - NO
-            - low: open @ 15-28psi 
-            - high: close @ 40psi
-        - sense high side pressure
-            - NC
-            - low: close @ 80-125psi
-            - high: open @ 270-330psi
-        - mid range: 2 terminal controls condenser fan
-            - low: open @ 35-60psi
-            - high: close @ 200-230psi
+        - low pressure sensor (NO):
+            - open @ 15-28psi 
+            - close @ 40psi
+        - high pressure sensor (NC)
+            - open @ 270-330psi
+            - close @ 80-125psi
+        - mid range: (NO) controls condenser fan
+            - open @ 35-60psi
+            - close @ 200-230psi
     - refrigerant solenoid valve
         - direct refrigerant to second evaporator's expansion device
         - open when sleeper compartment call for cooling and cab has to be in operation
