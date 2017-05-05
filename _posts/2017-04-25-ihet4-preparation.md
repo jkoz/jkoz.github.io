@@ -1545,7 +1545,6 @@ categories:
     - visual inspection
         - use refrigerant identifier to check type of refrigerant 
         - check tension should be not over 110lbs
-        - *poor heat exchange in evaporator causes lower than normal system pressure*
         - *bend or kinked condenser tubes causes lower than normal system pressure*
         - *poor heat exchange in condenser causes higher than normal system pressure*
             - bent fins will limit amount of air flow thought the condenser
@@ -1556,5 +1555,21 @@ categories:
         - connect manifold gauge
         - stablized system 15min running time
         - temperature depends on ambient temp, humidity levels, and condenser size
-        - **low/low**
-            - warm discharge air: **undercharge**
+        - **low/low/warm discharge air**
+            - **undercharge**
+            - internal blockage results in cold spots
+                - bent or kinked tubes
+                - TXV stuck in close position
+                - compressor outlet blockage results in clutch slippage, overheating
+            - restricted evaporator air flow
+        - **high/low**
+            - faulty air compressor
+                - broken reed valves, loss of piston ring seal
+                - slugging compressor: compressor being filled with liquid
+                    - overcharge
+                    - cold weather causes ac system has very little vapor (low pressure sw can be broken)
+        - **high/high**
+            - overcharged
+            - mixed refrigerant, including air
+            - restricted condenser air flow
+            - *txv stuck in open position or the sensing bulb is broken*
