@@ -1298,3 +1298,263 @@ categories:
 # Air condition fundamentals
 
 ![ac](https://www.dropbox.com/s/htc03agzzkhq2du/IMG_20170406_090317.jpg?raw=1)
+- comfortable temp: 70-75F or 21-25C
+- comfortable humidity: 40-45%
+- heat moves from a **hotter** *to* **colder** area
+- heat movement methods: convection, conduction, & radiation
+- heat measurement:
+    - intensity: Fahrenheit or Celsiush
+    - quantity: BTU or J
+        - raise water temp from 63-63F require 1 BTU
+        - raise water temp from 17-18C require 4.180kJ
+- *latent heat* is the *heat quantity (BTU)* that must be *added (absorb @ evap)* or *removed (give up @ condenser)* to make a substance change state, but not temperature
+- *temp @ which a substance changes state depends on the pressure surrounding the substance*
+- saturated conditions: there is only 1 pure refrigerant (gas or liquid) in the container
+    - R-134a: 12psi @ 10F; 1.9psi @ -10F
+- **evaporator**: liquid evaporates to gas
+    - add or absorb heat in the cab
+    - **superheating**
+        - deal with vapours
+        - all liquid has changed to gas, *"continue to absorb heat which means superheating"*
+        - help to protect compressor from liquid refrigerant
+        - evaporator's outlet will be *hotter* than the inlet 8-12F 
+            - how well the expansion device is working
+            - how efficient the evaporator is working
+- condenser: gas condenses to liquid
+    - remove or give up heat
+    - **subcooling**
+        - deal with liquid
+        - all gas has changed to liquid, "continue to give up heat which means subscooling"
+        - condenser's outlet will be *colder* than the inlet 12-21F
+- refrigerant
+    - R-134a light blue container contain greenhouse gas
+    - R12 has chlorofluorocarbon CFC which destroys ozone layer, phase out Jan 1, 1996
+    - Duracool 12a contains hydrocarbons which is flammable
+    - no refrigerant should be vented to atmosphere
+- refrigerant oil
+    - provide lub, seal, and cool the compressor parts
+    - mixed with refrigerant
+    - 3 types: 
+        - mineral oil based (MO)
+        - polyol ester (POE)
+        - polyalkylene glycol (PAG)
+    - **MO can NOT mixed with R-134a or PAG**
+    - **R-134a can mixed with POE & PAG**
+    - **"choose POE for topping up any AC system"**
+- four events of an AC system
+    - expansion (orifice): high pressurized liquid go over an orifice, becoming low pressurized liquid
+    - evaporation (evaporator): low pressure liquid absorbs heat, becoming low pressurized gas
+    - compression (compressor): low pressurized gas is compressed and added heat by compressor, becoming high hot pressurized gas 
+    - condensation (condenser): high hot pressurized **gas** give up its heat, becoming high hot pressurized **liquid**
+- components
+    - compressor and compressor clutch
+        - 2 reed valves: suction side and discharge side
+        - clutch coil or electromagnetic coil is stationary
+        - clutch coil is energized, magnetic field locks the pulley to the drive plate (clutch plate/hub) to engage the compressor
+    - service valves
+        1. quick-disconnect type or schrader type
+        1. stem type valve
+            - CCW: normal operation
+            - **CW: isolate compressor (do NOT operate compressor)**
+            - Mid-steated: connect to the gauge and compressor (service)
+    - condenser types: 
+        - tube and fin (strongest) 
+        - serpentine 
+        - parallel flow (use when mounting room is limited)
+    - receiver/dryer: TXV
+        - ensure only liquid go to orifice to maximize ac efficiency
+        - mounted after condenser (high side)
+        - separated vapor and liquid
+        - filter is screens and desiccant (commonly uses molecular sieve)
+            - to catch any moisture
+        - have sight glass may include moisture indicator
+            - by changing color of sight glass
+        - have high pressure sw
+    - accumulator: CCOT
+        - *help to prevent liquid enter compressor*
+        - mounted in the suction hose
+        - can evaporate a large amount of liquid because of their location
+        - use desiccant to trap moisture
+    - *thermal eXpansion valve (TXV)*
+        - *a variable orifice sensing evap outlet's temp to control how much refrigerant go to evaporator which ensures that outlet refrigerant is gas which protect the compressor*
+            - outlet temp **decreases**, TXV *decreases* flow of refrigerant
+                - outlet temp decrease, it means that subcooling is happening in the suction hose (outlet of evap), which means we may still have liquid in the suction hose, which is NOT good for reed valves, thus, the variable orifice has to decrease its size, allow less refrigerant enter the evaporator
+        - 2 types:
+            - blocked-type 
+            - internally/externally equalized thermostatic 
+                - has capillary tube and sensing bulb
+    - evaporator
+        - moisture forms into droplets and drains to the bottom of the evap housing
+    - air conditioning hose
+        - single braid
+        - double braid
+        - do NOT use hydraulic hoses for AC because they are too porous allowing refrigerant leak 
+        - fitting: flare or o-ring types
+- TXV system
+    - *a thermostatic sw senses evap's temp and turns compressor ON and OFF, giving the operator ability to control over the cab temperature*
+- Fixed orifice tube or CCOT system
+    - *a clutch cycling sw sensings the **pressure** of suction side to control the temperature of the evaporator*
+        - CC cw locates in accumulator 
+        - pressure is **high** which means **warm** temp, **the sw closes engage** the compressor clutch
+        - pressure is **low** which means **cold** temp, **the sw opens disengage** the compressor clutch
+
+# HVAC control systems
+
+- active: driver control
+    - engine coolant water valves
+        - operator set the amount of hot engine coolant that will pass through the heater core
+        - a sized open water valve causes the cab remain very warm even when the AC is running
+    - compressor magnetic clutch
+        - operator turn AC on
+        - voltage to the clutch coil 
+            - too low: drive plate may slip on pulley
+            - too high: overheating
+        - *black coil* 12 V
+        - *green coil* 24V: has double resistance of black coil
+- passive: automatic control
+    - thermostatic sw (NC, TXV only; replaced by CCOT cycling sw on CCOT system)
+        - adjustable can reach 50F for closing point
+        - fixed sw 
+            - open @ 32F, disengage the compressor
+                - when the evaporator core is closed to freeze temp, stop the compressor; the heat will warm and defrost any frozen moisture
+            - close @ 38F, engage the compressor
+                - when the evaporator core is warm, the sw closes the contact, engaging the compressor
+    - *low pressure sw (NO): use as low ambient temp proection sw*
+        - 24psi open & disengage the clutch
+        - 34psi close & engage the clutch
+        - placed in
+            - accumulator, protect compressor from low refrigerant pressures due to blocked expansion valve or lack of refrigerant, which results in lack of lub
+            - receiver/dryer, sense low pressure from high side and **ambient temp is too cod**
+    - clutch cycling sw (NO, a low pressure sw replace thermostatic sw on CCOT)
+        - protect compressor from operating with low refrigerant pressure & no oil circulation
+        - located on accumulator 
+            - open @ 24psi (34F), disengage compressor, defrost evap
+            - close @ 48psi (39F), engage compressor, cool evap
+        - can have diff range [12, 38] or [24psi, 48psi]
+    - high pressure cut-out sw, (NC)
+        - open @ 350psi, stop compressor
+        - close @ 250psi, start compressor
+        - sense high side
+        - **must lower than pressure relief valve (fusible plug)**
+        - **can use to control condenser fan & radiator shutter systems**
+            - condenser fan kick in when condenser does not receive enough cooling ram airflow to keep the pressure with normal limits
+    - binary sw (low/high pressure sw)
+        - provide slow and high pressure protection
+        - located bw condenser and expansion device (on dryer)
+    - trinary sw
+        - located bw condenser and expansion device (on dryer)
+        - low pressure sensor (NO):
+            - open @ 15-28psi 
+            - close @ 40psi
+        - high pressure sensor (NC)
+            - open @ 270-330psi
+            - close @ 80-125psi
+        - mid range: (NO) controls condenser fan
+            - open @ 35-60psi
+            - close @ 200-230psi
+    - electric refrigerant solenoid valve
+        - direct refrigerant to second evaporator's expansion device
+        - open when sleeper compartment call for cooling and cab has to be in operation
+    - blower motor and fans
+        - "single or double shaft" motor
+        - "single or double entry" blower wheels 
+- combination and supplemental control devices: may prevent or support system functions. e.i. ambient temp sw, radiator fan clutches and shutter systems
+- AC management system
+    - control module
+    - monitor (input): high / low pressure, & thermostatic sw
+    - control (output)
+        - condenser fan (how long is engaged depending on vehicle *speed* and *pressure*)
+        - compressor clutch
+- automatic temperature control
+    - monitor (input)
+        - cab temp sensor
+        - fresh air temp sensor
+        - evaporator temp sensor
+    - control (output)
+        - **heater water valve**
+        - blower fan speed
+        - compressor clutch
+|---
+| IC system | manual climate control system
+|---
+| water valve controls coolant | coolant is not control
+| all air flows through evap and heater core | have air door direct how much air to heater core
+| outlet temp depends on the amount of coolant passing the heater core | depends on air flow through heater core
+|---
+
+- sleeper heating
+    - heating: 
+        - extra heater core is hooked in parallel with that of cab
+        - electronically controlled water valve installed on **return side of coolant on sleeper side, parallel with heater system circuit**
+    - cooling
+        - extra evaporator core and TXV are hooked in parallel with those of cab
+        - electric refrigerant solenoid valve installed **after dryer on sleeper side**
+    - fuel-fired **air** heater (draw 2A/hour) use to reduce premature engine wear on parking truck for sleeping
+        - use to heat sleeper compartment
+    - fuel-fired coolant heater
+        - help engine start up
+        - warm sleeper compartment
+        - some sense battery voltage and not operate if less than 10.5V
+    - aux power units
+        - warm by heat from aux engine
+        - cool by aux driven air ac compressor
+- use fuse protected jumper wire override the low pressure sw, if clutch engages
+    - low refrigerant
+    - faulty low pressure sw
+    - the refrigerant is too cold to create enough pressure to closed the sw
+
+# AC testing and service
+
+- **air should contains 9% of oxygen**
+- never fill a refrigerant container over 80% full of liquid refrigerant
+- **moisture + refrigerant = acid**; moisture can free TXV orifice
+- **compressed air + R-134a = combustible mixture**
+- refrigerant identifiers
+    - identify and measure the purity of refrigerant
+- refrigerant recovery unit
+    - the refrigerant is removed in the form of a vapor
+    - overfill protection float shuts off the recovery unit when reaching 80% of its cap
+- leak detectors
+    - electronic refrigerant leak detectors
+        - move the probe to detect
+    - flourescent dye leak detection
+        - use syringe to inject dye to the system
+        - do NOT use red dye, clog station filters, air valves, etc.
+    - pressurize ac system with nitrogen 150psi
+        - if pressure drop **1psi over 5 minutes**, ac system has leaks
+- manifold gauge set
+    - access ac system
+    - remove air and moisture
+    - recover or add refrigerant
+    - do visual and perf inspection before hooking up gauge set
+    - do NOT hook up gauge set with engine is running
+    - do NOT open hand valves, or it create short from inlet to outlet, cause compressor slugging and broken reed valves
+- refrigerant scales: zero scale with empty container, recovery refrigerant, weight it, identify it, and charge 
+- high capacity vacuum pump
+    - use to remove air and moisture from AC system 
+    - a vacuum of 500 microns is drawn and held for 20 minutes to ensure that all moisture and air are removed
+- micron gauge, hose crimping, belt tension gauge
+- fin combs are used to straighen the bent fins, clean.
+- schrader valve core service tools
+    - use to install or remove schrader valve stems
+- spring lock coupling tools
+- heating system service tools
+    - pressure tester
+    - apply pressure with air pump, check pressure drop for leak
+-diagnosis
+    - visual inspection
+        - use refrigerant identifier to check type of refrigerant 
+        - check tension should be not over 110lbs
+        - *poor heat exchange in evaporator causes lower than normal system pressure*
+        - *bend or kinked condenser tubes causes lower than normal system pressure*
+        - *poor heat exchange in condenser causes higher than normal system pressure*
+            - bent fins will limit amount of air flow thought the condenser
+            - dirt, lint blocks air flow
+            - high pressure washing system can bend fins
+        - look up for frost build up on any ac components
+    - operation tests
+        - connect manifold gauge
+        - stablized system 15min running time
+        - temperature depends on ambient temp, humidity levels, and condenser size
+        - **low/low**
+            - warm discharge air: **undercharge**
