@@ -1,6 +1,6 @@
 ---
 layout: post
-title: swap caps in android
+title: Swap Caps in Android
 categories:
   -
 ---
