@@ -1,6 +1,6 @@
 ---
 layout: post
-title: powershift and automatic transmission
+title: Powershift and Automatic Transmission
 categories:
   -
 ---
