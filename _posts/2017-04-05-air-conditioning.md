@@ -1,6 +1,6 @@
 ---
 layout: post
-title: air conditioning
+title: Air Conditioning Systems
 categories:
   -
 ---
@@ -237,8 +237,8 @@ categories:
     | | max cooling | max heating | max defrost| normal cooling | floor and defrost heating | cab ventilation
     |---
     | blow speed | max | max | max | lowest | second speed | second speed
-    | heater water valve | closed | opened | opened | **partly opened** | opened | **partly opened**
-    | fresh air intake | closed | closed | closed | closed | closed | opened
+    | heater water valve | closed | opened | **opened** | **partly opened** | opened | **partly opened**
+    | fresh air intake | closed | closed | closed | opened | closed | opened
     | cab recirculation air inlet | opened | opened | opened | closed | opened | closed
     | panel outlet | opened | opened | closed | opened | closed | opened
     | floor outlet | opened | opened | closed | closed | opened | opened
