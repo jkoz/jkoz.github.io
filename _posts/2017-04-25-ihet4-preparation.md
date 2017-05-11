@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ihet4 preparation
+title: AIT 4 Preparation
 categories:
   -
 ---
@@ -1328,7 +1328,8 @@ categories:
         - condenser's outlet will be *colder* than the inlet 12-21F
 - refrigerant
     - R-134a light blue container contain greenhouse gas
-    - R12 has chlorofluorocarbon CFC which destroys ozone layer, phase out Jan 1, 1996
+    - R12 has chlorofluorocarbon CFC which destroys ozone layer, eliminate production and import Jan 1, 1996
+    - as of jan , 2000 can not charge or top up R12
     - Duracool 12a contains hydrocarbons which is flammable
     - no refrigerant should be vented to atmosphere
 - refrigerant oil
