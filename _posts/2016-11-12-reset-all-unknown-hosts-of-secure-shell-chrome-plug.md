@@ -1,6 +1,6 @@
 ---
 layout: post
-title: reset all unknown hosts of secure shell chrome plug
+title: Reset All Unknown Hosts of Secure Shell Chrome Plugin
 categories:
   -
 ---
