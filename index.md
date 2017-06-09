@@ -18,22 +18,30 @@ title: Resume
     - Obtained hands-on experience covering on-road, off-road hydraulics, transmission, engine, and steering systems
     - Used diagnostic tools to trace equipment faults (on-road and off-road equipment)
     - Consulted with schematics and service manuals to overhaul transmission, engine, etc
-    - SafeStart Certificate, October 2015 
-    - CEDA Al Redhead Memorial Scholarship, December 2015
-    - Period 1 AIT Heavy Equipment Technician examination 81%, January 2016
-    - Miller Motors (The Patriquin) Scholarship, February 2016
-    - Period 2 AIT Heavy Equipment Technician examination 83%, May 2016
-    - Period 3 AIT Heavy Equipment Technician examination 85%, February 2017
-    - Period 4 AIT Heavy Equipment Technician examination 80%, May 2017
-    - GPA: 3.9
+    <!--- GPA: 3.9-->
 
 ### Experience
+
+- Kitchen Helper,Capital Pizza, Edmonton, AB, July 2015 --- Present
+    - Handles work fast and accurately in a fast pace environment
+    - Assists cooks in rush hours by identifying need and taking initiative
+    - Completes work on time and responded to orders quickly
 
 - Mechanic, Bhullar Trucking Ltd, Edmonton, AB, May 2017 - June 2017
     - Greases the whole truck, drivelines, fifth wheels, etc.
     - Inspects and inflates tires
     - Fixes common electrical failures
     - Replaces air brake chambers, air springs, shock absorbers
+
+### Awards and Certificates
+
+- SafeStart Certificate, October 2015 
+- CEDA Al Redhead Memorial Scholarship, December 2015
+- Period 1 AIT Heavy Equipment Technician examination 81%, January 2016
+- Miller Motors (The Patriquin) Scholarship, February 2016
+- Period 2 AIT Heavy Equipment Technician examination 83%, May 2016
+- Period 3 AIT Heavy Equipment Technician examination 85%, February 2017
+- Period 4 AIT Heavy Equipment Technician examination 80%, May 2017
 
 ### Volunteer
 
