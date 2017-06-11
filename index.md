@@ -27,12 +27,6 @@ title: Resume
     - Assists cooks in rush hours by identifying need and taking initiative
     - Completes work on time and responded to orders quickly
 
-- Mechanic, Bhullar Trucking Ltd, Edmonton, AB, May 2017 - June 2017
-    - Greases the whole truck, drivelines, fifth wheels, etc.
-    - Inspects and inflates tires
-    - Fixes common electrical failures
-    - Replaces air brake chambers, air springs, shock absorbers
-
 ### Awards and Certificates
 
 - SafeStart Certificate, October 2015 
