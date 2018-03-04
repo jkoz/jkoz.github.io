@@ -26,31 +26,7 @@ title: Resume
 ### Experience
 
 - Aspen Custom Trailers, Edmonton, AB, August 2017 --- Present
-    <!--- Plumping air, electrical, and hydraulic for lowboy trailers-->
 - Kitchen Helper,Capital Pizza, Edmonton, AB, July 2015 --- October 2017
-
-<!--- Kitchen Helper,Capital Pizza, Edmonton, AB, July 2015 --- Present-->
-    <!--- Handles work fast and accurately in a fast pace environment-->
-    <!--- Assists cooks in rush hours by identifying need and taking initiative-->
-    <!--- Completes work on time and responded to orders quickly-->
-
-<!--### Awards and Certificates-->
-
-<!--- SafeStart Certificate, October 2015 -->
-<!--- CEDA Al Redhead Memorial Scholarship, December 2015-->
-<!--- Period 1 AIT Heavy Equipment Technician examination 81%, January 2016-->
-<!--- Miller Motors (The Patriquin) Scholarship, February 2016-->
-<!--- Period 2 AIT Heavy Equipment Technician examination 83%, May 2016-->
-<!--- Period 3 AIT Heavy Equipment Technician examination 85%, February 2017-->
-<!--- Period 4 AIT Heavy Equipment Technician examination 80%, May 2017-->
-
-<!--### Volunteer-->
-
-<!--- Open House Student Representative, NAIT, Edmonton, AB, October 2015-->
-    <!--- Greeted visitors at program booth-->
-    <!--- Provided IHET program information-->
-    <!--- Answered any questions regarding program prerequisites-->
-    <!--- Explained the operation of displayed equipment-->
 
 ## Contact
 
