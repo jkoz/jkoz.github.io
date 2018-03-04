@@ -18,9 +18,9 @@ title: Resume
 ### Education
 
 - Diploma of Industrial Heavy Equipment Technology, NAIT, Edmonton, AB, Sept 2015 - Apr 2017
-    - Obtained hands-on experience covering on-road, off-road hydraulics, transmission, engine, and steering systems
-    - Used diagnostic tools to trace equipment faults (on-road and off-road equipment)
-    - Consulted with schematics and service manuals to overhaul transmission, engine, etc
+    <!--- Obtained hands-on experience covering on-road, off-road hydraulics, transmission, engine, and steering systems-->
+    <!--- Used diagnostic tools to trace equipment faults (on-road and off-road equipment)-->
+    <!--- Consulted with schematics and service manuals to overhaul transmission, engine, etc-->
     <!--- GPA: 3.9-->
 
 ### Experience
