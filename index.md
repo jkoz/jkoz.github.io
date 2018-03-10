@@ -5,7 +5,7 @@ title: Resume
 
 ### Qualifications
 
-- Registered apprentice trailer mechanic
+- Registered apprentice truck and transport mechanic
 - Has Valid Class 1 driving license
 
 <!--- Graduates from IHET program at NAIT-->
