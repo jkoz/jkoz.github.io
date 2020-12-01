@@ -21,7 +21,7 @@ So what are the goals that I need in a mail client ?
 - Works with Oauth2
 - Securely store your tokens
 
-# Tools an dependencies:
+# Tools and dependencies:
 
 - cyrus-sasl-xoauth2
 - mbsync 
@@ -60,6 +60,7 @@ Besides, the empty line between each configuration block is important as well
 [ AuthMechs "XOAUTH2" ] is available for using after install cyrus-sasl-xoauth2 library
 
 {% highlight shell %}
+
 IMAPAccount gmail-phuoctaitp
 Host imap.gmail.com
 User phuoctaitp@gmail.com
@@ -105,3 +106,17 @@ Create Both
 SyncState *
 
 {% endhighlight %}
+
+## Crontab
+
+Crontab is for automatically update your mailboxes. I sync my mailboxes every minute. If this the first time you use cron, you should check this page out 
+[Crontab Guru](https://crontab.guru/#*_*_*_*_*)
+
+{% highlight shell %}
+
+crontab -e
+* * * * * /bin/bash -l -c '/usr/local/bin/mbsync gmail-phuoctaitp >> /Users/taitran/log/mbsync-gmail-phuoctaitp.log 2>&1'
+* * * * * /bin/bash -l -c '/usr/local/bin/mbsync hotmail-tait >> /Users/taitran/log/mbsync-hotmail-tait.log 2>&1'
+
+{% endhighlight %}
+
