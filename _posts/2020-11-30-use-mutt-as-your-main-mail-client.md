@@ -66,7 +66,7 @@ Isync is just an IMAP sync tool, same as OfflineIMAP but written in C. There are
 Firstly, it is the last '/' in Path, without that slash, mbsync can't sync your inner mailboxes ([Gmail]/Drafts, etc.) after the first sync.
 Besides, the empty line between each configuration block is important as well
 
-[ AuthMechs "XOAUTH2" ] is available for using after install cyrus-sasl-xoauth2 library
+[ AuthMechs "XOAUTH2" ] is available for using after install cyrus-sasl-xoauth2 library. XOAUTH2 mechs requires access_token returned by PassCmd
 
 {% highlight shell %}
 
@@ -131,6 +131,64 @@ crontab -e
 
 ## Curl
 
-I use curl to do oauth2 with microsoft or gmail server. In my opinion, curl is widespread available in different unix
+I use curl to handle oauth2 with microsoft or gmail server. Curl is available in different unix system, we don't need to add an other dependency. In this article I assume you know how to register your apps with google or microsoft to obtain the client_id and secret_id. Following are script for authenticating with microsoft server. Keep in mind that the request will be slightly different upon authenticate with different server such as google
+
+
+- First, open the browser to obtain the code
+
+{% highlight shell %}
+
+client_id="your_client_id"
+scope="https://outlook.office.com/IMAP.AccessAsUser.All%20offline_access%20https://outlook.office.com/SMTP.Send"
+redirect_uri="https://login.live.com/oauth20_desktop.srf"
+auth_uri="https://login.microsoftonline.com/common/oauth2/v2.0/authorize"
+open "${auth_uri}?client_id=${client_id}&response_type=code&redirect_uri=${redirect_uri}&scope=${scope}"
+
+{% endhighlight %}
+
+- Second, after obtaining the ${code}, we trade ${code} for refresh_token and access_token. Noticed that I don't send client_secret to the server, but in google authentication, I do. I use jq to extract information
+
+
+{% highlight shell %}
+
+curl -s \
+-d "client_id=${client_id}" \
+-d "code=${code}" \
+-d "redirect_uri=${redirect_uri}" \
+-d "grant_type=authorization_code" \
+${token_uri} | jq '. | .access_token'
+
+{% endhighlight %}
+
+As we know, we need to automate this process, and access_token will be expired. Instead checking expires_in attribute, we just use refresh_token to obtain access_token every time 
+we want to do authentication. I find that this way is simplest, but it doesn't affect your overall speed.
+
+{% highlight shell %}
+
+cat ~/.gnupg/gmail-phuoctaitp.gpg
+curl -s \
+-d "client_id=your_secret_id" \
+-d "refresh_token=your_refresh_token" \
+-d "grant_type=refresh_token" \
+https://login.microsoftonline.com/common/oauth2/v2.0/token | jq -r '. | .access_token'
+
+{% endhighlight %}
+
+- Now, we need to encrypt our script with gpg
+
+{% highlight shell %}
+
+gpg --encrypt ~/.gnupg/gmail-phuoctaitp.gpg
+
+{% endhighlight %}
+
+- Finally lets pass it to mbsyncrc via PassCmd. Noted that gpg output will be piped to xargs to eval the curl command.
+
+{% highlight shell %}
+
+PassCmd "gpg -dq ~/.gnupg/gmail-phuoctaitp.gpg | xargs -0 bash -c"
+
+{% endhighlight %}
+
 
 ## To be continue
