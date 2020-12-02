@@ -16,6 +16,7 @@ A mail client is very important at workplace. As I start my day at work; first t
 So what are the goals that I need in a mail client ?
 
 - Text-based mail client, so I can ssh to server and check my mail and take advantage of external tools like fzf, tmux, etc.
+- Utilize tools which are already available on unix system like find, sed, curl..
 - Dynamically find mailboxes, and subfolder management
 - Support view html in browser
 - Works with Oauth2
@@ -127,5 +128,9 @@ crontab -e
 * * * * * /bin/bash -l -c '/usr/local/bin/mbsync hotmail-tait >> /Users/taitran/log/mbsync-hotmail-tait.log 2>&1'
 
 {% endhighlight %}
+
+## Curl
+
+I use curl to do oauth2 with microsoft or gmail server. In my opinion, curl is widespread available in different unix
 
 ## To be continue
