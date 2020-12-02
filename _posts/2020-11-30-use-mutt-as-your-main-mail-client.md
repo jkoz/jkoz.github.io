@@ -161,7 +161,7 @@ ${token_uri} | jq '. | .access_token'
 {% endhighlight %}
 
 As we know, we need to automate this process, and access_token will be expired. Instead checking expires_in attribute, we just use refresh_token to obtain access_token every time 
-we want to do authentication. I find that this way is simplest, but it doesn't affect your overall speed.
+we want to do authentication. I find that this way is simplest, but it doesn't affect your overall speed much.
 
 {% highlight shell %}
 
