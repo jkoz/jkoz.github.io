@@ -20,6 +20,14 @@ So what are the goals that I need in a mail client ?
 - Support view html in browser
 - Works with Oauth2
 - Securely store your tokens
+- Fast searching mails by subject, name across mailboxes with mu
+- Easy view attachment
+
+# Screenshot
+
+Here is how it looks like
+
+![Mutt client](/img/mutt/mutt-screenshoot.jpg)
 
 # Tools and dependencies:
 
@@ -120,3 +128,4 @@ crontab -e
 
 {% endhighlight %}
 
+## To be continue
