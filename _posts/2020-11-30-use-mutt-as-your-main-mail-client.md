@@ -206,7 +206,10 @@ Mutt allows you to use shell commands in muttrc which is awesome to hack around 
 
 
 {% highlight shell %}
-find ~/Mail/phuoctaitp@gmail.com -maxdepth 5 -mindepth 1 -type d | sed -Ee "/\[Gmail\]$|tmp$|new$|cur$/d" -e "s/ /\\\\ /g" | awk 1 ORS=" "
+find ~/Mail/phuoctaitp@gmail.com -maxdepth 5 -mindepth 1 -type d | \
+sed -Ee "/\[Gmail\]$|tmp$|new$|cur$/d" \
+-e "s/ /\\\\ /g" | \
+awk 1 ORS=" "
 {% endhighlight %}
 
 - mindepth=1 to exclude current folder '~/Mail/phuoctaitp@gmail.com" which is not a mail box dir. Isync didn't create any cur tmp and new dir for it.
@@ -216,11 +219,14 @@ find ~/Mail/phuoctaitp@gmail.com -maxdepth 5 -mindepth 1 -type d | sed -Ee "/\[G
     - cur, new, and tmp are meta data directories
 - the last 2 things are escaping the spaced folder e.i Sent Mail, and removing \n with awk 
 
+## Open your mail boxes with fuzzy command
+
+
+To be continue....
+
 # links
 
 https://www.cryptomonkeys.com/2015/09/mutt-and-msmtp-on-osx/
 https://www.suffix.be/blog/mutt/
 http://stevelosh.com/blog/2012/10/the-homely-mutt/
-
-## To be continue
 
