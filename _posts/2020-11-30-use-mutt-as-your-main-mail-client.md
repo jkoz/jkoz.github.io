@@ -131,7 +131,7 @@ crontab -e
 
 ## Curl
 
-I use curl to handle oauth2 with microsoft or gmail server. Curl is available in different unix system, we don't need to add an other dependency. In this article I assume you know how to register your apps with google or microsoft to obtain the client_id and secret_id. Following are script for authenticating with microsoft server. Keep in mind that the request will be slightly different upon authenticate with different server such as google
+I use curl to handle oauth2 with microsoft or gmail server. Curl is available in different unix system, we don't need to add an other dependency. In this article I assume you know how to register your apps with google or microsoft to obtain the client_id and secret_id. Following are script for authenticating with microsoft server. Keep in mind that the request will be slightly different upon authenticating with different servers such as google
 
 
 - First, open the browser to obtain the code
@@ -190,5 +190,37 @@ PassCmd "gpg -dq ~/.gnupg/gmail-phuoctaitp.gpg | xargs -0 bash -c"
 
 {% endhighlight %}
 
+gpg will ask your passcode whenever decoding your gpg file; however it has a passcode session which allows you not to provide passcode everytime you run gpg -dq. gpg-agent will expires your session per your configuration in the apg-agent.conf in seconds. My setting is set to 30 days. 
+
+{% highlight shell %}
+> cat ~/.gnupg/gpg-agent.conf
+default-cache-ttl 2592000
+max-cache-ttl 2592000
+{% endhighlight %}
+
+This means that after 30 days since you provide passcode for gpg, you need to explicitly enter your passcode in order to reveal you gpg file. This will not be handle automatically for you, you need to run it on terminal to provide your passcode.
+
+## Dynamically load your mailboxes
+
+Mutt allows you to use shell commands in muttrc which is awesome to hack around with find command to list your mailboxes.
+
+
+{% highlight shell %}
+find ~/Mail/phuoctaitp@gmail.com -maxdepth 5 -mindepth 1 -type d | sed -Ee "/\[Gmail\]$|tmp$|new$|cur$/d" -e "s/ /\\\\ /g" | awk 1 ORS=" "
+{% endhighlight %}
+
+- mindepth=1 to exclude current folder '~/Mail/phuoctaitp@gmail.com" which is not a mail box dir. Isync didn't create any cur tmp and new dir for it.
+- maxdepth=5 limit how many nested mail boxes from imap server, it's 5 here
+- sed is used to eliminate all folders which are not mail boxes. In this case, there are:
+    - [Gmail] dir is just an aggregate folder of Spam, Drafts,etc.
+    - cur, new, and tmp are meta data directories
+- the last 2 things are escaping the spaced folder e.i Sent Mail, and removing \n with awk 
+
+# links
+
+https://www.cryptomonkeys.com/2015/09/mutt-and-msmtp-on-osx/
+https://www.suffix.be/blog/mutt/
+http://stevelosh.com/blog/2012/10/the-homely-mutt/
 
 ## To be continue
+
