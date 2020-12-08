@@ -9,9 +9,9 @@ categories:
 
 I know, another mutt guide!
 
-A mail client is very important at workplace. As I start my day at work; first thing first, check your email. Sometimes I am really disappointed, waiting for outlook or thunderbird launching.   
+A mail client is very important at digital workplace. As I start my day at work; first thing first, check your email. Sometimes I am really disappointed, waiting for outlook or thunderbird launching. I want something launching fast, vim-like tools, hackable, and following unix philosophy. Even though I am not in the technical field any more, I would like to share my mutt configuration.
 
-This article aims to use difference unix tools to configure plain old mutt as a modern mail client. The main goal is to support multiple account at a usable level.
+This article aims to use different unix tools to configure plain old mutt as a modern mail client. Thus, we don't need to add extra dependencies or re-invent the wheel. The main goal is to support multiple account at a usable level.
 
 
 So what are the goals that I need in a mail client ?
