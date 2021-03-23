@@ -5,6 +5,78 @@ categories:
   -
 ---
 
+# Engine fundamentals
+
+- Force is the push or pull; lbs or N
+- Work = force x distance; ft-lb; Nm
+- Torque = force x distance; lb-ft; Nm
+- Horse Power is the amount of work done in a given period of time
+    - 1 hp = 746W
+    - 1 hp = 33000 lbs x 1 foot x 1 minute
+    - 1 W = 1 Nm x 1 second
+- cylinder block: has frost plugs or expansion plugs which pop out if coolant freeze, to protect engine
+    - enbloc:
+        - intergal cylinders 
+        - liners:
+            - counterbore is a machined rescess in the block, where liner is seated
+            - relief is cut under the flange, so the liner will fit into the block without interfering with the edge of the counterbore
+            - dry: no contact with coolant
+                - firewall is a raised rim above liner's flange that reduce the combustion pressure, and heat act on the head gasket
+            - wet
+                - bead on the top of the flange cuts into the head gasket act as firewall
+                - seal rings are used to prevent coolant from leaking into the crankcase
+                - mid-stop design can eliminate the use of seal ring
+            - air cool
+    - modular or sectional: stationary, big engine
+    - service:
+        - crack dectection
+            - dye check: cleaner, penetrant, developer
+            - mage particle: ferrous metals only
+            - pressure test (bring the block to operating temperature before testing)
+        - deck surface flatness
+            - use straight edge and a feeler blade (0.0015")
+            - measure 3 positions: 1 lenghthwise, 2 diagonally
+            - maximum wrap 0.004"
+        - main bearing bore alignment
+            - use straight edge and a feeler blade (0.0015")
+        - main bearing bore size
+            - use dial bore gauge or telescoping gauge with an outside micrometer
+            - measure 3 position, subject the smallest from the largest diameter, compared to spec 
+        - camshaft bearing bore alignment
+        - camshaft bearing bore size
+        - thread repair
+            - helicoil inserts
+            - solid insert (stronger but have a larger outside diameter)
+                - can have locking pin, which driven down to lock the insert from turning
+        - cylinder measurement
+            - use dial bore gauge or telescoping gauge with an outside micrometer
+            - measure 4 locations
+                - compare top and bottom to determine taper
+                - compare inline 90% degree give out of round 
+        - boring oversize (intergal cylinder)
+            - double taper wear, and user the nerxt largest piston oversize available
+            - can use a repair sleeve
+            - crosshatch need to be restore to retain oil for lubrication of the piston rings
+            - clean water, detergent and a stiff bristle brush, DO NOT use solvent
+        - liner
+            - before remove, measure liner wear and liner height
+            - store line vertically
+            - remove by slide hammmer liner puller or a screw type liner puller
+            - check for crack, scuffing (lack of lube, overheat), scoring (broken rings, foreign marterial
+                - if the scoring catches finger nails, replace
+            - measure liner flanges
+        - counterbore 
+            - check for crack, erosion, and pitting
+            - measure depth and flatness with depth micrometer or a sled gauge
+        - liner height = flange thickness - counterbore height, compare with specs (should be positive, so liner flange sit above the block deck)
+            - use shim if needed
+        - installation 
+            - dry liner can be chill in dry ice to shrink the outside diameter for press fit
+            - wet liner: lub seal ring with liquid soap or vegetable oil; DO NOT use pertro oil
+            - use cylinder bore gauge measure again at the area of o-ring
+                - out of round indicates o-ring is twisted
+            - measure liner height again with a liner torque down
+
 # Fuel system
 
 - Combustion knock - longer ignition delay period
@@ -317,10 +389,155 @@ categories:
 - NO EGR system: DOC, DPF, SCR (selective catalyst reduction)
 - SCR - selective catalyst reduction - use to reduce NOx just like EGR, but not lose power 
     - located down stream of DOC & DPF
-    - DEF (diesel exhaust fluid) dosing pump, urea injector
-    - exhaust temp sensor (inlet and outlet of SCR)
-    - NOx sensor at outlet
-    - NO + NO2 + 2NH3 = 3H20 + 2N2
+    - DEF is injected into decomposition chamber (mixing pipe)
+    - SCR = SCR cat + AMOX cat
+        - SCR convert NOx to nitrogen and water NO + NO2 + 2NH3 = 3H20 + 2N2
+        - AMOX has platinum coating, braking up any ammonia that slips through SCR cat
+    - Temperature sensor, NOx sensor at outlet and in let
+    - components:
+        - dosing metering unit: send a metered unit of def to injector
+            - air inlet
+            - air pressure sensor
+            - def heater
+            - def temp sensor
+            - def pressure sensor
+        - DEF injector
+        - dosing control unit
+
+# Cluches
+- types: 
+    - push-type medium duty
+    - pull-type heavy duty
+- actuation
+    - mechanical
+    - hydraulic
+    - air over hydraulic
+- flywheel: 
+    - provide smooth friction surface for one side of clutch disc to work on during engagement process
+    - pilot bearing is used to pilot the transmission input shaft which helps to center the clutch disc in relation to the pressure plate
+    - types
+        - flat
+        - countersunk
+            - allow to use 2 clutch discs; increasing friction area, thus increasing the torque load
+- clutch cover
+    - contain and drive the pressure plate
+    - bolted to fly wheel, always rotate with it
+    - cast iron: absorb more heat, rigid structure
+    - stamped steel: lightweight, allow higher engine speed
+- pressure plate
+    - located in & driven by clutch cover
+    - one friction side is smooth
+    - made by cast iron
+- pressure springs
+    - perpendicular coil springs
+    - angled coil springs
+    - diaphram spring
+- clutch discs
+    - rigid
+        - used in applications where a limited amount of engagement and disengagement occurs
+    - dampened
+        - wave springs help reduce impact loads (torsional shock load) during engagement
+- linings
+    - organic or non-asbestos organic (NAO)
+    - ceramic - heavy duty applications, long service life
+- intermediate plate
+    - can not fastened tightly to flywheel or clutch cover
+    - flywheel drives intermediate plate through drive pins or 
+    - drive by drive straps bw clutch cover and intermediate plate
+    - have anti-rattle springs help reduce vibration and noise
+- clutch release lever
+    - compress the pressure springs, thus moving the pressure plate closer to the clutch cover during the disengagement process
+- release bearing assembly
+    - move clutch release levers
+    - push type
+        - only rotate during the engagement and disengagement process
+    - pull type
+        - always rotate upon engine running, but operate under load during the engagement and disengagement process
+        - pulls release bearing, sleeve, and levers away from pressure plate
+- clutch adjustment
+    - manual
+        - adjust threaded push rod that moves the release bearing yoke shaft
+    - self adjustment
+        - self adjusting every time when disengage and engage
+        - there is limit to avoid adjusting clutch to tight which could lead to premature wear 
+- clutch brake
+    - use to stop rotation of clutch disc and input transmission shaft upon moving from N to 1 or N to R
+    - help prevent gear clash
+    - DO NOT floor the clutch while driving, this burn clutch brake! (specially the solid clutches)
+    - torque-limiting clutch will slip above a certain pre-determined torque load
+- service
+    - slipping: 
+        - do not move vehicle at high gear, causing clutch slip, creating lost of heat, weakening pressure spring
+    - dragging
+        - difficult to shift caused by clutch partially disengaged, gear clashing may occur
+    - freeplay is the amount of movement of the clutch pedal before resistance is encountered (1")
+        - too little: increase wear of friction surface, release bearing and levers are in constant contact
+        - too much: decrease the amount of remaining pedal movement available to disengage the clutch
+            - can cause failure to completely disengage the clutch, thus clutch dragging
+    - chattering
+        - worn engine mounts, loose drivetrain comps
+        - worn clutch disc splines, trannny input shaft splines and warped friction disc surface
+    - vibration 
+        - imbalance clutch assembly
+            - linings separated
+            - debris trap in clutch assembly
+    - remove clutch assembly
+        - replace 2 clutch assembly mounting bolt with long guide studs, help to slide it out easy
+        - clutch disc aligning tool is used to help control the clutch disc
+        - check warpage with straight edge and a feeler gauge on flywheel, intermediate plate, pressure plate
+    - measurement on engine flywheel housing
+        - crankshaft end play check 
+        - flywheel face runout 
+            - out of spec will cause uneven contact with friction surface
+        - flywheel bore runout
+            - pilot bearing located in this bore
+    - clutch adjustment
+        - clutch free play reduces if not adjusting the clutch regular
+        - lock plate need to remove prior to adjusting the clutch
+        - adjust the clutch to spec gap bw yoke and release bearing (1/8")
+
+# Driveline
+
+- A trunnion is a highly polished bearing surface, is located at the end of each universal joint cross arm
+- Misalignment of the axle housings force the u-joints to operate at greater angles, thus vibration increase
+- Inspection of u-joint trunnion wear
+    - spalling: over load
+    - end galling: lack of lube, incorrect working angle
+    - false brinelling: lack of lube, operate at zero angle
+    - pitting: contamination
+- troubleshooting vibration
+    - stationary test
+        - separated engine, clutch or torque converter vibration with drive train problems
+    - road test
+        - low speed vibration is most likely wheel, tire, wheel bearing which rotates at 1/4 speed of driveshaft
+        - high pitched sound & vibration, specially during increase and decrease in speed, indicating driveshaft problems
+    - checking driveshaft
+        - not missing any weights
+        - no dents
+        - properly phased
+        - runout
+        - worn u-joints
+        - axles alignment
+# Transmission
+
+- low level oil cause bearing and gear failure due to lack of lube
+- high level oi cause oil foaming, air bubble reduce the lubrication qualities, causing bearing and gear failure
+- HLA: hydraulic launch assist: provide assist to propel the vehicle from a stop to assist acceleration @ low speed
+- mechanical air shift 18 speed
+    - start with LO gear, low rangek low splitter
+    - go high split, press clutch, ease gas
+    - go low split, press clutch, go neutral, reduce RPM
+- shift-by-wire
+    - inertia brake mounted PTO opening, used to slow down input shaft and counter shaft speed, allowing to shift happen faster
+
+## Input shaft
+
+- transmission input shaft or clutch shaft receives engine power from trapped clutch dics, and transfer to transmission input shaft gear (or transmission drive gear or main drive gear)
+- tapered roller bearing is located in the casting head of the input shaft gear
+    - center the input shaft
+    - provide a means of adjusting mainshaft end play
+    - use shim to preload the bearing to specs
+
 
 # Notes
 
