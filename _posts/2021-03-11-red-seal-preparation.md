@@ -457,6 +457,7 @@ categories:
 - clutch adjustment
     - manual
         - adjust threaded push rod that moves the release bearing yoke shaft
+        - 1/8" between yoke and release bearing; 1/2" between release bearing and clutch brake
     - self adjustment
         - self adjusting every time when disengage and engage
         - there is limit to avoid adjusting clutch to tight which could lead to premature wear 
@@ -518,17 +519,41 @@ categories:
         - runout
         - worn u-joints
         - axles alignment
+
 # Transmission
 
 - low level oil cause bearing and gear failure due to lack of lube
 - high level oi cause oil foaming, air bubble reduce the lubrication qualities, causing bearing and gear failure
 - HLA: hydraulic launch assist: provide assist to propel the vehicle from a stop to assist acceleration @ low speed
 - mechanical air shift 18 speed
-    - start with LO gear, low rangek low splitter
-    - go high split, press clutch, ease gas
-    - go low split, press clutch, go neutral, reduce RPM
+    - start with LO gear, low range, low splitter
+    - go high split (forward), immediately press clutch & ease gas
+    - go low split (backward), press clutch, go neutral, then reduce RPM (~300), and upshift to 1st gear
+- range shift activates from slave valve, then range cylinder 
+    - interlock prevent range shift happened if transmission is already in gear
+    - push transmission back to neutral will engage range shift
+- splitter shift activates splitter cylinder directly
 - shift-by-wire
     - inertia brake mounted PTO opening, used to slow down input shaft and counter shaft speed, allowing to shift happen faster
+- gear inspection, replaced if any of following:
+    - spalling: overloaded, destructive pitting with larger diameter craters and shallower in depth; 
+    - scoring/galling: 
+        - insufficient oil film bw mating gear teeth caused by incorrect type, grade, and level of oil
+        - high operating temperature
+    - burned:
+        - blue from teeth area inwards: excessive torque combined with insufficient lube bw geer teeth
+        - blue from middle of mainshaft gear outwards indicates mainshaft installed with insufficient clearance
+        - blue from inside of mainshaft gear outwards indicate mainshaft lack of lub because of incorrect towing, coast on neutral
+    - impact fractures:
+        - shock load, foreign object
+        - have crystalline finish
+    - fatigue fractures:
+        - extreme high stress on a gear tooth over a period of time
+        - have beach marks
+    - stringers/gas pockets
+        - are weak points in the gear
+        - difference in fracture shape
+
 
 ## Input shaft
 
@@ -538,6 +563,252 @@ categories:
     - provide a means of adjusting mainshaft end play
     - use shim to preload the bearing to specs
 
+## Mainshaft
+
+## Countershaft
+
+# Transfer case
+
+- front axle declutch is a mechanism to disengage the torque to the front drive axle
+- range shifting
+    - transfer case acts as a aux transmission
+    - can engage: a direct drive, neutral, and a low range gear set
+- proportional differential and lockout
+    - the main driveshaft is splined to the carrier 
+    - output to rear axle is splined to ring gear 70% torque
+    - output to front axle is splined to sun gear 30% toruqe
+    - a lockout clutch is used to locks front output shaft (sun) to main driveshaft (carrier), thus 100% torque go to rear axle
+- Power takeoff
+    - are susceptible to overspeeding if the transmission is placed in the wrong gear
+- breather
+    - use to relieve pressure built up from heat generated in the transfer case housing
+    - air leak in shift cylinder can cause excessive pressure
+
+# Auxiliary drive
+
+- drive whenever engine is running
+    - a hydraulic pump driven from the front of crankshaft
+    - rear engine-mounted drive requires a special flywheel housing
+- transfer case power takeoff
+    - large torque
+    - main transmission have to be in gear
+- dropbox
+    - send power straight through upon driving
+    - power to rear is interrupted upon using accessory
+- power tower
+    - mounted on top of aux transmission
+    - receive torque from countershaft
+- power takeoff
+    - mounted to the main transmission, aux transmission or transfer case housing
+    - 6 bolts & 8 bolts size
+- PTO actuation
+    - cable: push-pull type of activation system
+    - mechanical: linkage, same as transmission shift linkage system
+    - air: valve or solenoid
+    - electric: solenoid
+- additional amount of lubricant is required for aux drive
+- gear backlash is crucial
+    - 0.006 or 0.012" backlash
+    - use shim on PTO gaskets: 0.010" and 0.020" shim
+    - use a special filler block when the maximum amount of gaskets used
+    - to measure:
+        - the shift cover or inspection cover is removed
+        - dial indicator is install
+        - rock PTO gear side to side as holding transmission gear stationary
+    - insufficient backlash makes whining noise
+    - excessive backlash makes clattering noise
+- adapter plate: 
+    - use to mount hydraulic pump directly to the plate
+    - reduce force act on transmission case upon mount the pump
+- adapter housing
+    - change the angle of mounting component, to clear obstruction
+
+# Drive axle assembly
+
+- GAWR: gross axle weight rating
+    - the amount of weight that the axle can safely carry
+- GVWR: gross vehicle weight rating
+    - the total weight of the vehicle and its load
+    - do NOT overload GAWR even if GVWR not yet have been reach
+- GCWR: gross combination weight rating
+    - combined weight of the tractor, the trailers and their loads
+- if more traction is required, the extra axles added must be driving axles
+- drive axles gear ratios
+    - tooth combination: 39-6
+        - drive pinion: 6 teeth
+        - driven bevel gear: 39 teeth
+        - gear ratio: 39/6=6.50 which means 6.50:1
+    - choose differential ratios consider 2 things:
+        - startability: too high ratio 2:1 will make it hard to start a heavy load
+        - fuel economy: too low ratio 9:1 will effect more on fuel economy
+
+## Drive axles components
+
+### open differential 
+
+- drive axle housing (banjo housing), stamped steel
+    - mounting place for brakes, suspension components
+    - has spindle surface where the wheel ends are installed
+    - weight of vehicle is transfer from the suspension through the axle housing to the wheel hubs, rims, and tires
+- carrier housing
+    - made by cast iron
+    - can be integral carrier which is a part of the housing (light weight application)
+    - hold internal gear components
+    - have 2 removed bearing caps at the rear that use to secure differential case bearing and adjusters
+- pinion cage or pinion bearing houses the bearing that support the pinions
+- pinion is supported by 2 tapered roller bearings which is put under preload to keep the pinion located properly
+- overhung mount pinion
+    - flat surface at the end of the pinion gear
+- straddle mount pinion
+    - a short tub shaft that extends past the end of the pinion gear
+    - roller bearings on the tub shaft helps the pinion gear from deflecting away from the bevel gear under heavy loads
+- amboid - top mount
+- hyroid - bottom mount
+- thrust screw & jam nut
+    - located opposite the pinion gear
+    - prevent the bevel gear from deflecting away the pinion under heavy loads
+- differential case 
+    - consist of two halves bolted together 
+        - a flanged half is bolted with bevel gear
+        - a plain half has recess housing cross shaft
+    - supported by 2 tapered bearing
+- differential pinion gears or spider gears 
+    - mounted to each leg of the cross shaft
+    - free spin around cross shaft
+- side gears
+    - mounted on each case half
+    - mesh with spider gears
+    - can rotate at different speed than the case
+    - has internal splined to axle shafts
+- path of power
+    - drive pinion
+    - bevel gear
+    - diff case
+    - cross shaft
+    - spider gears
+    - side gears
+    - drive axle shafts
+- differential lock
+    - air pressure applied moves shift fork
+    - a shift collar or sliding dog clutch lock one side axle gear to differential case
+- planetary two speed differential
+    - input: bevel gear and planetary ring gear which are one piece
+    - output: planetary carrier and differential case which are one piece
+    - low speed: sliding sun gear inward, meshed with low speed clutch plate (bearing adjuster, a part of diff housing), thus holding sun gear
+    - high speed: sliding sun gear outward, internal splines of the sun gear are locked to planetary carrier (high speed clutch plate), thus locking 2 members of planetary gear set
+
+### inter-axle
+
+- allow different speed between front drive axle and rear drive axle
+- components
+    - helical drive gear
+        - one side is a side gear which meshed with pinion gears 
+        - one side is dog teeth gear which meshed with input shaft lockout shift collar
+    - input shaft
+        - first set of splines: splines to input yoke
+        - second set of splines: splines to lockout shift collar, which will splines to helical drive gear upon locking front and rear axle together
+        - third set of splines: splines to cross shaft which driving the side gear of helical drive gear  and output shaft side gear
+    - inter-axle differential case
+        - receive torque from input shaft through internal spline of the cross shaft
+        - then drive differential pinion gears
+        - then drive side axle of helical drive gear and output shaft side gear
+- path of power
+    - input shaft
+    - inter-axle differential cross shaft
+    - inter-axle different pinion gears
+    - helical drive gear and output shaft side gear
+        - from helical drive gear to helical driven gear, then front axle drive pinion
+        - from output shaft side gears to output shaft
+
+### axle configuration
+
+- semi-floating: 
+    - can NOT remove axle shaft without support vehicle
+    - the weight of the vehicle and cargo is transmitted through the axle housing, bearing, and axle shaft
+- full-floating: 
+    - can remove the axle shaft without support vehicle
+    - the weight of the vehicle and cargo is transmitted through the drive axle housing
+
+### outboard planetary drive
+
+- input : axle shaft splines to sun gear
+- ring gear is stationary
+- output: planetary carrier bolted to the hub assembly
+
+### driving steer axle
+
+- 3 pieces designs: inner shaft, outer shaft (ball shaft), and a cage ring assembly
+- axle housing has a axle ball and a ball socket
+
+### no-spin differential
+
+- normally locked or engaged & drive both wheel at the same speed
+- unlock during cornering, allow outer wheel to run faster than inner wheel
+- no cross shaft
+- ratcheting noise will occur during the cornering process
+
+### service
+
+- standpipe should be installed if 
+    - the drive axle assembly is installed of over 12
+    - operated on steep grades for extended periods
+- end play of input and output shaft
+    - if it's out of spec, it can show sign of internal wear, which can cause vibration
+- mismatch tires causes excessive heat and wear due to continuous differential action
+- perform a plug swap to inspect contamination on the plug
+- noise on coast: pinion and ring gear too tight
+- intermittent noise: warped ring gear, loose differential case bolts
+- overheating: normal 71C - 104C; >121C oil lose their quality
+- pre-disassembly check
+    - pinion to bevel gear backlash
+    - mark bearing side caps
+
+# Electrical
+
+## CAN (Controller Area Network) bus J1939
+
+- CAN use a bus topology
+- at two far end of the main bus (backbone) needs terminating resistors - 120ohm
+    - usually a deutsh termination plug which has a builtin 120ohm resister, encapsulated in epoxy to keep it watertight
+    - terminating resistors use to terminated the signal preventing it reflecting back which can interfere with the next data signal
+- along the backbone, there are different devices stubbed (branched) out
+- when there is no data being broad cast: voltage between high-ground and low-ground are ~2.5V
+- CAN low : green 2.5V - 1.5V
+- CAN high : yellow 2.5 - 3.5V
+
+### troubleshooting CAN bus system
+
+1. verify termination resistors
+
+- resistance between hi and lo on a node should be around 60ohm which is parallel combination of two 120ohm terminating resistors
+- if it shows 40ohm, the bus can have 3 terminating resistors which is not desirable
+- if it shows 120ohm, it is missing a termination resistor
+- to figure out which side of the harness missing, disconnect the backbone before the testing node
+    - measure resistance between hi & lo on the suspected node
+        - if it show more than 120ohm, usually will show kohm, then problem on this side of the backbone
+        - if it show 120ohm, then this side of the backbone has a terminating resistor
+- notes: some end node can have a built-in terminating resistor that is software seletable
+    - this means that it will show no resistance if the bus is not power
+
+1. hi & lo connect backward
+
+- voltage between hi & ground is always greater than voltage between lo & ground (or hi voltage > lo voltage in short)
+- if it is shown the opposite, there is at least one hi & lo was wired backward a connection point 
+- unplug each node, and verify for voltage of hi & lo, until it shown a hi voltage is greater than a lo voltage
+
+1. CAN signal missing (opened wire)
+
+- tested each node for hi and lo voltage
+- if one CAN signal has ~0 voltage, there is an open
+
+1. CAN signal shorted to ground 
+
+- whether hi or lo shorted to ground, it is shown low voltage reading on both hi & lo as hi and lo signal are connected by termination resistors
+- disconnecting termination resistors at both far end of the backbone will help to located whether it is hi or lo signal is shorted to ground
+- disconnect all devices, then connect one at the time while verifying hi or lo voltage
+    - if one node is connected, hi or lo voltage change to less than 2.5V, that branch has the short
+    - now, check resistance between 'hi & ground' and 'lo & ground'  on the node 
+        - internal resistance between hi and lo on the node usually is high in kohm range
 
 # Notes
 
