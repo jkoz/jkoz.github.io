@@ -77,6 +77,35 @@ categories:
                 - out of round indicates o-ring is twisted
             - measure liner height again with a liner torque down
 
+## piston, rings, connecting rod
+
+- piston material
+    - cast iron
+    - hypereutectic aluminum (higher silicon content)
+- piston types
+    - trunk type piston
+    - two piece
+        - crosshead design: uses semi-floating piston pin (pin is fixed to connecting rod) 
+        - articulated design: uses full floating piston pin (free to rotate in both the piston and the connecting rod, thus changing wear surface)
+- tapered piston skirt
+    - the piston skirt is generally tapered from the top to the bottom since the top of piston skirt is subject to higher temperatures
+- cam ground piston skirt
+    - the piston skirt of cam ground piston is an oval shape, measured slightly larger across the thrust faces
+- piston skirt types: full, semi-slipper, slipper
+    - to clear the crankshaft when the piston is approaching BDC
+- ring groove insert
+    - to reinforce & reduce wear in compression ring grooves
+    - steel, nickle-chrome alloy
+- piston cooling
+    - splash
+    - spray: medium & high speed engine
+    - circulation: slow speed engine
+    - shaker
+- piston rings
+    - form a gas tight seal by combination of cylinder pressure, ring tension and an oil film on the cylinder wall
+    - cool the piston
+    - control lubrication
+
 # Fuel system
 
 - Combustion knock - longer ignition delay period
@@ -764,7 +793,6 @@ categories:
     - mark bearing side caps
 
 # Electrical
-
 ## CAN (Controller Area Network) bus J1939
 
 - CAN use a bus topology
@@ -775,6 +803,9 @@ categories:
 - when there is no data being broad cast: voltage between high-ground and low-ground are ~2.5V
 - CAN low : green 2.5V - 1.5V
 - CAN high : yellow 2.5 - 3.5V
+- shield J1939-11 cable has non-insulated drain wire connected to battery ground
+    - drain wire prevent internal signals from radiating out and,
+    - block outside electromagnetic inference from corrupting the signal
 
 ### troubleshooting CAN bus system
 
@@ -810,6 +841,132 @@ categories:
     - now, check resistance between 'hi & ground' and 'lo & ground'  on the node 
         - internal resistance between hi and lo on the node usually is high in kohm range
 
+## four point testing procedure
+
+| location          | normal | open live | high resistance |
+|-------------------|--------|-----------|-----------------|
+| across the source | 12V    | 12V       | 12V             |
+| across the load   | 12 V   | 0V        | 10V             |
+| ground side       | 0V     | 0V        | 2V              |
+| live side         | 0V     | 12V       | 0V              |
+
+- live side: voltage is measured from the source positive to load positive
+
+## SRS supplemental restraint system
+
+- a shorting bar shorts across both terminals at an air bag connect upon unplugged to prevent accidental deployment of the air bag
+- it provides a low resistance path to the other terminal back to ground
+- if the air bag has been deployed, the clockspring assembly need to be checked and replace if needed
+- straightening the wheels & taping the top cover to the bottom housing before removing the clockspring
+- to center the clockspring
+    - turn counter-clockwise until snug
+    - turn clock-wise 4.5 turns
+    - align the arrows on the top cover and the bottom housing
+    - tape the top cover  with the bottom housing
+
+# Steering system
+
+- input shaft -> intergal steering gear -> sector shaft -> pitman arm -> drag link -> upper steering arm -> lower steering arm -> tie rod
+- drag link
+    - threaded ends must be completely inserted into drag link lube
+    - air hammer with flat punch strikes on pitman arm while prying drag link away from the joint
+- king pin, bushings, and thrust bearing
+    - king pin horizontal movement while rocking the top of tire in and out
+        - replace bushing if it shows more than 0.015" play
+    - king pin vertical movement while prying knuckle downward
+        - replace shims and thrust bearings if it shows more than 0.012" play
+- grease seals should be installed that the lip is pointing toward center of the knuckle
+- tie rod end play
+    - axial (up and down)
+    - radial (side by side)
+    - it should be less than 0.060"
+    - need to reset toe 
+- flushing steering gear
+    - empty the reservoir, disconnect steering gear hoses, and turn steering full left and full right
+- filling the steering system
+    - fill reservoir nearly full. Do not steer. Start engine 10s, check and refill. Repeat 3 times
+    - No not steer, check & refill with engine run 2 minutes
+    - auto bleeding
+        - steering full left and right several times while engine is running
+    - manual bleeding
+        - steering full left and right several times while engine is idling
+        - stop at the straight ahead position to loosen the bleed screw
+- hydraulic test
+    - preparation
+        - install pressure gauge, flowmeter, and load valve between pump output and steering gear
+        - put engine in idle
+        - close load valve (less than 5 seconds)
+        - bring hydraulic oil to operating temperature 66C-71C
+    - performance testing
+        - close the load valve, check pump pressure, should be 1900psi - 2275psi
+            - higher: replace relief valve
+            - lower: check relief valve first, then look at replacing or rebuilding pump 
+        - check flow rate at idle/1500rpm upon closing the load valve and releasing it
+            - compare to minimum & maximum flow rate 
+    - internal leakage
+        - install a unhardended steel spacer
+        - steer until the axle stop contacts the spacer
+        - 20lbs force on the steering wheel while recording internal flow rate of the gear (should less than 1gpm)
+    - poppet setting test
+        - turn steering wheel full left or right position, holding steering wheel with 20lbs of force
+        - pressure should drop 200-400psi less than the relief pressure when the steering 1/8" closes to the axle pad
+
+# Air conditioning
+
+- Celsius to Fahrenheit 
+C = (F - 32) * 5 / 9 
+- heat quantity (BTU, J) tells how much energy a substance contains
+- latent heat - the energy is absorbed or released when changes of state occur
+    - 1 pound of water requires the latent heat of evaporation (970 BTU) to change to water vapour
+    - 1 pound of water vapour requires the latent of condensation (970 BTU) to change to water
+    - R-134a requires 90 BTU for its state change @ 5F
+- the higher the pressure that surround the substance, the higher the temperature at which the substance changes state and vice versa
+- saturated conditions means that there is only pure R-134a liquid and pure R-134a vapour present in the closed container
+- superheat
+    - evaporator
+    - Line - Gauge = Superheat
+    - suction side
+    - vapour
+    - blue gauge
+    - low side (super heat)
+    - bigger line
+- subcooling: 
+    - condenser
+    - Gauge - Line = Subcooling
+    - liquid
+    - red gauge, red hose
+    - high side (subcooling)
+    - small size gauge
+- before turning unit on, crack open the line at the gauge set to purge all the moisture out
+- NC - thermostatic switch: [32F, 38F] - means open around 32F, close around 38F
+    - sensing caplillary tube @ evap core, if it's warm, sw is closed, clutch is engaged
+    - use  to trigger evap defrost, also protect compressor running low psi @ suction side
+- NO - low pressure switch: [24 psi, 34psi]
+    - sense pressure @ accumulator or dryer, if pressure is 24psi, sw is closed, clutch is engaged
+    - protect compressor running @ low psi @ suction side
+        - lack of refrigerant 
+        - block txv or orifice
+        - ambient temperature is cold, which can cause psi drop, thus turning ac system
+- NC - high pressure switch [350psi, 240psi]
+    - sense pressure @ accumulator or dryer, if pressure is 24psi, sw is closed, clutch is engaged
+    - set lowser than pressure relief, thus preventing refrigerant relief to atmosphere
+- binary switch = hi + lo pressure switch
+    - @ dryer
+- trinity switch = hi + lo + shutter fan
+    - low pressure NO sw: [24psi, 34psi]
+    - high pressure NC sw: [350psi, 250psi]
+    - shutter fan: 35~80 psi turn on engine fan for certain seconds depending on road speed
+- air conctrol system
+    - intergated: control how much coolant flow to heater core, air always flow through heater core and evap core
+    - manual: control how much air flow through theater core and evap core, coolant always flow to heater core @ maximum flow
+    - common terms: floor outlet, panel outlet, defroster outlet, refresh air intake, cab recirculation
+- troubleshoot
+    - overall check all interity of the wiring
+    - check clutch is engaged, then check fuse if need
+    - use a fuse jumper override the low pressure switch, if ac start working
+        - faulty low pressure switch
+        - low refrigerant
+        - refrigerant is too cold, or ambient temperature is too cold
 # Notes
 
 - DD Series 60: EUI
