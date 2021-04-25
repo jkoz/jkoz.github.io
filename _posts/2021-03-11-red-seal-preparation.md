@@ -5,6 +5,57 @@ categories:
   -
 ---
 
+# Air brake
+
+## Governor
+
+- RES: sense the supply tank
+- UNL: use air from RES port to unloading compressor and trigger exhaust in air dryer
+- EXH: exhaust air from unloader lines in load cycle
+
+## Air Dryer
+
+- UNL: sensing line from unloader port of governor
+- COMP: air from compressor
+- RES: to supply tank
+
+## Air brake circuit
+
+- primary service circuit: rear brakes
+- secondary service circuit: steers axle brakes (front)
+- emergeny brake circuit
+
+
+- DC-1 double check valve, which pressure from what ever high pressure
+- PP-1
+- R-14: speed up application, and quick release brake
+- SR-1: spring brake valve (modulate about 5 times) help if rear axles tank lost pressure
+    1. primary reservoir port
+    2. control port (air application, blue)
+    3. mix air
+    4. to brake relay
+
+- red glad hand : trailer supply
+- blue glad hand : trailer service
+- tractor protection systems
+    - TP-3 tractor protection valve, on/off for service line
+        - tractor supply
+        - tractor service 
+        - trailer supply
+        - trailer service
+        - 45 psi on tractor supply side will allow service brake
+    - PP-7 trailer supply valve (red button)
+        - supply port: from double check valve
+        - delivery port: to tractor supply port of pp-3
+        - control port: from delivery port of pp-1
+        - exhaust port
+        - pop out if air drop below 40 psi
+## Trailer valves
+
+- trailer release valve (syncro valve)
+    - use to delay supply air to pup trailer until the lead trailer supply pressure exceed the valve setting 60-86psi
+    - this avoid to hold the trailer supply valve button in to charge trailers
+
 # Engine fundamentals
 
 - Force is the push or pull; lbs or N

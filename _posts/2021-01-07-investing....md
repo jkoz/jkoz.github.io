@@ -5,7 +5,7 @@ categories:
   -
 ---
 
-- Type of order
+- Type of orders
     - market: buy at any price at the moment of executing the order
     - limit 
         - limit buy order: buy at limit price or lower

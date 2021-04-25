@@ -222,7 +222,9 @@ awk 1 ORS=" "
 
 ## Open your mail boxes with fuzzy command
 
-Below command will list all mail boxes under your account folder with the depth of 5. I use sed to make the output of find command look nicer. The output will be piped to fzf for selection. Again, I use sed to parse result from fzf to something mutt can understand (e.i push c=[Gmail]/Inbox)
+Below command will list all mail boxes under your account folder with the depth of 5. I use sed to make the output of find command look nicer. The output will be piped to fzf for selection. Again, I use sed to parse result from fzf to something mutt can understand (e.i push c=[Gmail]/Inbox).
+
+As you see, mutt is very sensitive with space, so we need to replace all space with \<quote-char\>\<space\>
 
 {% highlight shell %}
 macro index,pager ,m "<enter-command>\`cd ~/Mail/phuoctaitp@gmail.com && find . -maxdepth 5 -mindepth 1 -type d | sed -Ee \"/\\[Gmail\\]$|new$|cur$|tmp$/d\" -e \"s/^\\.//g\" -e \"s/\\//./g\" | fzf-tmux -r 25 | sed -e \"s/ /\\<quote-char\\>\\<space\\>/g\" -e \"s/^\./=/g\" -e \"s/\\./\\//g\" -e \"s/^/push c/\" -e \"s/$/\\<enter\\>/g\" \` <enter>"; \
