@@ -166,7 +166,7 @@ we want to do authentication. I find that this way is simplest, but it doesn't a
 
 {% highlight shell %}
 
-cat ~/.gnupg/gmail-phuoctaitp.gpg
+cat ~/.gnupg/gmail-phuoctaitp
 curl -s \
 -d "client_id=your_secret_id" \
 -d "refresh_token=your_refresh_token" \
@@ -179,7 +179,7 @@ https://login.microsoftonline.com/common/oauth2/v2.0/token | jq -r '. | .access_
 
 {% highlight shell %}
 
-gpg --encrypt ~/.gnupg/gmail-phuoctaitp.gpg
+gpg -r email -e ~/.gnupg/gmail-phuoctaitp
 
 {% endhighlight %}
 
