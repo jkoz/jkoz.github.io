@@ -191,74 +191,235 @@ categories:
 - Force is the push or pull; lbs or N
 - Work = force x distance; ft-lb; Nm
 - Torque = force x distance; lb-ft; Nm
-- Horse Power is the amount of work done in a given period of time
+- Horse power is the amount of work done in a given period of time or the rate of doing work
     - 1 hp = 746W
     - 1 hp = 33000 lbs x 1 foot x 1 minute
     - 1 W = 1 Nm x 1 second
-- cylinder block: has frost plugs or expansion plugs which pop out if coolant freeze, to protect engine
-    - enbloc:
-        - intergal cylinders
-        - liners:
-            - counterbore is a machined rescess in the block, where liner is seated
-            - relief is cut under the flange, so the liner will fit into the block without interfering with the edge of the counterbore
-            - dry: no contact with coolant
-                - firewall is a raised rim above liner's flange that reduce the combustion pressure, and heat act on the head gasket
-            - wet
-                - bead on the top of the flange cuts into the head gasket act as firewall
-                - seal rings are used to prevent coolant from leaking into the crankcase
-                - mid-stop design can eliminate the use of seal ring
-            - air cool
-    - modular or sectional: stationary, big engine
-    - service:
-        - crack dectection
-            - dye check: cleaner, penetrant, developer
-            - mage particle: ferrous metals only
-            - pressure test (bring the block to operating temperature before testing)
-        - deck surface flatness
-            - use straight edge and a feeler blade (0.0015")
-            - measure 3 positions: 1 lenghthwise, 2 diagonally
-            - maximum wrap 0.004"
-        - main bearing bore alignment
-            - use straight edge and a feeler blade (0.0015")
-        - main bearing bore size
-            - use dial bore gauge or telescoping gauge with an outside micrometer
-            - measure 3 position, subject the smallest from the largest diameter, compared to spec
-        - camshaft bearing bore alignment
-        - camshaft bearing bore size
-        - thread repair
-            - helicoil inserts
-            - solid insert (stronger but have a larger outside diameter)
-                - can have locking pin, which driven down to lock the insert from turning
-        - cylinder measurement
-            - use dial bore gauge or telescoping gauge with an outside micrometer
-            - measure 4 locations
-                - compare top and bottom to determine taper
-                - compare inline 90% degree give out of round
-        - boring oversize (intergal cylinder)
-            - double taper wear, and user the nerxt largest piston oversize available
-            - can use a repair sleeve
-            - crosshatch need to be restore to retain oil for lubrication of the piston rings
-            - clean water, detergent and a stiff bristle brush, DO NOT use solvent
-        - liner
-            - before remove, measure liner wear and liner height
-            - store line vertically
-            - remove by slide hammmer liner puller or a screw type liner puller
-            - check for crack, scuffing (lack of lube, overheat), scoring (broken rings, foreign marterial
-                - if the scoring catches finger nails, replace
-            - measure liner flanges
-        - counterbore
-            - check for crack, erosion, and pitting
-            - measure depth and flatness with depth micrometer or a sled gauge
-        - liner height = flange thickness - counterbore height, compare with specs (should be positive, so liner flange sit above the block deck)
-            - use shim if needed
-        - installation
-            - dry liner can be chill in dry ice to shrink the outside diameter for press fit
-            - wet liner: lub seal ring with liquid soap or vegetable oil; DO NOT use pertro oil
-            - use cylinder bore gauge measure again at the area of o-ring
-                - out of round indicates o-ring is twisted
-            - measure liner height again with a liner torque down
+- CI: compression ignition refers to the method of igniting fuel in a diesel engine
+    - diesel is injected into highly compressed air and the heat of compression ignites the fuel
+- SI: spark ignition
+    - electric spark is used to ignite an air/fuel mixture
+- piston displacement is the swept volume of a single cylinder
+    - piston displacement = cylinder area x stroke
+- clearance volume (CV) is the volume remaining above the piston when it's at TDC
+- compression ratio = ( pistone displacement + CV ) / CV
+- engine displacement is piston displacement x number of cylinders
+- thermal efficiency is the ability of an engine to convert the heat energy of a fuel into useable heat energy
+    - internal combustion engine is approximately 36%
+- the camshaft of a four stroke cycle engine rotates at 1/2 crankshaft speed
 
-## piston, rings, connecting rod
+## Cylinder block
+
+- frost plugs or expansion plugs which pop out if coolant freeze, to protect engine
+- enbloc:
+    - intergal cylinders
+    - liners:
+        - counterbore is a machined rescess in the block, where liner is seated
+        - relief is cut under the flange, so the liner will fit into the block without interfering with the edge of the counterbore
+        - dry: no contact with coolant
+            - firewall is a raised rim above liner's flange that reduce the combustion pressure, and heat act on the head gasket
+        - wet
+            - bead on the top of the flange cuts into the head gasket act as firewall
+            - seal rings are used to prevent coolant from leaking into the crankcase
+            - mid-stop design can eliminate the use of seal ring
+        - air cool
+- modular or sectional: stationary, big engine
+- service:
+    - crack dectection
+        - dye check: cleaner, penetrant, developer
+        - mage particle: ferrous metals only
+        - pressure test (bring the block to operating temperature before testing)
+    - deck surface flatness
+        - use straight edge and a feeler blade (0.0015")
+        - measure 3 positions: 1 lenghthwise, 2 diagonally
+        - maximum wrap 0.004"
+    - main bearing bore alignment
+        - use straight edge and a feeler blade (0.0015")
+    - main bearing bore size
+        - use dial bore gauge or telescoping gauge with an outside micrometer
+        - measure 3 position, subject the smallest from the largest diameter, compared to spec
+    - camshaft bearing bore alignment
+    - camshaft bearing bore size
+    - thread repair
+        - helicoil inserts
+        - solid insert (stronger but have a larger outside diameter)
+            - can have locking pin, which driven down to lock the insert from turning
+    - cylinder measurement
+        - use dial bore gauge or telescoping gauge with an outside micrometer
+        - measure 4 locations
+            - compare top and bottom to determine taper
+            - compare inline 90% degree give out of round
+    - boring oversize (intergal cylinder)
+        - double taper wear, and user the nerxt largest piston oversize available
+        - can use a repair sleeve
+        - crosshatch need to be restore to retain oil for lubrication of the piston rings
+        - clean water, detergent and a stiff bristle brush, DO NOT use solvent
+    - liner
+        - before remove, measure liner wear and liner height
+        - store line vertically
+        - remove by slide hammmer liner puller or a screw type liner puller
+        - check for crack, scuffing (lack of lube, overheat), scoring (broken rings, foreign marterial
+            - if the scoring catches finger nails, replace
+        - measure liner flanges
+    - counterbore
+        - check for crack, erosion, and pitting
+        - measure depth and flatness with depth micrometer or a sled gauge
+    - liner height = flange thickness - counterbore height, compare with specs (should be positive, so liner flange sit above the block deck)
+        - use shim if needed
+    - installation
+        - dry liner can be chill in dry ice to shrink the outside diameter for press fit
+        - wet liner: lub seal ring with liquid soap or vegetable oil; DO NOT use pertro oil
+        - use cylinder bore gauge measure again at the area of o-ring
+            - out of round indicates o-ring is twisted
+        - measure liner height again with a liner torque down
+
+## Cylinder heads
+
+- number of valves
+
+| valves | engine type | valve type          |
+|--------|-------------|---------------------|
+| 2      | 2 stroke    | 2 exhaust           |
+|        | 4 stroke    | 1 exhaust, 1 intake |
+|--------|-------------|---------------------|
+| 4      | 2 stroke    | 4 exhaust           |
+|        | 4 stroke    | 2 exhaust, 2 intake |
+
+- ports are cast in the cylinder head to direct airflow in and out of the cylinder
+- injector tube is a cylindrical sleeve made from copper, stainless steel, or brass; surround by coolant
+- coolant directional nozzles are copper or brass inserts which direct coolant flow to critical areas like exhaust valve seats
+
+- valve:
+    - assembly: valve lock, valve spring retainer, valve spring, valve seal, valve spring seat, valve guide, valve face, valve seat
+        - valve seat provides wear resistance, seal the valve closes, draw heat away from the valve face
+    - terminology: tip, lock groove, stem, fillet, face, margin, head
+    - carbon scraper helps keep the lower part of the valve guide clean and reduce carbon build up
+        - the lower end of the valve stems are machined to a slightly smaller diameter
+    - sodium-cooled exhaust valves has hollow valve stem filled with sodium crystals (15% cooler than solid one)
+- valve guides & seats can be intergal or wearable insert
+- valve face angle
+    - intake has 30 degree angle providing better air flow 
+    - exhaust has 40 degree angle providing more seating force, thus keep the seat clean and better cooling
+- valve spring
+    - valve float happens when valve springs oscillate uncontrolled, which prevents the valves from sealing properly, resulting loss of power
+    - constant rate spring has a constant rate of force
+    - progressive spring has a variable rate of force increase as it's compressed a specific distance
+- valve retainers & locks
+    - keep the valve and spring as a unit
+    - can be called collects or keepers
+- positive valve rotator
+    - can be used in place of valve retainers or spring seat 
+    - change wear surface for even valve and seat wear
+    - create a wiping action that clean the valve face and seat
+- valve seal
+    - help prevent oil run down bw valve guide and valve stem cause oil consumption and carbon build up in the ports, valves
+    - inventually will reduce engine's volumetric efficiency, then power loss can occur
+    - positive seal provide the best control of valve stem lubrication; has spring clips to seal on valve stem
+    - non-positive or umbrella type seal rides up and down with the stem during engine operation
+- valve bridge or crosshead: allow 1 rocker open a pair of valves simultaniously
+
+## Cylinder heads service
+
+- remove injectors, and glow plugs before removing the head
+- valve leakage test:
+    - rest the head on the bench with the head gasket surface vertical
+    - fill the port with petroleum solvant and observe the valve/sear area for leakage
+    - minor moistening is accpetable; stream of fluid is NOT ok
+- pressure test to find internal cracks
+    - using special test strips to seal all of the cylinder head coolant passages
+    - if injector tubes is used, dummy injector will be used in place with the injector hold down crab
+    - apply 20~40psi air pressure to the coolant passage
+    - immerse the head in the hot water tank @ 180~200F for 15~20 minutes
+- injector tubes and o-ring will be replaced during cylinder head rebuild
+- cleaning: soaking the head in hot tank, followed by steam cleaning
+- water passages deposits:
+    - white scale - high concentration of minerals
+    - green/blue - high concentration of cooling chemical
+    - rust/corrosion - lack of corrosion inhibitors
+- valve guide need to be clean by using valve guide brush or carbon scraper
+    - measure diameter by a small hole gauge
+    - worn valve guides cause: 
+        - accelerated wear of the valve face and seat
+        - oil consumption
+- after grind the valve, make sure the remaining margin greater than 1/2 the margin of new valve
+    - insufficient margin will run excessively hot and burn prematurely
+- service removable valve guide
+    - use a hammer or air chisel and valve guide remover to remove the valve guide
+    - use an air harmer, valve guide driver, and a limiting sleeve to install the new valve guide
+        - limiting sleeve stop the driver when the guide reaches the correct depth
+    - valve guide height
+        - too high: component damage because of contacting between the valve spring retainer and the valve seal 
+        - too low: valve may not be closed because of contacting between the guide and the valve fillet
+- service the valve insert
+    - use 'a valve seat insert puller' to remove the valve seat
+    - use a hammer and 'a valve seat insert installer' to drive valve seat to the head
+    - finish by doing a concentricity check to ensure that the valve seat is concentric with the valve guide
+- valve face and valve seat angles
+    - can be slightly different 1/2 ~ 1° to produce a narrow contact between the valve face and seat  
+- valve seat width and contact area
+    - firstly grind with 45° stone, secondly 15° stone, lastly 60° stone
+    - spread a thin lay of Prussian blue on the valve face, insert the valve to the guide without spin the valve, remove and check the valve
+    - the seat is too narrow, reducing contact area, poor cooling, and rapid wear
+    - the seat is too wide, lower the seating force, causing leakage, carborn build up, then poor cooling
+- valve seat height or protrusion is the distance from the bottom of the valve head to the machined gasket surface on the cylinder head
+    - excessive height increase in compression ratio & piston can contact valve
+    - insufficient height decrease in compression ratio
+- valve spring service
+    - free length measurement
+    - squareness; maximum allowable variation 1/16"
+    - tension: valve close height and tension; valve open height and tension 
+        - low tension cause poor valve sealing, cooling, valve flow or flutter
+- once push rod has been bent, it is fatiqued and will be more susceptiable to bending; always replace bend push rods
+- if valve face and seat has been machined, this increases the valve spring height and lowers the valve spring tension
+    - install shims under valve spring; install no more than 2 shims, max 0.060"
+    - use a vaccum tester apply 20" of Hg. A drop in vacuum greate 10 Hg in 10s is excessive
+- torque cylinder head in sequene, starting from the center of the head and working outward
+- torque and turn is more accurate than torquing a fastener to a final value
+    - initial low torque values seats the mating surface, an turn the fastener produces a specific amount of bolt stretch for even clamping load
+- install valve bridges before the rocker arm assemblies; guideless crossheads don't use guide pin and non-adjustable
+    - adjust crossheads, to open valves at the same time, and is centered on the guide pin
+        - back off the adjusting screw off one turn (until it's not touch the tip of the valve stem)
+        - apply light finger pressure to the center of the crosshead and turn the adjusting screw down until it touches the valve stem
+        - hold the adjusting screw and snug the lock nut, (some time, crossheads need to be holded upon torquing to prevent bending the valve stem)
+- valve clearance (lash)
+    - provide clearance for component expansion as engine temp rises
+    - compensate for wear in the valve operating mechanism
+    - the valves must be closed upon adjusting the valve lash
+
+## Two stroke engine
+
+- 360 degree of the crankshaft rotation to finish a cycle
+- exhaust valves open @ 102 ATDC and close @ 60 ABDC
+- intake valves open @ 46 BBDC and close @ 46 ABDC; during this time the exhaust valves are also open (scavenging)
+- fuel is injected @ 21 BTDC
+- scavenging is the removal of the exhaust gases from the cylinder
+    - crankcase scavenging: 
+        - use in small gasoline engines; high exhaust emissions
+        - air and fuel are pressurized in the crankcase by the downward movement of the piston
+    - blower scavenging
+        - use a possitive displacement air pump or blower to pressurized the inlet air
+        - use in two stroke diesel engines
+
+## Four stroke engine
+
+- 720 degree of crankshaft rotation to finish a cycle
+- intake valves opens @ 20 BTDC and close @ 49 ABDC
+- fuel is injected @ 23 BTDC, power stoke ends when exhaust valves are opened
+- exhaust valves open @ 51 BBDC and close @ 20 ATDC
+- valves overlap is when both intake and exhaust valves are opened at the same time.
+    - the incoming boost air helps remove the exhaust gases (scavenging)
+
+## Gasoline vs diesel
+
+- gasoline
+    - intake: has air inlet restriction by a throttle valve 
+    - compression: air/fuel 9:1
+
+- diesel
+    - intake: completely fill cylinders with air even @ idle
+    - compression: air/fuel 18:1 ~ 25:1
+
+## Piston, rings, and connecting rod
 
 - piston material
     - cast iron
@@ -313,7 +474,7 @@ categories:
     - fix by
         - block heater
         - glow plugs, manifold heaters
-        - fuel heaters
+        - uel heaters
         - retard timing for starting only
         - raise injection pressure for starting only
 - white smoke - unburned fuel
@@ -322,13 +483,17 @@ categories:
         - low injection pressure
         - coolant burned
         - retard injection
-- black smoke - not enough oxygen
-    - lack of air: clogged air filter, defective turbo, leaking in intake components
+- black smoke - incomplete combustion or not enough oxygen
+    - lack of air
+        - clogged air filter
+        - defective turbo
+        - leaking in intake components
     - too much fuel (leaking dosing valve), nozzle dribble
 - blue smoke - oil is burned
     - worn piston rings
-    - excessive crankcase pressure
-    - leaking turbo
+    - excessive crankcase pressure increase pressure on the turbo oil sealing ring
+    - leaking turbo: shaft sealing rings are defective
+        - oil leaks to turbine or compressor housing
 - primary filter
     - >= 25 microns
     - first filter after tank
@@ -357,7 +522,7 @@ categories:
     - plunger type
 - pressure test fuel system
     - vacuum gauge installed on inlet transfer pump (inches of Hg, or mm of Hg) 1" of Hg = 25.4 mm of Hg
-        - if # is higher the specs, prob can be
+        - if the number is higher the specs, the problem can be
             - plugged pickup tub
             - plugged tank vent
             - clogged filter before transfer pump
@@ -447,7 +612,7 @@ categories:
 - diode trio is additional diodes used to rectify ac output to dc for voltage regulator
 - battery will be undercharged if the alternator sense a false voltage created by unwanted high resistances
 
-## service charging system
+## Service charging system
 
 - one battery has higher resitance can affected the whole group of battery; thus battery group state of charge and condition must be checked first
 - alternator terminals
@@ -620,20 +785,40 @@ categories:
 
 - before taking injectors out do:
     - disconnect battery cable
-    - use compress air at a regulated 65psi blowing to inlet fuel passage in cylinder head
+    - drain the fuel
+        - use compress air at a regulated 65psi blowing to inlet fuel passage in cylinder head
         - this is important, fuel trap in cylinder head can cause hydraulic lock, damage cylinder rod
 
 # Air induction system and turbocharger
 
-- waste gate is a valve that controls the flow of exhaust gases to the turbine wheel, which regulate maximum boost pressure
 - intercooler, aftercooler, or air cooler is used to cool the air after it has been compressed by turbo
     - maximum engine performance occurse when the air is cool, less than 33C
     - hot air is less dense will cause power loss.
 - intake manifold pressure test
-- plugged drain line on turbo charge can cause turbo charger bearing
+- plugged drain line on turbo charge can cause turbo charger bearing failure
+- volumetric efficientcy (VE) = volume of air taken in / actual cylinder volume
+    - engine speed increase, VE decreases
 - naturally aspirated has a volumetric efficiency of 75%~85%
     - engine cylinder would only receive about 75-85% of the air that is actually required to completely fill the cylinder
-- pre-cleaner cleans larger particles
+- turbocharged engine has following feature compared to naturally asperated engine
+    - compression ratio is lower
+    - valve overlap will be increased
+    - retard injetion timing
+    - fuel pump output and/or fuel injector sizes are increased
+- turbocharger components:
+    - turbine: housing, turbine wheel, wastegate or impeller
+        - mount om exhaust side
+        - turbine housing can have a separate port that is used to divert some exhaust gases away
+        - wastegate controls the opening of this port
+    - compressor: housing and compressor wheel
+        - mount on intake side
+        - a nut is used to retained the compressor wheel on the turbine shaft
+        - diffuser plate or nozzle vanes smoothly direct the boost air into the intake manifold
+    - 2 small piston style sealing rings help prevent
+        - oil from entering the housings
+        - exhaust gases and compressed air from entering oil cavity
+    - large O-ring or RTV (room temperature vulcanizing) sealant is used bw compressor housing and center housing
+    - metal-to-metal seal is used bw turbine housing and center housing
 
 ## Dust ejection system
 
@@ -650,6 +835,7 @@ categories:
 - dry type air filters - 99.5 effective
     - work at all engine speeds
     - single stage filter use a pre-cleaner
+        - pre-cleaner cleans larger particles
     - double stage filter
         - inner element is the secondary or safety filter which protects engine if the primary filter develops holes
     - pleated paper is used to provide a large surface area for the filter
@@ -659,6 +845,90 @@ categories:
     - filter is dirty; restrictor gauge should show 20-25 inches of water
 - place a trouble light in the center of the round filter. Bright points of the light indicate signs of air leakage or dirt entry can occur
 - blowing 30-50psi air @ 90 degree to the pleats  though the air filter in the opposite direction of normal airflow
+
+## Service air intake system and turbocharger
+
+- do not use a mercury manometer (use water manometer); mercury can be drawn to the intake system which can produce poisonous gas
+- load the engine to maximum horsepower to test turbo boost pressure
+
+| system  | nanometer | asperated | turbocharged |
+|---------|-----------|-----------|--------------|
+| intake  | water     | 15"       | 25psi        |
+| exhaust | mercury   | 10"       | 3psi         |
+
+- lack of power and low boost pressure in turbocharged engines
+    - leaking or restricted intercooler
+    - worn engine parts as pistons, rings or liners
+    - faulty fuel injection system, pump or injectors
+- excessive noise
+    - carbon build up causes turbo out of balanced; rubbing action bw turbo wheel and housing occur
+    - lubrication problems
+        - plugged oi supply and oil passage can starve turbo bearing, causing bind turbine shaft
+        - plugged oil return, or oil return line is too small; oil can build up in center housing, thus increasing pressure on sealing rings
+        - shutdown engine too quickly, the oil burns and cokes on the bearing shaft, cause premature wear on the bearing
+    - air and exhaust leaks can cause noise
+- leaking turbo
+    - internal: blue smoke, oil leakage is evident on the compressor, turbine wheels, increase carbon build up
+    - external: defective oil inlet or oil drain gasket
+- exessive shaft end play
+    - the thrust washer and related components wear, the axial end play will increase
+    - too much endplay wheels can rub on housings, creating noise and drag
+    - use dial indicator to check
+- excessive radial play
+    - use feeler gauge check side clearance of the wheels and the housings
+    - adjustment is not possible, replace the turbo
+- turbo removal
+    - disconnect wastegate valve before removing turbo
+    - mark the compressor and turbine housing in relation to the centre housing
+    - check id plate for ordering parts
+    - turbine housing can be immerse in hot tank
+    - compressor housing made by aluminum, use clean Varsol
+- turbo installation
+    - use antiseie to secure turbor charger to the exhaust manifold
+    - pre-lube the turbo bearing while rotating the compressor wheel by hand
+- **shutdown time**: idle engines 3-5 minutes before shutting it down, allow oil to remove heat from the turbo
+
+## Aftercooler/intercooler
+
+- air-to-air intercooler or air-to-air aftercooler (ATAAC)
+    - best in mobile equipment with steady flow of outside air
+- air-to-coolant aftercooler
+    - stationary application or off-road equipment which does not have a constant air flow
+    - pressurized turbocharged air is forced through tubes that are surrounded by moving engine coolant
+
+## Service aftercooler/intercooler 
+
+- air-to-air aftercooler
+    - cap intlet and outlet port the the test plugs. One of the test plug has a gauge and air quick connect
+    - pressurize ATAAC with compressed air according to specs. the intercooler must maintain the pressure for a specific time interval
+    - air coolers need to be cleaned on a regular basis
+- air-to-coolant intercooler
+    - remove and drain coolant from the aftercooler
+    - plug all ports and submerged it to warm (82C) water tank
+    - pressurize the aftercooler ~40psi, look for air bubbles
+    - leaks can causes
+        - compressed air to coolant
+        - coolant may enter the intake, cause white smoke, and loss of coolant
+
+## Variable displacement turbohargers (VDT) and Wastegates
+
+### Wastegate
+
+- wastegate is a valve that senses turbo boost pressure and open a port to bypass exhaust gases around the turbine wheel which controls the speed of the turbine
+- the wastegate valve stucks open, will cause low power as boost pressure will below the specs
+- the wastegate valve stucks close, turbo speed will be unregulated which can cause engine and turbo damage
+
+### VDT
+
+- use in conjunction with EGR to control
+    - turbo speed
+    - boost
+    - exhaust backpressure
+    - help improve engine brake
+- sliding nozzle vane
+    - control exhaust gases flow to the turbine by sliding the nozzle vanes back and forth
+- pivoting nozzle vane
+    - control exhaust gases flow to the turbine by turning the pivoting vanes close and open
 
 ## Exhaust system
 
@@ -679,7 +949,7 @@ categories:
     - increasing CO and HC emissions
     - loss of power
     - reduced fuel economy
-- EGR valve: butterfly or poppet
+- EGR valve: butterfly or poppet, allow exhaust gases go back into combustion charmber
 - EGR actuatior
     - air
     - electrical (PWM on motor)
@@ -754,7 +1024,7 @@ categories:
         - DEF injector
         - dosing control unit
 
-# Cluches
+# Clutch
 
 - types:
     - push-type medium duty
@@ -829,6 +1099,7 @@ categories:
     - chattering
         - worn engine mounts, loose drivetrain comps
         - worn clutch disc splines, trannny input shaft splines and warped friction disc surface
+    - a vehicle is difficult to get out of gear
     - vibration
         - imbalance clutch assembly
             - linings separated
@@ -1437,7 +1708,6 @@ C = (F - 32) * 5 / 9
     - oil with high viscosity index would experiences small change in viscosity
 - oil function: reduce wear, absorb heat, clean, sealant
 - if engine oil contains silicon, check air filter seals and air intake connections for leaks
-- oil cooler system
 - detergents help prevent deposits from forming on internal engine parts
 - dispersants keep deposits suspended in the oil 
 - oxidation inhibitors prevent oil from absorbing excess oxygen, which may build of of sludge
@@ -1486,7 +1756,7 @@ C = (F - 32) * 5 / 9
 
 ## Oil cooler service 
 
-- an internal leaks in the cooler could allow oil to pass into the cooling system as pressure in lub system is higher than cooling system
+- an internal leaks in the cooler could allow oil to pass into the cooling system as pressure in lubrication system is higher than cooling system
 - some oil cooler can use a termostat to regulate oil flow opening.
 - pressure test oil cooler, immerse the cooler in the warm water, and watch for air bubbles
     - one opening is blocked off, the other is connected to an adjuster air regulator
