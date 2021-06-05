@@ -208,7 +208,7 @@ categories:
     - internal combustion engine is approximately 36%
 - the camshaft of a four stroke cycle engine rotates at 1/2 crankshaft speed
 
-## Cylinder block
+## Engine block
 
 - frost plugs or expansion plugs which pop out if coolant freeze, to protect engine
 - enbloc:
@@ -385,6 +385,12 @@ categories:
     - provide clearance for component expansion as engine temp rises
     - compensate for wear in the valve operating mechanism
     - the valves must be closed upon adjusting the valve lash
+    - adjust the clearance
+        1. insert the feeler gauge, tighten the adjusting screw until any clearance is removed
+        2. continue to tight 1/4~1/2 of a turn to open the valve slightly and squeezes oil out of the operating mechanism contact areas
+        3. back the adjusting screw off until the feeler gauge slide smoothly with a slight drag
+        4. hold the screw and snug the locknut, then torque the locknut
+        5. recheck the drag on the feeler gauge
 
 ## Two stroke engine
 
@@ -447,6 +453,30 @@ categories:
     - form a gas tight seal by combination of cylinder pressure, ring tension and an oil film on the cylinder wall
     - cool the piston
     - control lubrication
+
+## Camshaft
+
+- camshaft nose is located at front of camshaft, a mounting surface for drive gear
+- journals are the load bearing surfaces
+- lobes are accentrics that convert the rotary motion of the camshaft into reciprocating motion of the cam follower
+- modular camshafts are used in big engine
+- OHV: *overhead valve* or camshaft in-block
+- OHC: *overhead camshaft*
+    - fewer moving parts
+    - less friction
+    - more accurate valve timing
+- a thrust plate or washer is the method of controlling end play on camshafts
+
+### Camshaft follower
+
+- solid type
+    - straight body
+    - mushroom
+    - bottom face of the lifter is slightly convex
+    - the lifter centerline is also offset in relation to the cam lobe, thus rotating the follower, and change the wear surface
+    - require some valve clearance or lash to allow for expansion.
+- roller type
+    - the roller is centered on the cam lobe
 
 ## Engine brake
 
@@ -633,7 +663,7 @@ categories:
     - set engine speed @ maximum alternator ouput (~5000rpm of the alternator)
     - carbon pile is placed on positive and negative comming to battery from the starter
     - use carbon pile to draw amp until ammeter show its highest value
-    - if output amp have to be higher 10% of its rated amperage output
+    - output amp have to be higher 10% of its rated amperage output
 - unit battery over charge
     - faulty regulator
     - loose regulator connections
@@ -1081,7 +1111,7 @@ categories:
         - 1/8" between yoke and release bearing; 1/2" between release bearing and clutch brake
     - self adjustment
         - self adjusting every time when disengage and engage
-        - there is limit to avoid adjusting clutch to tight which could lead to premature wear
+        - there is limit to avoid adjusting clutch too tight which could lead to premature wear
 - clutch brake
     - use to stop rotation of clutch disc and input transmission shaft upon moving from N to 1 or N to R
     - help prevent gear clash
@@ -1099,7 +1129,7 @@ categories:
     - chattering
         - worn engine mounts, loose drivetrain comps
         - worn clutch disc splines, trannny input shaft splines and warped friction disc surface
-    - a vehicle is difficult to get out of gear
+    - a vehicle is difficult to get out of gear, clutch disc may be wrap
     - vibration
         - imbalance clutch assembly
             - linings separated
@@ -1287,7 +1317,7 @@ categories:
     - low/wrong lubrication level
     - excessive backlash, end play
 - noise on coast
-    - pinion and ring gear to tight
+    - pinion and ring gear too tight
 - intermittent noise
     - warped ring gear
     - loose diff case bolts
@@ -1662,20 +1692,23 @@ C = (F - 32) * 5 / 9
     - high side (subcooling)
     - small size gauge
 - before turning unit on, crack open the line at the gauge set to purge all the moisture out
-- NC - thermostatic switch: [32F, 38F] - means open around 32F, close around 38F
+- NC - thermostatic switch: [32F, 38F] 
+    - <= 32F (freeze point) compressor not run; >= 38F compressor run
     - sensing caplillary tube @ evap core, if it's warm, sw is closed, clutch is engaged
     - use  to trigger evap defrost, also protect compressor running low psi @ suction side
 - NO - low pressure switch: [24 psi, 34psi]
+    - <=24psi (~32F @ evap) compressor not run; >=34psi compressor run
     - sense pressure @ accumulator or dryer, if pressure is 24psi, sw is closed, clutch is engaged
     - protect compressor running @ low psi @ suction side
         - lack of refrigerant
         - block txv or orifice
         - ambient temperature is cold, which can cause psi drop, thus turning ac system
-- NC - high pressure switch [350psi, 240psi]
-    - sense pressure @ accumulator or dryer, if pressure is 24psi, sw is closed, clutch is engaged
+- NC - high pressure switch [350psi, 250psi] 
+    - >=350 psi contacts open, and close when pressure drop below 250psi
+    - sense pressure @ accumulator or dryer
     - set lowser than pressure relief, thus preventing refrigerant relief to atmosphere
 - binary switch = hi + lo pressure switch
-    - @ dryer
+    - located at dryer
 - trinity switch = hi + lo + shutter fan
     - low pressure NO sw: [24psi, 34psi]
     - high pressure NC sw: [350psi, 250psi]
