@@ -620,7 +620,7 @@ categories:
 
 - fully charge 12.6V or 25.2V; max 14.8V or 29.6V
 
-##  alternator
+## Alternator
 
 - stator has output to charge the battery though retifier
     - 3 windings wound
@@ -707,7 +707,7 @@ categories:
 
 - upon cranking, voltage drop of
     - battery is at least 9.6V
-    - crank solenoid on starter should be less than or equal to  0.2V
+    - voltage drop bw crank solenoid on starter should be less than or equal to  0.2V
     - for 500A draw, voltage loss should be around 0.7V (0.5V for all cables, 0.2 for selonoid)
 - note:
     - upon simulating motor draw, carbon pile draws 500A on 12V system and 250A on 24V system
