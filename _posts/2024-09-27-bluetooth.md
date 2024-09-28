@@ -1,9 +1,8 @@
-
 ---
 layout: post
-title: awk data processing
+title: Bluetooth with bluez
 categories:
-  -
+  - cli, bluez
 ---
 
 
