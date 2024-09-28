@@ -6,7 +6,7 @@ categories:
 ---
 
 
-# Bluez
+# Connect to a Bluetooth device
 
 ``` bash
 sudo systemctl start bluetooth
