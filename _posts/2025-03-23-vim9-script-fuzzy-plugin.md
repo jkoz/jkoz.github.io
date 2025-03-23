@@ -7,5 +7,5 @@ categories:
 
 ## Introduce yet another fuzzy plugin in vim9 script, developing stage
 
-[github.com/jkoz/vim-fuzzy](vim-fuzzy)
+[vim-fuzzy](github.com/jkoz/vim-fuzzy)
 
