@@ -14,15 +14,16 @@ categories:
 @font-face {
     font-family: "Jetbrains Mono Font";
     src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/refs/heads/master/patched-fonts/JetBrainsMono/NoLigatures/Regular/JetBrainsMonoNLNerdFontMono-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
 }
 
 @font-face {
-    font-family: "Terminess Nerd Font";
-    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/refs/heads/master/patched-fonts/Terminus/TerminessNerdFont-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Jetbrains Mono Extra Light Font";
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/refs/heads/master/patched-fonts/JetBrainsMono/NoLigatures/ExtraLight/JetBrainsMonoNLNerdFontMono-ExtraLight.ttf");
+}
+
+@font-face {
+    font-family: "Julia Mono Font";
+    src: url("https://raw.githubusercontent.com/cormullion/juliamono/refs/heads/master/JuliaMono-Regular.ttf");
 }
 
 x-row {
@@ -32,4 +33,4 @@ x-row {
 
 ```
 
-- Text font family: 'Jetbrains Mono Font', 'Terminess Nerd Font'
+- Text font family:  'Jetbrains Mono Extra Light Font', 'Jetbrains Mono Font', 'Julia Mono Font'
