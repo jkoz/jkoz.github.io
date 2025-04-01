@@ -33,4 +33,4 @@ x-row {
 
 ```
 
-- Text font family:  'Jetbrains Mono Extra Light Font', 'Jetbrains Mono Font', 'Julia Mono Font'
+- Text font family: 'Consolas', 'Jetbrains Mono Extra Light Font', 'Jetbrains Mono Font', 'Julia Mono Font'
