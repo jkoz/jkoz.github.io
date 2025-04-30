@@ -14,9 +14,12 @@ gdb ./a.out
 
 # Gdb command collections
 
-- b file:linenr | add a break point
-- l . | show code at breakpoint
-- c-x a | toggle tui
-- c-l | redraw/clear screen
-- n | next 
+b file:linenr | add a break point
+l . | show code at breakpoint
+c-x a | toggle tui
+c-l | redraw/clear screen
+n | next 
 
+# Source
+
+CPP Con 2015 Gdb
