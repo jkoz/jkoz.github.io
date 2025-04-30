@@ -18,7 +18,12 @@ b file:linenr | add a break point
 l . | show code at breakpoint
 c-x a | toggle tui
 c-l | redraw/clear screen
+i b | show all break point infomation
+p a | print variable a
 n | next 
+c | continues run til hit next break point
+s | step into function
+bt | print back trace or call stack
 
 # Source
 
