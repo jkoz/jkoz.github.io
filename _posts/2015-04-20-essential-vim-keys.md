@@ -5,7 +5,7 @@ categories:
   -
 ---
 
-# Vimdiff essential keys
+# Fugitive
 
 - do - get changes from other window to current
 - dp - put changes current window to other
@@ -18,6 +18,17 @@ categories:
 - zd - delete current fold
 
 # surround
+
+- insert mode: C-g S {
+
+# windows
+
+c-w o | focus on current window, close other
+c-w hjkl | move into window in given direction
+c-w HJKL | move window in given direction
+c-w 2+ | adjust size of current window 2 line
+c-w _ | increase a window to maximum height
+c-w \| | increase a window to maximum width
 
 # Retab
 
