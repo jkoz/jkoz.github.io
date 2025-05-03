@@ -17,6 +17,7 @@ gdb ./a.out
 b file:linenr | add a break point
 l . | show code at breakpoint
 c-x a | toggle tui
+c-x 2 | cycle through register, asm
 c-l | redraw/clear screen
 i b | show all break point infomation
 p a | print variable a
