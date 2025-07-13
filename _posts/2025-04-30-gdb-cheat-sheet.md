@@ -5,6 +5,13 @@ categories:
  -
 ---
 
+# Mode line Emacs movement keys
+
+c-b: move backward 1 character
+c-f: move forward 1 character
+c-d: delete a character under cursor
+c-w: delete 1 word from current cursor towards front of the line
+
 # Add debug flag at compile time
 
 ```sh
