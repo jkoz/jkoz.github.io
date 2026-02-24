@@ -25,3 +25,9 @@ git clone https://github.com/jkoz/jkoz.github.io
 ```
 cd ~/jkoz.github.io && bundle exec jekyll serve
 ```
+
+### Github auth
+
+```
+eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed12519
+```
